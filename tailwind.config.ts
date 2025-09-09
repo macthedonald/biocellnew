@@ -57,6 +57,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "medical-gold": "hsl(var(--medical-gold))",
+        "medical-gold-light": "hsl(var(--medical-gold-light))",
+        "medical-dark": "hsl(var(--medical-dark))",
+        "medical-gray": "hsl(var(--medical-gray))",
+        "medical-light": "hsl(var(--medical-light))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -84,6 +89,15 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "bounce": "bounce 2s infinite",
+      },
+      backgroundImage: {
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-gold": "var(--gradient-gold)",
+      },
+      boxShadow: {
+        "medical": "var(--shadow-medical)",
+        "gold": "var(--shadow-gold)",
       },
     },
   },
