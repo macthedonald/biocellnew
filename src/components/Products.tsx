@@ -12,6 +12,7 @@ import cbdProduct from "@/assets/cbd-product-original.png";
 import mscExosomalLysate from "@/assets/msc-exosomal-lysate.png";
 import cbscCryo from "@/assets/cbsc-cryo.png";
 import hucFreshMsc from "@/assets/huc-fresh-msc.png";
+import wellnessResults from "@/assets/wellness-results.jpg";
 
 const Products = () => {
   const cellularProducts = [
@@ -97,6 +98,55 @@ const Products = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Wellness Results Section */}
+        <div className="bg-gradient-to-r from-accent/5 to-accent/10 rounded-3xl p-8 md:p-12 mt-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <Badge variant="secondary" className="mb-4">
+                Real Results
+              </Badge>
+              <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+                Experience Renewed Vitality
+              </h3>
+              <p className="text-lg text-muted-foreground mb-8">
+                Our advanced regenerative therapies help patients regain mobility, reduce inflammation, 
+                and experience improved quality of life through the body's natural healing processes.
+              </p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center">
+                  <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
+                  <span className="text-foreground">Enhanced mobility and flexibility</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
+                  <span className="text-foreground">Reduced pain and inflammation</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
+                  <span className="text-foreground">Accelerated healing and recovery</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
+                  <span className="text-foreground">Improved overall wellness</span>
+                </div>
+              </div>
+              
+              <Button variant="medical" size="lg">
+                Learn More About Results
+              </Button>
+            </div>
+            
+            <div className="text-center">
+              <img 
+                src={wellnessResults} 
+                alt="Person stretching demonstrating wellness results from regenerative therapy"
+                className="w-full max-w-lg mx-auto rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
