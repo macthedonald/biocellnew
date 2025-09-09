@@ -1,15 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { 
-  Microscope, 
-  Award, 
   Users, 
   Shield,
-  Zap,
-  Target,
-  Play
+  Zap
 } from "lucide-react";
+import VideoPlayer from "@/components/VideoPlayer";
 import videoThumbnail from "@/assets/video-thumbnail.jpg";
 
 const Features = () => {
@@ -89,38 +85,14 @@ const Features = () => {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div 
-              className="relative aspect-video bg-cover bg-center rounded-2xl overflow-hidden border border-accent/20 cursor-pointer group shadow-medical hover:shadow-gold transition-all duration-300"
-              style={{ backgroundImage: `url(${videoThumbnail})` }}
-            >
-              {/* Video Overlay */}
-              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300"></div>
-              
-              {/* Play Button */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-white/90 rounded-full shadow-lg group-hover:bg-white group-hover:scale-110 transition-all duration-300">
-                  <Play className="w-8 h-8 text-medical-dark ml-1" />
-                </div>
-              </div>
-              
-              {/* Video Info */}
-              <div className="absolute bottom-6 left-6 right-6 text-white">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-lg font-semibold mb-1">BioCellRx Explainer Video</p>
-                    <p className="text-white/80 text-sm">3.2M views • See our breakthrough technology</p>
-                  </div>
-                  <Button variant="medical" size="sm" className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    Watch Now
-                  </Button>
-                </div>
-              </div>
-              
-              {/* Duration Badge */}
-              <div className="absolute top-4 right-4">
-                <Badge className="bg-black/70 text-white border-0">4:32</Badge>
-              </div>
-            </div>
+            <VideoPlayer
+              thumbnail={videoThumbnail}
+              title="BioCellRx Explainer Video"
+              description="See our breakthrough technology"
+              videoUrl="https://vimeo.com/76979871" // Replace with your actual video URL
+              duration="4:32"
+              views="3.2M views"
+            />
           </div>
         </div>
       </div>
