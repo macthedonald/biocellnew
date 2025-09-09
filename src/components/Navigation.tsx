@@ -1,12 +1,15 @@
 import { Button } from "@/components/ui/button";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
+  const location = useLocation();
+  
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "Services", href: "#services" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
-    { name: "Products", href: "#products" },
+    { name: "Home", href: "/", isRoute: true },
+    { name: "Services", href: "/services", isRoute: true },
+    { name: "About", href: "#about", isRoute: false },
+    { name: "Contact", href: "#contact", isRoute: false },
+    { name: "Products", href: "#products", isRoute: false },
   ];
 
   return (
@@ -23,15 +26,29 @@ const Navigation = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-300"
-              >
-                {item.name}
-              </a>
-            ))}
+            {navItems.map((item) => 
+              item.isRoute ? (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`transition-colors duration-300 ${
+                    location.pathname === item.href 
+                      ? "text-accent font-medium" 
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+                >
+                  {item.name}
+                </a>
+              )
+            )}
           </div>
 
           {/* CTA Button */}
