@@ -13,6 +13,9 @@ import {
   Phone
 } from "lucide-react";
 import labHeroBg from "@/assets/lab-hero-bg.jpg";
+import regenerativeProcessImg from "@/assets/regenerative-process-infographic.jpg";
+import safetyQualityImg from "@/assets/safety-quality-infographic.jpg";
+import treatmentTimelineImg from "@/assets/treatment-timeline-infographic.jpg";
 
 const Resources = () => {
   const resourceCategories = [
@@ -128,7 +131,100 @@ const Resources = () => {
               <Download className="w-5 h-5 mr-2" />
               Download Resources
             </Button>
+        </div>
+
+        {/* Visual Learning Section - Infographics */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-foreground mb-4">
+              Visual Learning Center
+            </h3>
+            <p className="text-muted-foreground">
+              Understanding regenerative medicine through visual guides
+            </p>
           </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-blue-50 to-blue-100">
+                <img 
+                  src={regenerativeProcessImg} 
+                  alt="Regenerative Medicine Process"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardContent className="p-6 text-center">
+                <h4 className="font-semibold text-foreground mb-2">How It Works</h4>
+                <p className="text-sm text-muted-foreground">Visual guide to regenerative healing</p>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-green-50 to-green-100">
+                <img 
+                  src={safetyQualityImg} 
+                  alt="Safety and Quality Standards"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardContent className="p-6 text-center">
+                <h4 className="font-semibold text-foreground mb-2">Safety Standards</h4>
+                <p className="text-sm text-muted-foreground">Quality control and compliance</p>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-purple-50 to-purple-100">
+                <img 
+                  src={treatmentTimelineImg} 
+                  alt="Treatment Timeline"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardContent className="p-6 text-center">
+                <h4 className="font-semibold text-foreground mb-2">Treatment Journey</h4>
+                <p className="text-sm text-muted-foreground">From consultation to recovery</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        {/* Educational Video Section */}
+        <div className="mb-20">
+          <Card className="bg-gradient-to-br from-accent/5 to-accent/10 border-0 overflow-hidden">
+            <CardContent className="p-0">
+              <div className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="p-8 lg:p-12">
+                  <Badge variant="secondary" className="mb-4">
+                    Educational Video
+                  </Badge>
+                  <h3 className="text-3xl font-bold text-foreground mb-4">
+                    Understanding Regenerative Medicine
+                  </h3>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    Watch our comprehensive educational video that explains the science behind regenerative medicine, treatment protocols, and patient success stories.
+                  </p>
+                  <div className="flex items-center space-x-4 text-sm text-muted-foreground">
+                    <span>• Treatment Overview</span>
+                    <span>• Scientific Foundation</span>
+                    <span>• Patient Stories</span>
+                  </div>
+                </div>
+                <div className="relative aspect-video bg-black">
+                  <iframe
+                    src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=0&title=0&portrait=0&byline=0&badge=0&loop=0&muted=0&controls=1"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0"
+                  />
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
         </div>
       </section>
 
@@ -158,17 +254,20 @@ const Resources = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {category.description}
                   </p>
-                  <div className="space-y-2">
+                  <div className="grid grid-cols-2 gap-2">
                     {category.resources.map((resource, idx) => (
-                      <div key={idx} className="flex items-center justify-between p-3 bg-accent/5 rounded-lg">
-                        <span className="text-sm font-medium text-foreground">{resource}</span>
-                        <Button variant="ghost" size="sm" className="text-accent hover:text-accent/80">
-                          <Download className="w-4 h-4" />
-                        </Button>
-                      </div>
+                      <Button 
+                        key={idx} 
+                        variant="ghost" 
+                        size="sm" 
+                        className="h-auto p-3 justify-start text-xs text-left"
+                      >
+                        <Download className="w-3 h-3 mr-2 flex-shrink-0" />
+                        <span className="truncate">{resource}</span>
+                      </Button>
                     ))}
                   </div>
                 </CardContent>
@@ -191,16 +290,16 @@ const Resources = () => {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <Accordion type="single" collapsible className="space-y-4">
+            <Accordion type="single" collapsible className="space-y-3">
               {faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg border-0 shadow-sm">
                   <AccordionTrigger className="px-6 py-4 text-left font-semibold text-foreground hover:no-underline">
                     <div className="flex items-center space-x-3">
-                      <HelpCircle className="w-5 h-5 text-accent flex-shrink-0" />
-                      <span>{faq.question}</span>
+                      <HelpCircle className="w-4 h-4 text-accent flex-shrink-0" />
+                      <span className="text-sm">{faq.question}</span>
                     </div>
                   </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4 text-muted-foreground leading-relaxed">
+                  <AccordionContent className="px-6 pb-4 text-muted-foreground text-sm leading-relaxed">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
