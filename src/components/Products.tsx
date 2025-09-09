@@ -8,7 +8,7 @@ import {
   Leaf,
   CheckCircle
 } from "lucide-react";
-import cbdProduct from "@/assets/cbd-product.jpg";
+import cbdProduct from "@/assets/cbd-product-original.png";
 
 const Products = () => {
   const cellularProducts = [
