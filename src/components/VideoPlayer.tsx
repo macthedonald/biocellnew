@@ -55,37 +55,45 @@ const VideoPlayer = ({
 
   return (
     <>
-      {/* Video Thumbnail */}
+      {/* Video Thumbnail with Live Video Background */}
       <div 
-        className="relative aspect-video bg-cover bg-center rounded-2xl overflow-hidden border border-accent/20 cursor-pointer group shadow-medical hover:shadow-gold transition-all duration-300"
-        style={{ backgroundImage: `url(${thumbnail})` }}
+        className="relative aspect-video rounded-2xl overflow-hidden border border-accent/20 cursor-pointer group shadow-medical hover:shadow-gold transition-all duration-300"
         onClick={() => setIsOpen(true)}
       >
-        {/* Video Overlay */}
-        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300"></div>
+        {/* Live Video Background */}
+        <div className="absolute inset-0">
+          <iframe
+            src={videoUrl}
+            width="100%"
+            height="100%"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
         
-        {/* Play Button */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        {/* Hover Overlay */}
+        <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300 pointer-events-none"></div>
+        
+        {/* Play Button Overlay */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-white/90 rounded-full shadow-lg group-hover:bg-white group-hover:scale-110 transition-all duration-300">
             <Play className="w-8 h-8 text-medical-dark ml-1" />
           </div>
         </div>
         
-        {/* Video Info */}
-        <div className="absolute bottom-6 left-6 right-6 text-white">
+        {/* Video Info Overlay */}
+        <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-lg font-semibold mb-1">{title}</p>
-              <p className="text-white/80 text-sm">{views} • {description}</p>
+              <p className="text-lg font-semibold mb-1 drop-shadow-lg">{title}</p>
+              <p className="text-white/90 text-sm drop-shadow-lg">{views} • {description}</p>
             </div>
-            <Button variant="medical" size="sm" className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              Watch Now
-            </Button>
           </div>
         </div>
         
         {/* Duration Badge */}
-        <div className="absolute top-4 right-4">
+        <div className="absolute top-4 right-4 pointer-events-none">
           <div className="bg-black/70 text-white px-2 py-1 rounded text-sm font-medium">
             {duration}
           </div>
