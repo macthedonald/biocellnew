@@ -193,34 +193,16 @@ const Resources = () => {
         <div className="mb-20">
           <Card className="bg-gradient-to-br from-accent/5 to-accent/10 border-0 overflow-hidden">
             <CardContent className="p-0">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="p-8 lg:p-12">
-                  <Badge variant="secondary" className="mb-4">
-                    Educational Video
-                  </Badge>
-                  <h3 className="text-3xl font-bold text-foreground mb-4">
-                    Understanding Regenerative Medicine
-                  </h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Watch our comprehensive educational video that explains the science behind regenerative medicine, treatment protocols, and patient success stories.
-                  </p>
-                  <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                    <span>• Treatment Overview</span>
-                    <span>• Scientific Foundation</span>
-                    <span>• Patient Stories</span>
-                  </div>
-                </div>
-                <div className="relative aspect-video bg-black">
-                  <iframe
-                    src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=0&title=0&portrait=0&byline=0&badge=0&loop=0&muted=0&controls=1"
-                    width="100%"
-                    height="100%"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
-                    className="absolute inset-0"
-                  />
-                </div>
+              <div className="relative aspect-video bg-black">
+                <iframe
+                  src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0"
+                />
               </div>
             </CardContent>
           </Card>
