@@ -7,7 +7,7 @@ const Navigation = () => {
   const navItems = [
     { name: "Home", href: "/", isRoute: true },
     { name: "Services", href: "/services", isRoute: true },
-    { name: "About", href: "#about", isRoute: false },
+    { name: "About", href: "/about", isRoute: true },
     { name: "Contact", href: "#contact", isRoute: false },
     { name: "Products", href: "#products", isRoute: false },
   ];
