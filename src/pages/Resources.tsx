@@ -3,68 +3,18 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { 
-  FileText,
-  Download,
-  BookOpen,
   HelpCircle,
-  Users,
-  Award,
-  Shield,
-  Phone
+  Phone,
+  Download
 } from "lucide-react";
 import labHeroBg from "@/assets/lab-hero-bg.jpg";
 import regenerativeProcessImg from "@/assets/regenerative-process-infographic.jpg";
 import safetyQualityImg from "@/assets/safety-quality-infographic.jpg";
 import treatmentTimelineImg from "@/assets/treatment-timeline-infographic.jpg";
+import researchGallery1 from "@/assets/research-gallery-1.jpg";
+import researchGallery2 from "@/assets/research-gallery-2.jpg";
 
 const Resources = () => {
-  const resourceCategories = [
-    {
-      icon: FileText,
-      title: "Clinical Documentation",
-      description: "Access comprehensive clinical studies and research papers supporting our regenerative therapies",
-      resources: [
-        "Stem Cell Therapy Research Compendium",
-        "MSC Exosomal Lysate Clinical Studies",
-        "Safety & Efficacy Documentation",
-        "Regulatory Compliance Guidelines"
-      ]
-    },
-    {
-      icon: BookOpen,
-      title: "Educational Materials",
-      description: "Learn about regenerative medicine, treatment protocols, and recovery expectations",
-      resources: [
-        "Patient Education Handbook",
-        "Understanding Stem Cell Therapy",
-        "Treatment Protocol Guidelines",
-        "Recovery & Aftercare Instructions"
-      ]
-    },
-    {
-      icon: Users,
-      title: "Provider Resources",
-      description: "Comprehensive resources for healthcare practitioners and medical professionals",
-      resources: [
-        "Practitioner Training Materials",
-        "Clinical Implementation Guide",
-        "Assessment & Evaluation Tools",
-        "Professional Certification Programs"
-      ]
-    },
-    {
-      icon: Shield,
-      title: "Safety & Quality",
-      description: "Documentation ensuring the highest standards of safety and quality in our treatments",
-      resources: [
-        "Quality Assurance Protocols",
-        "Safety Data Sheets",
-        "Laboratory Certifications",
-        "Regulatory Approvals"
-      ]
-    }
-  ];
-
   const faqs = [
     {
       question: "What is regenerative medicine and how does it work?",
@@ -125,26 +75,20 @@ const Resources = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
-              Access comprehensive resources, clinical documentation, and educational materials about regenerative medicine and our advanced therapeutic solutions
+              Access comprehensive resources, clinical documentation, and educational materials about regenerative medicine
             </p>
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold">
               <Download className="w-5 h-5 mr-2" />
               Download Resources
             </Button>
-        </div>
-
-        {/* Visual Learning Section - Infographics */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-foreground mb-4">
-              Visual Learning Center
-            </h3>
-            <p className="text-muted-foreground">
-              Understanding regenerative medicine through visual guides
-            </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        </div>
+      </section>
+
+      {/* Visual Learning Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
             <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
               <div className="aspect-video bg-gradient-to-br from-blue-50 to-blue-100">
                 <img 
@@ -187,74 +131,90 @@ const Resources = () => {
               </CardContent>
             </Card>
           </div>
-        </div>
 
-        {/* Educational Video Section */}
-        <div className="mb-20">
-          <Card className="bg-gradient-to-br from-accent/5 to-accent/10 border-0 overflow-hidden">
-            <CardContent className="p-0">
-              <div className="relative aspect-video bg-black">
-                <iframe
-                  src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
-                  width="100%"
-                  height="100%"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
-                  className="absolute inset-0"
-                />
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-        </div>
-      </section>
-
-      {/* Resource Categories */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Resource Categories
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-              Explore our comprehensive collection of clinical documentation, educational materials, and professional resources
-            </p>
+          {/* Educational Video Section - Better Integrated */}
+          <div className="mb-20">
+            <div className="text-center mb-8">
+              <Badge variant="secondary" className="mb-4">
+                Educational Video
+              </Badge>
+              <h3 className="text-3xl font-bold text-foreground mb-4">
+                Watch Our Educational Series
+              </h3>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Learn about regenerative medicine through our comprehensive video presentations
+              </p>
+            </div>
+            
+            <div className="max-w-5xl mx-auto">
+              <Card className="border-0 shadow-medical overflow-hidden bg-gradient-to-br from-accent/5 to-accent/10">
+                <div className="relative aspect-video bg-black">
+                  <iframe
+                    src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0"
+                  />
+                </div>
+              </Card>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {resourceCategories.map((category, index) => (
-              <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
-                <CardHeader>
-                  <div className="flex items-center space-x-4">
-                    <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-accent to-accent-foreground rounded-full">
-                      <category.icon className="w-6 h-6 text-white" />
-                    </div>
-                    <CardTitle className="text-xl font-semibold text-foreground">
-                      {category.title}
-                    </CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {category.description}
-                  </p>
-                  <div className="grid grid-cols-2 gap-2">
-                    {category.resources.map((resource, idx) => (
-                      <Button 
-                        key={idx} 
-                        variant="ghost" 
-                        size="sm" 
-                        className="h-auto p-3 justify-start text-xs text-left"
-                      >
-                        <Download className="w-3 h-3 mr-2 flex-shrink-0" />
-                        <span className="truncate">{resource}</span>
-                      </Button>
-                    ))}
-                  </div>
-                </CardContent>
+          {/* Research Gallery */}
+          <div className="mb-20">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-foreground mb-4">
+                Clinical Research Gallery
+              </h3>
+              <p className="text-muted-foreground">
+                Explore our research documentation and laboratory facilities
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
+                <div className="aspect-square bg-gradient-to-br from-blue-50 to-blue-100">
+                  <img 
+                    src={researchGallery1} 
+                    alt="Research Documentation"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </Card>
-            ))}
+
+              <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
+                <div className="aspect-square bg-gradient-to-br from-green-50 to-green-100">
+                  <img 
+                    src={researchGallery2} 
+                    alt="Laboratory Equipment"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </Card>
+
+              <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
+                <div className="aspect-square bg-gradient-to-br from-purple-50 to-purple-100">
+                  <img 
+                    src={regenerativeProcessImg} 
+                    alt="Process Documentation"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </Card>
+
+              <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
+                <div className="aspect-square bg-gradient-to-br from-orange-50 to-orange-100">
+                  <img 
+                    src={safetyQualityImg} 
+                    alt="Quality Standards"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -287,65 +247,6 @@ const Resources = () => {
                 </AccordionItem>
               ))}
             </Accordion>
-          </div>
-        </div>
-      </section>
-
-      {/* Research & Studies */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <Badge variant="secondary" className="mb-4">
-                Scientific Excellence
-              </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                Backed by Scientific Research
-              </h2>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Our treatments are supported by extensive clinical research and peer-reviewed studies. Access our research database to explore the scientific foundation behind our regenerative therapies.
-              </p>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center space-x-3">
-                  <Award className="w-5 h-5 text-accent" />
-                  <span className="text-foreground">20+ Years of Clinical Research</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <FileText className="w-5 h-5 text-accent" />
-                  <span className="text-foreground">50+ Published Studies</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Shield className="w-5 h-5 text-accent" />
-                  <span className="text-foreground">FDA-Registered Laboratory Partners</span>
-                </div>
-              </div>
-              <Button variant="medical" size="lg">
-                Access Research Database
-              </Button>
-            </div>
-
-            <Card className="bg-gradient-to-br from-accent/5 to-accent/10 border-0">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-6">
-                  Recent Publications
-                </h3>
-                <div className="space-y-4">
-                  {[
-                    "Efficacy of MSC Exosomal Therapy in Joint Regeneration",
-                    "Long-term Safety Analysis of Stem Cell Treatments",
-                    "Comparative Study: Fresh vs. Cryopreserved MSCs",
-                    "Clinical Outcomes in Regenerative Orthopedics"
-                  ].map((publication, index) => (
-                    <div key={index} className="flex items-center justify-between p-4 bg-white rounded-lg">
-                      <span className="font-medium text-foreground">{publication}</span>
-                      <Button variant="ghost" size="sm" className="text-accent">
-                        <Download className="w-4 h-4" />
-                      </Button>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
