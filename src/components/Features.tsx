@@ -89,7 +89,7 @@ const Features = () => {
               thumbnail={videoThumbnail}
               title="BioCellRx Explainer Video"
               description="See our breakthrough technology"
-              videoUrl="https://vimeo.com/76979871" // Replace with your actual video URL
+              videoUrl="https://player.vimeo.com/video/671229814?h=0fd935f76c&autoplay=1&muted=1&loop=1&background=1"
               duration="4:32"
               views="3.2M views"
             />
