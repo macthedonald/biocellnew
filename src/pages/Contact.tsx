@@ -155,7 +155,8 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+          {/* Contact Information Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {contactInfo.map((info, index) => (
               <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white text-center">
                 <CardHeader>
@@ -189,18 +190,19 @@ const Contact = () => {
             ))}
           </div>
 
-          {/* New Patient Form */}
+          {/* New Patient Form - Within the same "Get in Touch" section */}
           <div className="max-w-2xl mx-auto">
+            <div className="mb-8">
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                New Patient Form
+              </h3>
+              <p className="text-muted-foreground">
+                Fill out this form and send it to us to save time when you come in for your appointment.
+              </p>
+            </div>
+            
             <Card className="bg-gradient-to-br from-accent/5 to-accent/10 border-0">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-bold text-foreground">
-                  New Patient Form
-                </CardTitle>
-                <p className="text-muted-foreground">
-                  Fill out this form and send it to us to save time when you come in for your appointment.
-                </p>
-              </CardHeader>
-              <CardContent>
+              <CardContent className="p-8">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
