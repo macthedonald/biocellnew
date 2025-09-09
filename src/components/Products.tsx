@@ -9,6 +9,9 @@ import {
   CheckCircle
 } from "lucide-react";
 import cbdProduct from "@/assets/cbd-product-original.png";
+import mscExosomalLysate from "@/assets/msc-exosomal-lysate.png";
+import cbscCryo from "@/assets/cbsc-cryo.png";
+import hucFreshMsc from "@/assets/huc-fresh-msc.png";
 
 const Products = () => {
   const cellularProducts = [
@@ -17,28 +20,32 @@ const Products = () => {
       title: "MSC Exosomal Lysate",
       description: "Advanced exosomal therapy for cellular regeneration and tissue repair",
       features: ["Tissue Regeneration", "Anti-Inflammatory", "Cellular Communication"],
-      color: "from-blue-500 to-blue-600"
+      color: "from-blue-500 to-blue-600",
+      image: mscExosomalLysate
     },
     {
       icon: Snowflake,
       title: "CBSC Cryo",
       description: "Cryopreserved cord blood stem cells with multiple potency levels",
       features: ["Multiple Tiers Available", "Cryopreserved Quality", "High Viability"],
-      color: "from-cyan-500 to-cyan-600"
+      color: "from-cyan-500 to-cyan-600",
+      image: cbscCryo
     },
     {
       icon: Zap,
       title: "hUC Fresh MSC",
       description: "Fresh umbilical cord mesenchymal stem cells for optimal potency",
       features: ["Fresh Preparation", "High Cell Count", "Maximum Potency"],
-      color: "from-purple-500 to-purple-600"
+      color: "from-purple-500 to-purple-600",
+      image: hucFreshMsc
     },
     {
       icon: Leaf,
       title: "Premium CBD",
       description: "Daily 200 CBD and specialized formulations for wellness support",
       features: ["Daily Wellness", "Pain Management", "Inflammation Support"],
-      color: "from-green-500 to-green-600"
+      color: "from-green-500 to-green-600",
+      image: cbdProduct
     }
   ];
 
@@ -72,8 +79,12 @@ const Products = () => {
           {cellularProducts.map((product, index) => (
             <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
               <CardHeader className="text-center pb-4">
-                <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r ${product.color} rounded-full mb-4 mx-auto`}>
-                  <product.icon className="w-8 h-8 text-white" />
+                <div className="mb-4">
+                  <img 
+                    src={product.image} 
+                    alt={product.title}
+                    className="w-24 h-24 mx-auto object-contain"
+                  />
                 </div>
                 <CardTitle className="text-lg font-semibold text-foreground">
                   {product.title}
