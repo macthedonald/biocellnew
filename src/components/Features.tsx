@@ -1,13 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { 
   Microscope, 
   Award, 
   Users, 
   Shield,
   Zap,
-  Target
+  Target,
+  Play
 } from "lucide-react";
+import videoThumbnail from "@/assets/video-thumbnail.jpg";
 
 const Features = () => {
   const features = [
@@ -86,17 +89,36 @@ const Features = () => {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="relative aspect-video bg-gradient-to-br from-accent/10 to-accent/5 rounded-2xl overflow-hidden border border-accent/20">
+            <div 
+              className="relative aspect-video bg-cover bg-center rounded-2xl overflow-hidden border border-accent/20 cursor-pointer group shadow-medical hover:shadow-gold transition-all duration-300"
+              style={{ backgroundImage: `url(${videoThumbnail})` }}
+            >
+              {/* Video Overlay */}
+              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300"></div>
+              
+              {/* Play Button */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-20 h-20 bg-accent rounded-full mb-4 cursor-pointer hover:bg-accent/90 transition-colors">
-                    <svg className="w-8 h-8 text-accent-foreground ml-1" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
-                  </div>
-                  <p className="text-lg font-semibold text-foreground">BioCellRx Explainer Video</p>
-                  <p className="text-muted-foreground">3.2M views • See our breakthrough technology</p>
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-white/90 rounded-full shadow-lg group-hover:bg-white group-hover:scale-110 transition-all duration-300">
+                  <Play className="w-8 h-8 text-medical-dark ml-1" />
                 </div>
+              </div>
+              
+              {/* Video Info */}
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-lg font-semibold mb-1">BioCellRx Explainer Video</p>
+                    <p className="text-white/80 text-sm">3.2M views • See our breakthrough technology</p>
+                  </div>
+                  <Button variant="medical" size="sm" className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Watch Now
+                  </Button>
+                </div>
+              </div>
+              
+              {/* Duration Badge */}
+              <div className="absolute top-4 right-4">
+                <Badge className="bg-black/70 text-white border-0">4:32</Badge>
               </div>
             </div>
           </div>
