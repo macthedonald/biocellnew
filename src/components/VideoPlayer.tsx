@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Play, X } from "lucide-react";
+import { Volume2, VolumeX, X } from "lucide-react";
 
 // Video embed component for different platforms
 const VideoEmbed = ({ url, title }: { url: string; title: string }) => {
@@ -52,6 +52,12 @@ const VideoPlayer = ({
   views = "3.2M views"
 }: VideoPlayerProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
+
+  const toggleMute = (e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent opening the modal when clicking volume
+    setIsMuted(!isMuted);
+  };
 
   return (
     <>
@@ -63,7 +69,7 @@ const VideoPlayer = ({
         {/* Live Video Background */}
         <div className="absolute inset-0">
           <iframe
-            src={videoUrl}
+            src={`${videoUrl}&muted=${isMuted ? 1 : 0}`}
             width="100%"
             height="100%"
             frameBorder="0"
@@ -72,14 +78,19 @@ const VideoPlayer = ({
           />
         </div>
         
-        {/* Hover Overlay */}
-        <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300 pointer-events-none"></div>
+        {/* Subtle Hover Overlay */}
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 pointer-events-none"></div>
         
-        {/* Play Button Overlay */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-white/90 rounded-full shadow-lg group-hover:bg-white group-hover:scale-110 transition-all duration-300">
-            <Play className="w-8 h-8 text-medical-dark ml-1" />
-          </div>
+        {/* Volume Control */}
+        <div className="absolute top-4 left-4">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={toggleMute}
+            className="bg-black/50 text-white hover:bg-black/70 border-0 w-10 h-10"
+          >
+            {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+          </Button>
         </div>
         
         {/* Video Info Overlay */}
@@ -88,6 +99,9 @@ const VideoPlayer = ({
             <div>
               <p className="text-lg font-semibold mb-1 drop-shadow-lg">{title}</p>
               <p className="text-white/90 text-sm drop-shadow-lg">{views} • {description}</p>
+            </div>
+            <div className="text-xs text-white/80 bg-black/50 px-2 py-1 rounded">
+              Click to expand
             </div>
           </div>
         </div>
