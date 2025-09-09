@@ -9,7 +9,7 @@ const Navigation = () => {
     { name: "Services", href: "/services", isRoute: true },
     { name: "About", href: "/about", isRoute: true },
     { name: "Contact", href: "/contact", isRoute: true },
-    { name: "Products", href: "#products", isRoute: false },
+    { name: "Resources", href: "/resources", isRoute: true },
   ];
 
   return (
