@@ -11,8 +11,10 @@ import labHeroBg from "@/assets/lab-hero-bg.jpg";
 import regenerativeProcessImg from "@/assets/regenerative-process-infographic.jpg";
 import safetyQualityImg from "@/assets/safety-quality-infographic.jpg";
 import treatmentTimelineImg from "@/assets/treatment-timeline-infographic.jpg";
-import researchGallery1 from "@/assets/research-gallery-1.jpg";
-import researchGallery2 from "@/assets/research-gallery-2.jpg";
+import researchLab1 from "@/assets/research-lab-1.jpg";
+import researchLab2 from "@/assets/research-lab-2.jpg";
+import researchLab3 from "@/assets/research-lab-3.jpg";
+import researchLab4 from "@/assets/research-lab-4.jpg";
 
 const Resources = () => {
   const faqs = [
@@ -146,17 +148,15 @@ const Resources = () => {
               </p>
             </div>
             
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <Card className="border-0 shadow-medical overflow-hidden bg-gradient-to-br from-accent/5 to-accent/10">
-                <div className="relative aspect-video bg-black">
+                <div className="relative w-full h-0 pb-[56.25%]">
                   <iframe
                     src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
-                    width="100%"
-                    height="100%"
+                    className="absolute inset-0 w-full h-full"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
-                    className="absolute inset-0"
                   />
                 </div>
               </Card>
@@ -167,10 +167,10 @@ const Resources = () => {
           <div className="mb-20">
             <div className="text-center mb-12">
               <h3 className="text-3xl font-bold text-foreground mb-4">
-                Clinical Research Gallery
+                Research Laboratory Gallery
               </h3>
               <p className="text-muted-foreground">
-                Explore our research documentation and laboratory facilities
+                Advanced facilities and cutting-edge research technology
               </p>
             </div>
             
@@ -178,8 +178,8 @@ const Resources = () => {
               <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
                 <div className="aspect-square bg-gradient-to-br from-blue-50 to-blue-100">
                   <img 
-                    src={researchGallery1} 
-                    alt="Research Documentation"
+                    src={researchLab1} 
+                    alt="Medical Research Laboratory"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -188,8 +188,8 @@ const Resources = () => {
               <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
                 <div className="aspect-square bg-gradient-to-br from-green-50 to-green-100">
                   <img 
-                    src={researchGallery2} 
-                    alt="Laboratory Equipment"
+                    src={researchLab2} 
+                    alt="Clinical Research Facility"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -198,8 +198,8 @@ const Resources = () => {
               <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
                 <div className="aspect-square bg-gradient-to-br from-purple-50 to-purple-100">
                   <img 
-                    src={regenerativeProcessImg} 
-                    alt="Process Documentation"
+                    src={researchLab3} 
+                    alt="Laboratory Analysis"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -208,8 +208,8 @@ const Resources = () => {
               <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
                 <div className="aspect-square bg-gradient-to-br from-orange-50 to-orange-100">
                   <img 
-                    src={safetyQualityImg} 
-                    alt="Quality Standards"
+                    src={researchLab4} 
+                    alt="Biotechnology Research"
                     className="w-full h-full object-cover"
                   />
                 </div>
