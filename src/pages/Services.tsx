@@ -76,7 +76,18 @@ const Services = () => {
       badge: "Medical Grade",
       description: "Certified• Tested• Highest potency available • Full spectrum• Organic• Vegan• nonGMO • MEDICAL grade Phytocannabinoids with therapeutic terpenes for pain relief and anti-inflammatory benefits.",
       details: "6000mg CBD, Beta-Caryophyllene, Humulene, Linalool terpenes",
-      image: "/lovable-uploads/eaca80fb-dc37-43e5-b4cf-18bd12a0b5ea.png"
+      image: "/lovable-uploads/eaca80fb-dc37-43e5-b4cf-18bd12a0b5ea.png",
+      price: "$125.00",
+      paymentLink: "https://poynt.godaddy.com/checkout/cc0c781b-890f-4c5e-b8e1-3297a417b5d7/BioCBDrx"
+    },
+    {
+      title: "Semaglutide GLP-1 10mg",
+      badge: "GLP-1 Therapy",
+      description: "Semaglutide is a glucagon-like peptide-1 (GLP-1) receptor agonist with the same effects of the natural GLP-1 hormone in the body. Approved for the treatment of diabetes and obesity, it improves blood insulin levels and regulates appetite.",
+      details: "10mg 1 month supply, four 2.5mg/week injections",
+      image: "/lovable-uploads/4b4a2781-d57e-45fc-aca9-7b3808f1ff22.png",
+      price: "$425.00",
+      paymentLink: "https://poynt.godaddy.com/checkout/cc0c781b-890f-4c5e-b8e1-3297a417b5d7/BioCBDrx"
     }
   ];
 
@@ -204,11 +215,24 @@ const Services = () => {
                   <p className="text-sm font-medium text-accent">
                     {therapy.details}
                   </p>
-                  <Link to="/contact">
-                    <Button variant="outline" className="w-full">
-                      Book a call
-                    </Button>
-                  </Link>
+                  {therapy.price && (
+                    <div className="flex items-center justify-between">
+                      <span className="text-2xl font-bold text-accent">{therapy.price}</span>
+                    </div>
+                  )}
+                  {therapy.paymentLink ? (
+                    <a href={therapy.paymentLink} target="_blank" rel="noopener noreferrer">
+                      <Button variant="medical" className="w-full">
+                        Purchase Now
+                      </Button>
+                    </a>
+                  ) : (
+                    <Link to="/contact">
+                      <Button variant="outline" className="w-full">
+                        Book a call
+                      </Button>
+                    </Link>
+                  )}
                 </CardContent>
               </Card>
             ))}
