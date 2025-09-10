@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Users, Award, Network } from "lucide-react";
+import { Link } from "react-router-dom";
 import labHeroBg from "@/assets/lab-hero-bg.jpg";
 
 const Hero = () => {
@@ -44,13 +45,12 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="medical" size="lg" className="group">
-              Start Your Healing Journey
-              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" size="lg" className="bg-white/10 text-white border-white/30 hover:bg-white/20">
-              Discover Our Science
-            </Button>
+            <Link to="/contact">
+              <Button variant="medical" size="lg" className="group">
+                Start Your Healing Journey
+                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
           </div>
 
           {/* Stats */}

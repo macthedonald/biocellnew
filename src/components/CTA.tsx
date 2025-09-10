@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
@@ -25,10 +26,12 @@ const CTA = () => {
           </div>
         </div>
         
-        <Button variant="medical" size="lg" className="group">
-          Book Your Consultation Today
-          <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-        </Button>
+        <Link to="/contact">
+          <Button variant="medical" size="lg" className="group">
+            Book Your Consultation Today
+            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+          </Button>
+        </Link>
       </div>
     </section>
   );

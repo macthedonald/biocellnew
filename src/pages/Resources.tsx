@@ -4,10 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 import { 
   HelpCircle,
   Phone,
-  Download
+  Mail
 } from "lucide-react";
 import labHeroBg from "@/assets/lab-hero-bg.jpg";
 import regenerativeProcessImg from "@/assets/regenerative-process-infographic.jpg";
@@ -89,10 +90,12 @@ const Resources = () => {
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
               Access comprehensive resources, clinical documentation, and educational materials about regenerative medicine
             </p>
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold">
-              <Download className="w-5 h-5 mr-2" />
-              Download Resources
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold">
+                <Mail className="w-5 h-5 mr-2" />
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -301,13 +304,17 @@ const Resources = () => {
               Our medical team is available to answer your questions and provide additional resources tailored to your specific needs
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold">
-                <Phone className="w-5 h-5 mr-2" />
-                Contact Our Team
-              </Button>
-              <Button variant="outline" size="lg">
-                Schedule Consultation
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Contact Our Team
+                </Button>
+              </Link>
+              <Link to="/contact">
+                <Button variant="outline" size="lg">
+                  Schedule Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
