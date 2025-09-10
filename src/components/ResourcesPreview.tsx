@@ -89,7 +89,7 @@ const ResourcesPreview = () => {
         <div className="text-center">
           <Link to="/resources">
             <Button size="lg" className="group">
-              Visit Knowledge Centre
+              Get more Knowledge
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
