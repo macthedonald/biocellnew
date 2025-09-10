@@ -62,7 +62,7 @@ const Services = () => {
       badge: "Fresh",
       description: "Clinical-grade mesenchymal stem cells, non-frozen and fresh, obtained from umbilical cords with over 90% activity and 95% purity.",
       details: "Pharmaceutical-grade cGMP lab produced",
-      image: hucFreshMsc
+      image: "/lovable-uploads/1480de50-6d67-425b-a2dd-202a1919d30f.png"
     },
     {
       title: "UC MSC 30 Million",
