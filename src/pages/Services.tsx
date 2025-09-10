@@ -178,7 +178,7 @@ const Services = () => {
                     <img 
                       src={therapy.image} 
                       alt={therapy.title}
-                      className="w-32 h-32 mx-auto object-contain"
+                      className="w-48 h-48 mx-auto object-contain"
                     />
                   </div>
                   <div className="mb-2">
