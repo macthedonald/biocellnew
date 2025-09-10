@@ -48,9 +48,6 @@ const Products = () => {
       <div className="container mx-auto px-6">
         {/* Cellular Products Section */}
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-4">
-            Advanced Bio-Therapies
-          </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Cutting-Edge Regenerative Products
           </h2>

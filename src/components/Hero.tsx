@@ -22,12 +22,6 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 pt-20 pb-16">
         <div className="max-w-4xl mx-auto text-center">
           {/* Trust Badge */}
-          <Badge variant="secondary" className="mb-6 px-4 py-2 bg-white/10 text-white border-white/20">
-            <Users className="w-4 h-4 mr-2" />
-            TRUSTED BY 50,000+ PATIENTS WORLDWIDE
-          </Badge>
-
-          {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
             Unlock Your Body's{" "}
             <span className="bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">

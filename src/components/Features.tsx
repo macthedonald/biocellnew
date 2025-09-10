@@ -69,9 +69,6 @@ const Features = () => {
         {/* Video Section */}
         <div className="mt-20">
           <div className="text-center mb-12">
-            <Badge variant="secondary" className="mb-4">
-              Exclusive Preview
-            </Badge>
             <h3 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
               See the Science Behind the Breakthrough
             </h3>

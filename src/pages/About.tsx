@@ -82,9 +82,6 @@ const About = () => {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-6 bg-accent/20 text-accent border-accent/30">
-              PIONEERING EXCELLENCE
-            </Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               About
               <span className="block bg-gradient-to-r from-accent to-accent-foreground bg-clip-text text-transparent">

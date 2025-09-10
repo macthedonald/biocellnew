@@ -104,9 +104,6 @@ const Resources = () => {
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <Badge variant="secondary" className="mb-4">
-                  Educational Guide
-                </Badge>
                 <h3 className="text-3xl font-bold text-foreground mb-6">
                   Understanding Stem Cells
                 </h3>
@@ -130,9 +127,6 @@ const Resources = () => {
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="lg:order-2">
-                <Badge variant="secondary" className="mb-4">
-                  Treatment Applications
-                </Badge>
                 <h3 className="text-3xl font-bold text-foreground mb-6">
                   Comprehensive Therapy Benefits
                 </h3>
@@ -156,9 +150,6 @@ const Resources = () => {
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <Badge variant="secondary" className="mb-4">
-                  Industry Analysis
-                </Badge>
                 <h3 className="text-3xl font-bold text-foreground mb-6">
                   Cell Culture Market Insights
                 </h3>
@@ -182,9 +173,6 @@ const Resources = () => {
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="lg:order-2">
-                <Badge variant="secondary" className="mb-4">
-                  Process Workflow
-                </Badge>
                 <h3 className="text-3xl font-bold text-foreground mb-6">
                   Stem Cell Processing Journey
                 </h3>
@@ -208,9 +196,6 @@ const Resources = () => {
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <Badge variant="secondary" className="mb-4">
-                  Specialized Treatment
-                </Badge>
                 <h3 className="text-3xl font-bold text-foreground mb-6">
                   Joint Conditions Therapy
                 </h3>
