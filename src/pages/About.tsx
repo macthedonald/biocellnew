@@ -194,7 +194,7 @@ const About = () => {
               
               <div className="h-full">
                 <img 
-                  src={eloisaPhoto} 
+                  src="/lovable-uploads/e7d67ffc-9092-4b3a-86f6-a70e84254cd3.png" 
                   alt="Eloisa Sultan - Medical Science Liaison"
                   className="w-full h-full object-cover"
                 />
