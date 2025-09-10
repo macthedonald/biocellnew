@@ -46,29 +46,29 @@ const Services = () => {
     {
       title: "MSC Exosomal Lysate",
       badge: "Premium",
-      description: "A potent cellular signaling vesicle transport, rich in cytokines and tetraspanin proteins, promoting extracellular matrix composition and aiding in immune regulation and tissue regeneration.",
-      details: "Available in 5ml vials",
+      description: "A cell signaling vesicle transport with Tetraspanin protein. Increases extracellular matrix composition of skin tissue and integrity with 86% average expression of cell surface protein marker. Activates intracellular communication, helps recruit angiogenic immune cells, aids in immune regulation, and promotes myoblast fusion for tissue regeneration.",
+      details: "5ml vials • Cytokines transport • 30-100nm size",
       image: "/lovable-uploads/f51f3f85-b0dd-4995-85c2-5c41f0080e4e.png"
     },
     {
       title: "CBSC cryo",
       badge: "Clinical Grade",
-      description: "Developed from umbilical cord blood, CBSC® offers a concentrated cellular and protein therapeutic for localized treatments.",
-      details: "Silver (8M), Gold (15M), Platinum (30M nucleated cells)",
+      description: "Developed biological therapeutic derived from umbilical cord blood having stem cells for body transplant. The lower cell count makes the CBSC product line perfect for smaller, localized treatments. Contains 1mL/1cc of cellular and protein therapeutic.",
+      details: "Silver (8M) • Gold (15M) • Platinum (30M nucleated cells)",
       image: "/lovable-uploads/ac57993d-bdef-4edf-a603-8a8c226e58a3.png"
     },
     {
       title: "hUC Fresh MSC Stem Cells",
       badge: "Fresh",
-      description: "Clinical-grade mesenchymal stem cells, non-frozen and fresh, obtained from umbilical cords with over 90% activity and 95% purity.",
-      details: "Pharmaceutical-grade cGMP lab produced",
+      description: "Clinical grade mesenchymal stem cells, non-frozen fresh grade. The first team to isolate umbilical cord MSCs in 2006. Pharmaceutical grade cGMP lab with the highest standard in the industry. Fresh stem cells activity >90% & purity >95%.",
+      details: "40ml • Multiple FDA approved INDs • Pharmaceutical grade cGMP",
       image: "/lovable-uploads/1480de50-6d67-425b-a2dd-202a1919d30f.png"
     },
     {
       title: "UC MSC 30 Million",
       badge: "Advanced",
-      description: "DMSO-free, cryopreserved umbilical cord mesenchymal stem cells with ability to differentiate into bone, adipose, and cartilage lineages.",
-      details: "30 Million cells, measured by surface markers",
+      description: "DMSO free, cryopreserved stem cells measured by the presence of relevant cell surface markers. These stem cells are able to differentiate into bone cells including osteoblasts (osteogenic), adipose (adipogenic), and cartilage (chondrogenic) lineages.",
+      details: "30 Million cells • DMSO free • Cryopreserved",
       image: "/lovable-uploads/8362a3bb-d455-415a-a85d-5576bcf8a37d.png"
     },
     {
@@ -138,34 +138,102 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Personalized Wellness Support */}
+      {/* Wellness Support */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Personalized Wellness Support
+              Wellness Support
             </h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-              Our dedicated team of medical professionals provides unparalleled wellness support, working collaboratively to build a healthier you
+              Our team will support you in building a healthier you with the latest innovative treatments
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {personalizedServices.map((service, index) => (
-              <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
-                <CardHeader>
-                  <CardTitle className="text-xl font-semibold text-foreground flex items-center">
-                    <CheckCircle className="w-6 h-6 text-accent mr-3" />
-                    {service.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {service.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-6">
+                <CheckCircle className="w-8 h-8 text-accent mb-4" />
+                <p className="text-muted-foreground leading-relaxed">
+                  Our team will support you in building a healthier you with the latest most innovative treatments
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-6">
+                <CheckCircle className="w-8 h-8 text-accent mb-4" />
+                <p className="text-muted-foreground leading-relaxed">
+                  No matter what your health needs are, having a team support you will keep you on the path to meeting them
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-6">
+                <CheckCircle className="w-8 h-8 text-accent mb-4" />
+                <p className="text-muted-foreground leading-relaxed">
+                  We work together to connect you with the services you need with the right expert practitioner or specialist in your vicinity
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-6">
+                <CheckCircle className="w-8 h-8 text-accent mb-4" />
+                <p className="text-muted-foreground leading-relaxed">
+                  When you choose us, you join a community of qualified practitioners
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-6">
+                <CheckCircle className="w-8 h-8 text-accent mb-4" />
+                <p className="text-muted-foreground leading-relaxed">
+                  We work not just with you but with other members of our community to build a network of people working together
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Referrals and Access to Bio Therapies */}
+      <section className="py-20 bg-gradient-to-br from-accent/5 to-accent/10">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+              Referrals and Access to Bio Therapies
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+              Partnered with the best and most reputable laboratories and clinics that prioritize safety and quality first with regulatory approved research products
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+              <CardHeader>
+                <CardTitle className="text-xl font-semibold text-foreground flex items-center">
+                  <CheckCircle className="w-6 h-6 text-accent mr-3" />
+                  Premium Laboratory Partnerships
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground leading-relaxed">
+                  We are teamed with only the best and most reputable laboratories and clinics that puts safety and quality first with regulatory approved research products.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+              <CardHeader>
+                <CardTitle className="text-xl font-semibold text-foreground flex items-center">
+                  <CheckCircle className="w-6 h-6 text-accent mr-3" />
+                  Comprehensive Specialist Network
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground leading-relaxed">
+                  We provide referrals for local Aesthetics, Orthopedic surgeons, Pain specialists, Plastic surgery, Dental, Internal, general medicine and Pediatrics.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
