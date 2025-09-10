@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { 
   Phone,
   ArrowRight,
@@ -64,7 +66,9 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <>
+      <Navigation />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section 
         className="relative py-32 text-white overflow-hidden"
@@ -258,7 +262,9 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+      <Footer />
+    </>
   );
 };
 
