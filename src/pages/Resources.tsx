@@ -212,38 +212,6 @@ const Resources = () => {
             </div>
           </div>
 
-          {/* Educational Video Section */}
-          <div className="mb-20">
-            <div className="text-center mb-8">
-              <Badge variant="secondary" className="mb-4">
-                Educational Video
-              </Badge>
-              <h3 className="text-3xl font-bold text-foreground mb-4">
-                Watch Our Educational Series
-              </h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Learn about regenerative medicine through our comprehensive video presentations
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Full Width Video Section */}
-      <section className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-20">
-        <div className="relative w-full aspect-video bg-gradient-to-br from-accent/5 to-accent/10">
-          <iframe
-            src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
-            className="w-full h-full"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
-      </section>
-
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
 
           {/* Research Gallery */}
           <div className="mb-20">
