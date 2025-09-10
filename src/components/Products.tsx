@@ -24,7 +24,7 @@ const Products = () => {
     {
       icon: Snowflake,
       title: "CBSC cryo",
-      description: "CBSC® is a developed biological therapeutic derived from umbilical cord blood having stem cells for body transplant. The lower cell count makes the CB ® product line perfect for smaller, localized treatments.",
+      description: "CBSC® is a developed biological therapeutic derived from umbilical cord blood having stem cells for body transplant. The lower cell count makes the CB ® product line perfect for smaller, localized treatments. Each vial of CB ® contains 1mL/1cc of a cellular and protein that has demonstrated remarkable results in early research testing.",
       features: ["1ml", "Silver (8 Million nucleated cells)", "Gold (15 Million nucleated cells)", "Platinum (30 million nucleated cells)"],
       color: "from-cyan-500 to-cyan-600",
       image: productImage
@@ -32,7 +32,7 @@ const Products = () => {
     {
       icon: Zap,
       title: "hUC Fresh MSC stem cells",
-      description: "Clinical grade mesenchymal stem cells. Obtained multiple FDA approved INDs for clinical trials. Non-frozen, fresh grade. The first team to isolate umbilical cord Mscs In 1996",
+      description: "Clinical grade mesenchymal stem cells. Obtained multiple FDA approved INDs for clinical trials. Non-frozen, fresh grade. The first team to isolate umbilical cord Mscs in 1996. This product is mesenchymal stem cell lysate.",
       features: ["40ml", "Clinical grade mesenchymal stem cells", "FDA approved INDs", "Non-frozen, fresh grade"],
       color: "from-purple-500 to-purple-600",
       image: productImage
