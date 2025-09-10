@@ -102,123 +102,65 @@ const Resources = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           
-          {/* How It Works Section */}
+          {/* Educational Infographics Section */}
           <div className="mb-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <Badge variant="secondary" className="mb-4">
-                  Regenerative Process
-                </Badge>
-                <h3 className="text-3xl font-bold text-foreground mb-6">
-                  How Regenerative Medicine Works
-                </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Our regenerative medicine process harnesses your body's natural healing mechanisms through advanced cellular therapies. Using carefully selected stem cells and growth factors, we activate your body's repair systems to restore damaged tissues and promote natural healing.
-                </p>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span>Targeted cellular delivery to damaged tissues</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span>Natural tissue regeneration and repair</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span>Reduced inflammation and accelerated healing</span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <Card className="border-0 shadow-medical overflow-hidden">
-                  <img 
-                    src={regenerativeProcessImg} 
-                    alt="Regenerative Medicine Process"
-                    className="w-full h-auto"
-                  />
-                </Card>
-              </div>
+            <div className="text-center mb-12">
+              <Badge variant="secondary" className="mb-4">
+                Educational Resources
+              </Badge>
+              <h3 className="text-3xl font-bold text-foreground mb-4">
+                Understanding Regenerative Medicine
+              </h3>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Comprehensive visual guides to stem cell therapy and regenerative medicine
+              </p>
             </div>
-          </div>
-
-          {/* Safety Standards Section */}
-          <div className="mb-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="lg:order-2">
-                <Badge variant="secondary" className="mb-4">
-                  Quality Assurance
-                </Badge>
-                <h3 className="text-3xl font-bold text-foreground mb-6">
-                  Rigorous Safety Standards
-                </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Every cellular product we use undergoes extensive quality control testing and is sourced from FDA-registered laboratories. Our commitment to safety ensures each treatment meets the highest medical standards and regulatory requirements.
-                </p>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span>FDA-registered laboratory sourcing</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span>Comprehensive sterility testing</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span>Strict chain of custody protocols</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="lg:order-1">
-                <Card className="border-0 shadow-medical overflow-hidden">
+            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {/* Stem Cell Basics */}
+              <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
+                <div className="aspect-[4/3] bg-gradient-to-br from-blue-50 to-blue-100 p-4">
                   <img 
-                    src={safetyQualityImg} 
-                    alt="Safety and Quality Standards"
-                    className="w-full h-auto"
+                    src={stemCellInfographic} 
+                    alt="What is a Stem Cell - Complete Guide"
+                    className="w-full h-full object-contain"
                   />
-                </Card>
-              </div>
-            </div>
-          </div>
+                </div>
+                <CardContent className="p-6 text-center">
+                  <h4 className="font-semibold text-foreground mb-2">Stem Cell Fundamentals</h4>
+                  <p className="text-sm text-muted-foreground">Essential knowledge about mesenchymal stem cells and their capabilities</p>
+                </CardContent>
+              </Card>
 
-          {/* Treatment Journey Section */}
-          <div className="mb-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <Badge variant="secondary" className="mb-4">
-                  Treatment Timeline
-                </Badge>
-                <h3 className="text-3xl font-bold text-foreground mb-6">
-                  Your Treatment Journey
-                </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  From initial consultation to recovery, we guide you through every step of your regenerative medicine journey. Our personalized approach ensures optimal outcomes tailored to your specific condition and health goals.
-                </p>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span>Comprehensive medical evaluation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span>Personalized treatment planning</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span>Ongoing monitoring and support</span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <Card className="border-0 shadow-medical overflow-hidden">
+              {/* Therapy Benefits */}
+              <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
+                <div className="aspect-[4/3] bg-gradient-to-br from-red-50 to-red-100 p-4">
                   <img 
-                    src={treatmentTimelineImg} 
-                    alt="Treatment Timeline"
-                    className="w-full h-auto"
+                    src={stemCellTherapyBenefits} 
+                    alt="Stem Cell Therapy Benefits and Applications"
+                    className="w-full h-full object-contain"
                   />
-                </Card>
-              </div>
+                </div>
+                <CardContent className="p-6 text-center">
+                  <h4 className="font-semibold text-foreground mb-2">Treatment Applications</h4>
+                  <p className="text-sm text-muted-foreground">Comprehensive overview of conditions treatable with stem cell therapy</p>
+                </CardContent>
+              </Card>
+
+              {/* Market Research */}
+              <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
+                <div className="aspect-[4/3] bg-gradient-to-br from-purple-50 to-purple-100 p-4">
+                  <img 
+                    src={cellCultureMarket} 
+                    alt="Cell Culture Market Research and Analysis"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <CardContent className="p-6 text-center">
+                  <h4 className="font-semibold text-foreground mb-2">Industry Insights</h4>
+                  <p className="text-sm text-muted-foreground">Market trends and growth analysis in regenerative medicine</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
