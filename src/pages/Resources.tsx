@@ -59,6 +59,18 @@ const Resources = () => {
   ];
 
   return (
+    <>
+      {/* Video positioned outside main container */}
+      <div className="fixed top-0 left-0 w-screen h-screen z-50 bg-black/90 hidden" id="fullscreen-video">
+        <iframe
+          src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
+          className="w-full h-full"
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+    
     <div className="min-h-screen">
       {/* Hero Section */}
       <section 
@@ -229,11 +241,19 @@ const Resources = () => {
         </div>
       </section>
 
-      {/* Full Width Video Section - Breaks out completely */}
-      <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+      {/* Full Width Video Section - ABSOLUTE POSITIONING */}
+      <div style={{ 
+        position: 'relative',
+        left: '50%',
+        right: '50%',
+        marginLeft: '-50vw',
+        marginRight: '-50vw',
+        width: '100vw',
+        height: '500px'
+      }}>
         <iframe
           src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
-          className="w-full h-[500px]"
+          style={{ width: '100%', height: '100%', border: 'none' }}
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowFullScreen
@@ -294,6 +314,7 @@ const Resources = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 
