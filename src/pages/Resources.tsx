@@ -231,7 +231,7 @@ const Resources = () => {
 
       {/* Full Width Video Section */}
       <section className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-20">
-        <div className="relative aspect-video">
+        <div className="relative w-full h-[60vh]">
           <iframe
             src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
             className="absolute inset-0 w-full h-full"
