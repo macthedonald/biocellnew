@@ -42,17 +42,17 @@ const ResourcesPreview = () => {
         <div className="text-center mb-16">
           <Badge variant="secondary" className="mb-4">
             <BookOpen className="w-4 h-4 mr-2" />
-            EDUCATIONAL RESOURCES
+            KNOWLEDGE CENTRE
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Knowledge &{" "}
             <span className="bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">
-              Resources
+              Centre
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Access comprehensive educational materials, clinical research, and treatment guides 
-            to understand regenerative medicine and our advanced therapies
+            from our knowledge centre to understand regenerative medicine and our advanced therapies
           </p>
         </div>
 
@@ -89,7 +89,7 @@ const ResourcesPreview = () => {
         <div className="text-center">
           <Link to="/resources">
             <Button size="lg" className="group">
-              View All Resources
+              Visit Knowledge Centre
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>

@@ -79,16 +79,16 @@ const Resources = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-6 bg-accent/20 text-accent border-accent/30">
-              EDUCATIONAL RESOURCES
+              KNOWLEDGE CENTRE
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Resources &
+              Knowledge &
               <span className="block bg-gradient-to-r from-accent to-accent-foreground bg-clip-text text-transparent">
-                Knowledge Center
+                Centre
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
-              Access comprehensive resources, clinical documentation, and educational materials about regenerative medicine
+              Access comprehensive knowledge, clinical documentation, and educational materials about regenerative medicine
             </p>
             <Link to="/contact">
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold">
@@ -301,7 +301,7 @@ const Resources = () => {
               Need More Information?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Our medical team is available to answer your questions and provide additional resources tailored to your specific needs
+              Our medical team is available to answer your questions and provide additional knowledge tailored to your specific needs
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
