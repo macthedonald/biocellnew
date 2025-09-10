@@ -143,7 +143,7 @@ const Resources = () => {
                   Rigorous Safety Standards
                 </h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Every cellular product we use undergoes extensive quality control testing and is sourced from FDA-registered laboratories. Our commitment to safety ensures that each treatment meets the highest medical standards and regulatory requirements.
+                  Every cellular product we use undergoes extensive quality control testing and is sourced from FDA-registered laboratories. Our commitment to safety ensures each treatment meets the highest medical standards and regulatory requirements.
                 </p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start">
@@ -212,7 +212,7 @@ const Resources = () => {
             </div>
           </div>
 
-          {/* Educational Video Section - Better Integrated */}
+          {/* Educational Video Section */}
           <div className="mb-20">
             <div className="text-center mb-8">
               <Badge variant="secondary" className="mb-4">
@@ -226,19 +226,17 @@ const Resources = () => {
               </p>
             </div>
             
-            <div className="w-full max-w-none">
-              <Card className="border-0 shadow-medical overflow-hidden bg-gradient-to-br from-accent/5 to-accent/10">
-                <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                  <iframe
-                    src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
-                    className="absolute top-0 left-0 w-full h-full"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
-              </Card>
-            </div>
+            <Card className="border-0 shadow-medical overflow-hidden bg-gradient-to-br from-accent/5 to-accent/10">
+              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                <iframe
+                  src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
+                  className="absolute top-0 left-0 w-full h-full"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </Card>
           </div>
 
           {/* Research Gallery */}
