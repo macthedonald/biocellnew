@@ -93,9 +93,6 @@ const Products = () => {
         <div className="bg-gradient-to-r from-accent/5 to-accent/10 rounded-3xl p-8 md:p-12 mt-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge variant="secondary" className="mb-4">
-                Real Results
-              </Badge>
               <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
                 Experience Renewed Vitality
               </h3>
