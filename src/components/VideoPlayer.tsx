@@ -101,16 +101,6 @@ const VideoPlayer = ({
               <p className="text-lg font-semibold mb-1 drop-shadow-lg">{title}</p>
               <p className="text-white/90 text-sm drop-shadow-lg">{views} • {description}</p>
             </div>
-            <div className="text-xs text-white/80 bg-black/50 px-2 py-1 rounded">
-              Click to expand
-            </div>
-          </div>
-        </div>
-        
-        {/* Duration Badge */}
-        <div className="absolute top-4 right-4 pointer-events-none">
-          <div className="bg-black/70 text-white px-2 py-1 rounded text-sm font-medium">
-            {duration}
           </div>
         </div>
       </div>
