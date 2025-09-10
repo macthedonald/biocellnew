@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { 
   HelpCircle,
   Phone,
@@ -60,18 +62,8 @@ const Resources = () => {
 
   return (
     <>
-      {/* Video positioned outside main container */}
-      <div className="fixed top-0 left-0 w-screen h-screen z-50 bg-black/90 hidden" id="fullscreen-video">
-        <iframe
-          src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
-          className="w-full h-full"
-          frameBorder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
-        />
-      </div>
-    
-    <div className="min-h-screen">
+      <Navigation />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section 
         className="relative py-32 text-white overflow-hidden"
@@ -320,7 +312,8 @@ const Resources = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+      <Footer />
     </>
   );
 };
