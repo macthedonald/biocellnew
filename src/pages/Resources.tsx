@@ -243,22 +243,29 @@ const Resources = () => {
 
       {/* Full Width Video Section - ABSOLUTE POSITIONING */}
       <div style={{ 
-        position: 'relative',
-        left: '50%',
-        right: '50%',
-        marginLeft: '-50vw',
-        marginRight: '-50vw',
+        position: 'absolute',
+        left: 0,
+        right: 0,
         width: '100vw',
-        height: '500px'
+        height: '500px',
+        zIndex: 10
       }}>
         <iframe
           src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
-          style={{ width: '100%', height: '100%', border: 'none' }}
+          style={{ 
+            width: '100vw', 
+            height: '100%', 
+            border: 'none',
+            display: 'block'
+          }}
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowFullScreen
         />
       </div>
+      
+      {/* Spacer to push content down */}
+      <div style={{ height: '520px' }}></div>
 
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
