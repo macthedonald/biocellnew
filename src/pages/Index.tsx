@@ -15,7 +15,6 @@ const Index = () => {
       <Hero />
       <Features />
       <Products />
-      <ResourcesPreview />
       
       {/* Full Width Video Section */}
       <div style={{ 
@@ -40,6 +39,7 @@ const Index = () => {
         />
       </div>
       
+      <ResourcesPreview />
       <Testimonials />
       <FAQ />
       <CTA />
