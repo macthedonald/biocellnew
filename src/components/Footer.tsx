@@ -65,12 +65,6 @@ const Footer = () => {
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
-                <span 
-                  className="text-white/40 cursor-not-allowed"
-                  title="Instagram account currently unavailable"
-                >
-                  <Instagram className="w-5 h-5" />
-                </span>
                 <a 
                   href="https://www.linkedin.com/in/eloisa-sultan/"
                   target="_blank"
