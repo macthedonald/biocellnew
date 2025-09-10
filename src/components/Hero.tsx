@@ -9,7 +9,10 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${labHeroBg})` }}
+        style={{ 
+          backgroundImage: `url(${labHeroBg})`,
+          backgroundPosition: 'center 20%'
+        }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-medical-dark/90 to-medical-dark/70"></div>
       </div>

@@ -8,10 +8,7 @@ import {
   Leaf,
   CheckCircle
 } from "lucide-react";
-import cbdProduct from "@/assets/cbd-product-original.png";
-import mscExosomalLysate from "@/assets/msc-exosomal-lysate.png";
-import cbscCryo from "@/assets/cbsc-cryo.png";
-import hucFreshMsc from "@/assets/huc-fresh-msc.png";
+import productImage from "/lovable-uploads/a5998c10-9c39-441b-a504-74ab1bce3890.png";
 import wellnessResults from "@/assets/wellness-results.jpg";
 
 const Products = () => {
@@ -19,34 +16,26 @@ const Products = () => {
     {
       icon: Dna,
       title: "MSC Exosomal Lysate",
-      description: "Advanced exosomal therapy for cellular regeneration and tissue repair",
-      features: ["Tissue Regeneration", "Anti-Inflammatory", "Cellular Communication"],
+      description: "Cytokines are a cell signaling vehicle transport. A Tetraspanin protein- potential suppressor of metastasis. 30-100nm in size, Increase the extracellular matrix composition of skin tissue and integrity. 86% average expression of cell surface protein",
+      features: ["5ml", "Cell signaling vehicle", "30-100nm in size"],
       color: "from-blue-500 to-blue-600",
-      image: mscExosomalLysate
+      image: productImage
     },
     {
       icon: Snowflake,
-      title: "CBSC Cryo",
-      description: "Cryopreserved cord blood stem cells with multiple potency levels",
-      features: ["Multiple Tiers Available", "Cryopreserved Quality", "High Viability"],
+      title: "CBSC cryo",
+      description: "CBSC® is a developed biological therapeutic derived from umbilical cord blood having stem cells for body transplant. The lower cell count makes the CB ® product line perfect for smaller, localized treatments.",
+      features: ["1ml", "Silver (8 Million nucleated cells)", "Gold (15 Million nucleated cells)", "Platinum (30 million nucleated cells)"],
       color: "from-cyan-500 to-cyan-600",
-      image: cbscCryo
+      image: productImage
     },
     {
       icon: Zap,
-      title: "hUC Fresh MSC",
-      description: "Fresh umbilical cord mesenchymal stem cells for optimal potency",
-      features: ["Fresh Preparation", "High Cell Count", "Maximum Potency"],
+      title: "hUC Fresh MSC stem cells",
+      description: "Clinical grade mesenchymal stem cells. Obtained multiple FDA approved INDs for clinical trials. Non-frozen, fresh grade. The first team to isolate umbilical cord Mscs In 1996",
+      features: ["40ml", "Clinical grade mesenchymal stem cells", "FDA approved INDs", "Non-frozen, fresh grade"],
       color: "from-purple-500 to-purple-600",
-      image: hucFreshMsc
-    },
-    {
-      icon: Leaf,
-      title: "Premium CBD",
-      description: "Daily 200 CBD and specialized formulations for wellness support",
-      features: ["Daily Wellness", "Pain Management", "Inflammation Support"],
-      color: "from-green-500 to-green-600",
-      image: cbdProduct
+      image: productImage
     }
   ];
 
