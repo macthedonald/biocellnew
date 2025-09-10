@@ -229,54 +229,26 @@ const Resources = () => {
             </div>
           </div>
 
-          {/* Research Gallery */}
+          {/* Educational Video Section */}
           <div className="mb-20">
             <div className="text-center mb-12">
               <h3 className="text-3xl font-bold text-foreground mb-4">
-                Research Laboratory Gallery
+                Advanced Research & Technology
               </h3>
               <p className="text-muted-foreground">
-                Advanced facilities and cutting-edge research technology
+                See our cutting-edge research facilities and breakthrough technology in action
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
-                <div className="aspect-square bg-gradient-to-br from-blue-50 to-blue-100">
-                  <img 
-                    src={cellularResearchLab} 
-                    alt="Cellular Research Laboratory"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </Card>
-
-              <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
-                <div className="aspect-square bg-gradient-to-br from-green-50 to-green-100">
-                  <img 
-                    src={stemCellFacility} 
-                    alt="Stem Cell Processing Facility"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </Card>
-
-              <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
-                <div className="aspect-square bg-gradient-to-br from-purple-50 to-purple-100">
-                  <img 
-                    src={qualityControlLab} 
-                    alt="Quality Control Laboratory"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </Card>
-
-              <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
-                <div className="aspect-square bg-gradient-to-br from-orange-50 to-orange-100">
-                  <img 
-                    src={cryogenicStorage} 
-                    alt="Cryogenic Storage Facility"
-                    className="w-full h-full object-cover"
+            <div className="w-full">
+              <Card className="border-0 shadow-medical overflow-hidden bg-gradient-to-br from-accent/5 to-accent/10">
+                <div className="relative w-full aspect-video">
+                  <iframe
+                    src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
                   />
                 </div>
               </Card>
