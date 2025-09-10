@@ -11,7 +11,7 @@ import {
 import mscExosomalLysate from "@/assets/msc-exosomal-lysate.png";
 import cbscCryo from "@/assets/cbsc-cryo.png";
 import hucFreshMsc from "@/assets/huc-fresh-msc.png";
-import wellnessResults from "@/assets/wellness-results.jpg";
+import wellnessResults from "@/assets/wellness-results-fullbody.jpg";
 
 const Products = () => {
   const cellularProducts = [
