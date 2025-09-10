@@ -69,7 +69,7 @@ const Services = () => {
       badge: "Advanced",
       description: "DMSO-free, cryopreserved umbilical cord mesenchymal stem cells with ability to differentiate into bone, adipose, and cartilage lineages.",
       details: "30 Million cells, measured by surface markers",
-      image: hucFreshMsc
+      image: "/lovable-uploads/8362a3bb-d455-415a-a85d-5576bcf8a37d.png"
     }
   ];
 
