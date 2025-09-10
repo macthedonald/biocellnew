@@ -33,12 +33,12 @@ const Products = () => {
       image: cbscCryo
     },
     {
-      icon: Zap,
-      title: "hUC Fresh MSC stem cells",
-      description: "Clinical grade mesenchymal stem cells. Obtained multiple FDA approved INDs for clinical trials. Non-frozen, fresh grade. The first team to isolate umbilical cord Mscs in 1996. This product is mesenchymal stem cell lysate.",
-      features: ["40ml", "Clinical grade mesenchymal stem cells", "FDA approved INDs", "Non-frozen, fresh grade"],
-      color: "from-purple-500 to-purple-600",
-      image: hucFreshMsc
+      icon: Leaf,
+      title: "CBD 6000mg Total",
+      description: "Premium Hemp Products - High Quality Infused Hemp Supplement. Our CBD 6000mg total offers therapeutic benefits with organic apple flavor in a convenient tincture format for optimal bioavailability.",
+      features: ["6000mg total CBD", "Organic Apple flavor", "High Quality Infused", "Hemp Supplement"],
+      color: "from-green-500 to-green-600",
+      image: "/lovable-uploads/eaca80fb-dc37-43e5-b4cf-18bd12a0b5ea.png"
     }
   ];
 

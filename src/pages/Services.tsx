@@ -70,6 +70,13 @@ const Services = () => {
       description: "DMSO-free, cryopreserved umbilical cord mesenchymal stem cells with ability to differentiate into bone, adipose, and cartilage lineages.",
       details: "30 Million cells, measured by surface markers",
       image: "/lovable-uploads/8362a3bb-d455-415a-a85d-5576bcf8a37d.png"
+    },
+    {
+      title: "CBD 6000mg Total",
+      badge: "Premium Hemp",
+      description: "Premium Hemp Products - High Quality Infused Hemp Supplement with organic apple flavor. Designed to complement your regenerative therapy for enhanced wellness support.",
+      details: "6000mg total CBD, Organic Apple flavor",
+      image: "/lovable-uploads/eaca80fb-dc37-43e5-b4cf-18bd12a0b5ea.png"
     }
   ];
 
