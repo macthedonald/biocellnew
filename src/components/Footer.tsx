@@ -61,15 +61,26 @@ const Footer = () => {
                   href="https://www.facebook.com/111531213660668"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/70 hover:text-accent transition-colors"
+                  className="text-[#1877F2] hover:text-[#1877F2]/80 transition-colors"
+                  title="Follow us on Facebook"
                 >
                   <Facebook className="w-5 h-5" />
+                </a>
+                <a 
+                  href="https://www.instagram.com/accounts/suspended/?next=https%3A%2F%2Fwww.instagram.com%2Fbiocellrx%2F%3Figshid%3DYmMyMTA2M2Y%253D%26__coig_ufac%3D1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#E4405F] hover:text-[#E4405F]/80 transition-colors"
+                  title="Follow us on Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
                 </a>
                 <a 
                   href="https://www.linkedin.com/in/eloisa-sultan/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/70 hover:text-accent transition-colors"
+                  className="text-[#0A66C2] hover:text-[#0A66C2]/80 transition-colors"
+                  title="Connect with us on LinkedIn"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>

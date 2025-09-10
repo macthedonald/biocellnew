@@ -148,13 +148,13 @@ const Contact = () => {
       </section>
 
       {/* Get in Touch Section */}
-      <section className="py-20 bg-black text-white">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Get in Touch
             </h2>
-            <p className="text-xl text-white/70 max-w-4xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
               Contact us directly with any questions, comments, or scheduling inquiries. Our team is here to support your wellness journey.
             </p>
           </div>
@@ -165,11 +165,11 @@ const Contact = () => {
             <div className="space-y-8">
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-start space-x-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-white/10 rounded-lg flex-shrink-0">
+                  <div className="flex items-center justify-center w-12 h-12 bg-accent/10 rounded-lg flex-shrink-0">
                     <info.icon className="w-6 h-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-white mb-2">
+                    <h3 className="text-xl font-semibold text-foreground mb-2">
                       {info.title}
                     </h3>
                     {info.href ? (
@@ -186,7 +186,7 @@ const Contact = () => {
                         {info.value}
                       </p>
                     )}
-                    <p className="text-white/70 leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed">
                       {info.description}
                     </p>
                   </div>
@@ -195,11 +195,11 @@ const Contact = () => {
             </div>
 
             {/* Right Side - Contact Form */}
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+            <div className="bg-white rounded-2xl p-8 border border-border shadow-lg">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="firstName" className="text-white font-medium">
+                    <Label htmlFor="firstName" className="text-foreground font-medium">
                       First Name <span className="text-accent">*</span>
                     </Label>
                     <Input
@@ -209,11 +209,11 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       placeholder="Enter your first name"
-                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-accent focus:ring-accent/20"
+                      className="bg-white border-border focus:border-accent focus:ring-accent/20"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="lastName" className="text-white font-medium">
+                    <Label htmlFor="lastName" className="text-foreground font-medium">
                       Last Name <span className="text-accent">*</span>
                     </Label>
                     <Input
@@ -223,13 +223,13 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       placeholder="Enter your last name"
-                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-accent focus:ring-accent/20"
+                      className="bg-white border-border focus:border-accent focus:ring-accent/20"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="text-white font-medium">
+                  <Label htmlFor="email" className="text-foreground font-medium">
                     Email Address <span className="text-accent">*</span>
                   </Label>
                   <Input
@@ -240,12 +240,12 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     placeholder="Enter your email"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-accent focus:ring-accent/20"
+                    className="bg-white border-border focus:border-accent focus:ring-accent/20"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-white font-medium">
+                  <Label htmlFor="phone" className="text-foreground font-medium">
                     Phone Number <span className="text-accent">*</span>
                   </Label>
                   <Input
@@ -256,12 +256,12 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     placeholder="(555) 123-4567"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-accent focus:ring-accent/20"
+                    className="bg-white border-border focus:border-accent focus:ring-accent/20"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="primaryHealthConcern" className="text-white font-medium">
+                  <Label htmlFor="primaryHealthConcern" className="text-foreground font-medium">
                     Primary Health Concern
                   </Label>
                   <Input
@@ -270,12 +270,12 @@ const Contact = () => {
                     value={formData.primaryHealthConcern}
                     onChange={handleInputChange}
                     placeholder="What brings you to BioCellRx?"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-accent focus:ring-accent/20"
+                    className="bg-white border-border focus:border-accent focus:ring-accent/20"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="additionalInfo" className="text-white font-medium">
+                  <Label htmlFor="additionalInfo" className="text-foreground font-medium">
                     Additional Information
                   </Label>
                   <Textarea
@@ -285,7 +285,7 @@ const Contact = () => {
                     value={formData.additionalInfo}
                     onChange={handleInputChange}
                     placeholder="Tell us more about your health goals or any questions you have..."
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-accent focus:ring-accent/20 resize-none"
+                    className="bg-white border-border focus:border-accent focus:ring-accent/20 resize-none"
                   />
                 </div>
 
@@ -295,9 +295,9 @@ const Contact = () => {
                     checked={formData.agreeToComms}
                     onCheckedChange={handleCheckboxChange}
                     required
-                    className="border-white/20 data-[state=checked]:bg-accent data-[state=checked]:border-accent mt-1"
+                    className="border-border data-[state=checked]:bg-accent data-[state=checked]:border-accent mt-1"
                   />
-                  <Label htmlFor="agreeToComms" className="text-sm leading-relaxed text-white/90">
+                  <Label htmlFor="agreeToComms" className="text-sm leading-relaxed text-muted-foreground">
                     I agree to receive communications from BioCellRx regarding my inquiry and understand that I can unsubscribe at any time. <span className="text-accent">*</span>
                   </Label>
                 </div>
