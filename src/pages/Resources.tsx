@@ -20,11 +20,6 @@ import researchImage2 from "@/assets/research-image-2.png";
 import researchImage3 from "@/assets/research-image-3.png";
 import processGraph from "@/assets/process-graph.jpg";
 import researchImage5 from "@/assets/research-image-5.jpg";
-import stemCellInfographic from "@/assets/stem-cell-infographic.png";
-import stemCellTherapyBenefits from "@/assets/stem-cell-therapy-benefits.png";
-import cellCultureMarket from "@/assets/cell-culture-market.png";
-import stemCellProcessFlow from "@/assets/stem-cell-process-flow.png";
-import jointConditionsTherapy from "@/assets/joint-conditions-therapy.png";
 
 const Resources = () => {
   // Updated component with new image imports
@@ -121,7 +116,7 @@ const Resources = () => {
               <div>
                 <Card className="border-0 shadow-medical overflow-hidden">
                   <img 
-                    src={stemCellInfographic} 
+                    src={researchImage1} 
                     alt="What is a Stem Cell - Complete Educational Guide"
                     className="w-full h-auto"
                   />
@@ -147,7 +142,7 @@ const Resources = () => {
               <div className="lg:order-1">
                 <Card className="border-0 shadow-medical overflow-hidden">
                   <img 
-                    src={stemCellTherapyBenefits} 
+                    src={researchImage2} 
                     alt="Stem Cell Therapy Benefits for Multiple Medical Conditions"
                     className="w-full h-auto"
                   />
@@ -173,7 +168,7 @@ const Resources = () => {
               <div>
                 <Card className="border-0 shadow-medical overflow-hidden">
                   <img 
-                    src={cellCultureMarket} 
+                    src={researchImage3} 
                     alt="Cell Culture Market Analysis and Industry Research"
                     className="w-full h-auto"
                   />
@@ -199,7 +194,7 @@ const Resources = () => {
               <div className="lg:order-1">
                 <Card className="border-0 shadow-medical overflow-hidden">
                   <img 
-                    src={stemCellProcessFlow} 
+                    src={processGraph} 
                     alt="Complete Stem Cell Processing and Treatment Workflow"
                     className="w-full h-auto"
                   />
@@ -225,7 +220,7 @@ const Resources = () => {
               <div>
                 <Card className="border-0 shadow-medical overflow-hidden">
                   <img 
-                    src={jointConditionsTherapy} 
+                    src={researchImage5} 
                     alt="Joint Conditions and Regenerative Medicine Treatment Guide"
                     className="w-full h-auto"
                   />
@@ -286,154 +281,6 @@ const Resources = () => {
                 </div>
               </Card>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Educational Resources Gallery */}
-      <section className="py-20 bg-gradient-to-br from-accent/5 to-accent/10">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <Badge variant="secondary" className="mb-4">
-              Educational Materials
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Medical Research & Educational Resources
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-              Comprehensive medical documentation, research findings, and educational materials to help you understand regenerative medicine
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {/* Row 1 - Main Educational Infographics */}
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden cursor-pointer hover-scale">
-              <div className="aspect-[4/3] bg-gradient-to-br from-blue-50 to-blue-100 p-4">
-                <img 
-                  src={stemCellInfographic} 
-                  alt="What is a Stem Cell - Educational Infographic"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h4 className="font-semibold text-foreground mb-2">Understanding Stem Cells</h4>
-                <p className="text-sm text-muted-foreground">Learn about mesenchymal stem cells and their regenerative capabilities</p>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden cursor-pointer hover-scale">
-              <div className="aspect-[4/3] bg-gradient-to-br from-red-50 to-red-100 p-4">
-                <img 
-                  src={stemCellTherapyBenefits} 
-                  alt="Stem Cell Therapy Benefits for Multiple Conditions"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h4 className="font-semibold text-foreground mb-2">Therapy Benefits</h4>
-                <p className="text-sm text-muted-foreground">Discover how stem cell therapy can help treat over 65 different conditions</p>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden cursor-pointer hover-scale">
-              <div className="aspect-[4/3] bg-gradient-to-br from-purple-50 to-purple-100 p-4">
-                <img 
-                  src={cellCultureMarket} 
-                  alt="Cell Culture Market Analysis and Trends"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h4 className="font-semibold text-foreground mb-2">Market Research</h4>
-                <p className="text-sm text-muted-foreground">Industry analysis and growth trends in regenerative medicine</p>
-              </CardContent>
-            </Card>
-
-            {/* Row 2 - Process and Clinical Research */}
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden cursor-pointer hover-scale">
-              <div className="aspect-[4/3] bg-gradient-to-br from-green-50 to-green-100 p-4">
-                <img 
-                  src={stemCellProcessFlow} 
-                  alt="Stem Cell Processing and Treatment Workflow"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h4 className="font-semibold text-foreground mb-2">Treatment Process</h4>
-                <p className="text-sm text-muted-foreground">Step-by-step breakdown of stem cell collection and transplantation</p>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden cursor-pointer hover-scale">
-              <div className="aspect-[4/3] bg-gradient-to-br from-orange-50 to-orange-100 p-4">
-                <img 
-                  src={jointConditionsTherapy} 
-                  alt="Joint Conditions and Regenerative Medicine Solutions"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h4 className="font-semibold text-foreground mb-2">Joint Conditions</h4>
-                <p className="text-sm text-muted-foreground">Specialized treatments for arthritis and joint-related conditions</p>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden cursor-pointer hover-scale">
-              <div className="aspect-[4/3] bg-gradient-to-br from-teal-50 to-teal-100 p-4">
-                <img 
-                  src={processGraph} 
-                  alt="Clinical Research Process Documentation"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h4 className="font-semibold text-foreground mb-2">Research Process</h4>
-                <p className="text-sm text-muted-foreground">Clinical research methodology and documentation standards</p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Additional Research Images Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden cursor-pointer hover-scale">
-              <div className="aspect-square bg-gradient-to-br from-indigo-50 to-indigo-100 p-2">
-                <img 
-                  src={researchImage1} 
-                  alt="Clinical Research Documentation"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </Card>
-
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden cursor-pointer hover-scale">
-              <div className="aspect-square bg-gradient-to-br from-pink-50 to-pink-100 p-2">
-                <img 
-                  src={researchImage2} 
-                  alt="Medical Research Findings"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </Card>
-
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden cursor-pointer hover-scale">
-              <div className="aspect-square bg-gradient-to-br from-yellow-50 to-yellow-100 p-2">
-                <img 
-                  src={researchImage3} 
-                  alt="Scientific Documentation"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </Card>
-
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden cursor-pointer hover-scale">
-              <div className="aspect-square bg-gradient-to-br from-cyan-50 to-cyan-100 p-2">
-                <img 
-                  src={researchImage5} 
-                  alt="Research Analysis Data"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </Card>
           </div>
         </div>
       </section>
