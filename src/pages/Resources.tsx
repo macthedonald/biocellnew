@@ -240,7 +240,7 @@ const Resources = () => {
               </p>
             </div>
             
-            <div className="w-full">
+            <div className="max-w-4xl mx-auto">
               <Card className="border-0 shadow-medical overflow-hidden bg-gradient-to-br from-accent/5 to-accent/10">
                 <div className="relative w-full aspect-video">
                   <iframe
