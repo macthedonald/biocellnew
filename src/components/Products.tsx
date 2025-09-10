@@ -34,9 +34,9 @@ const Products = () => {
     },
     {
       icon: Leaf,
-      title: "CBD 6000mg Total",
-      description: "Premium Hemp Products - High Quality Infused Hemp Supplement. Our CBD 6000mg total offers therapeutic benefits with organic apple flavor in a convenient tincture format for optimal bioavailability.",
-      features: ["6000mg total CBD", "Organic Apple flavor", "High Quality Infused", "Hemp Supplement"],
+      title: "BioCBDrx 6000mg",
+      description: "Certified• Tested• Highest potency available • Full spectrum• Organic• Vegan• nonGMO • MEDICAL grade Phytocannabinoids• Terpene for Pain • Flavonoids• MCT. Features therapeutic terpenes including Beta-Caryophyllene for anti-inflammatory and pain relief.",
+      features: ["6000mg total CBD", "Full spectrum", "Medical grade", "Organic & Vegan"],
       color: "from-green-500 to-green-600",
       image: "/lovable-uploads/eaca80fb-dc37-43e5-b4cf-18bd12a0b5ea.png"
     }

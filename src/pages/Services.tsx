@@ -72,10 +72,10 @@ const Services = () => {
       image: "/lovable-uploads/8362a3bb-d455-415a-a85d-5576bcf8a37d.png"
     },
     {
-      title: "CBD 6000mg Total",
-      badge: "Premium Hemp",
-      description: "Premium Hemp Products - High Quality Infused Hemp Supplement with organic apple flavor. Designed to complement your regenerative therapy for enhanced wellness support.",
-      details: "6000mg total CBD, Organic Apple flavor",
+      title: "BioCBDrx 6000mg",
+      badge: "Medical Grade",
+      description: "Certified• Tested• Highest potency available • Full spectrum• Organic• Vegan• nonGMO • MEDICAL grade Phytocannabinoids with therapeutic terpenes for pain relief and anti-inflammatory benefits.",
+      details: "6000mg CBD, Beta-Caryophyllene, Humulene, Linalool terpenes",
       image: "/lovable-uploads/eaca80fb-dc37-43e5-b4cf-18bd12a0b5ea.png"
     }
   ];
