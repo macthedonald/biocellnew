@@ -11,10 +11,10 @@ import labHeroBg from "@/assets/lab-hero-bg.jpg";
 import regenerativeProcessImg from "@/assets/regenerative-process-infographic.jpg";
 import safetyQualityImg from "@/assets/safety-quality-infographic.jpg";
 import treatmentTimelineImg from "@/assets/treatment-timeline-infographic.jpg";
-import researchLab1 from "@/assets/research-lab-1.jpg";
-import researchLab2 from "@/assets/research-lab-2.jpg";
-import researchLab3 from "@/assets/research-lab-3.jpg";
-import researchLab4 from "@/assets/research-lab-4.jpg";
+import cellularResearchLab from "@/assets/cellular-research-lab.jpg";
+import stemCellFacility from "@/assets/stem-cell-facility.jpg";
+import qualityControlLab from "@/assets/quality-control-lab.jpg";
+import cryogenicStorage from "@/assets/cryogenic-storage.jpg";
 
 const Resources = () => {
   const faqs = [
@@ -90,48 +90,125 @@ const Resources = () => {
       {/* Visual Learning Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-blue-50 to-blue-100">
-                <img 
-                  src={regenerativeProcessImg} 
-                  alt="Regenerative Medicine Process"
-                  className="w-full h-full object-cover"
-                />
+          
+          {/* How It Works Section */}
+          <div className="mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <Badge variant="secondary" className="mb-4">
+                  Regenerative Process
+                </Badge>
+                <h3 className="text-3xl font-bold text-foreground mb-6">
+                  How Regenerative Medicine Works
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Our regenerative medicine process harnesses your body's natural healing mechanisms through advanced cellular therapies. Using carefully selected stem cells and growth factors, we activate your body's own repair systems to restore damaged tissues and promote natural healing.
+                </p>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Targeted cellular delivery to damaged tissues</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Natural tissue regeneration and repair</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Reduced inflammation and accelerated healing</span>
+                  </li>
+                </ul>
               </div>
-              <CardContent className="p-6 text-center">
-                <h4 className="font-semibold text-foreground mb-2">How It Works</h4>
-                <p className="text-sm text-muted-foreground">Visual guide to regenerative healing</p>
-              </CardContent>
-            </Card>
+              <div>
+                <Card className="border-0 shadow-medical overflow-hidden">
+                  <img 
+                    src={regenerativeProcessImg} 
+                    alt="Regenerative Medicine Process"
+                    className="w-full h-auto"
+                  />
+                </Card>
+              </div>
+            </div>
+          </div>
 
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-green-50 to-green-100">
-                <img 
-                  src={safetyQualityImg} 
-                  alt="Safety and Quality Standards"
-                  className="w-full h-full object-cover"
-                />
+          {/* Safety Standards Section */}
+          <div className="mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="lg:order-2">
+                <Badge variant="secondary" className="mb-4">
+                  Quality Assurance
+                </Badge>
+                <h3 className="text-3xl font-bold text-foreground mb-6">
+                  Rigorous Safety Standards
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Every cellular product we use undergoes extensive quality control testing and comes from FDA-registered laboratories. Our commitment to safety ensures that each treatment meets the highest medical standards and regulatory requirements.
+                </p>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>FDA-registered laboratory sourcing</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Comprehensive sterility testing</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Strict chain of custody protocols</span>
+                  </li>
+                </ul>
               </div>
-              <CardContent className="p-6 text-center">
-                <h4 className="font-semibold text-foreground mb-2">Safety Standards</h4>
-                <p className="text-sm text-muted-foreground">Quality control and compliance</p>
-              </CardContent>
-            </Card>
+              <div className="lg:order-1">
+                <Card className="border-0 shadow-medical overflow-hidden">
+                  <img 
+                    src={safetyQualityImg} 
+                    alt="Safety and Quality Standards"
+                    className="w-full h-auto"
+                  />
+                </Card>
+              </div>
+            </div>
+          </div>
 
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-purple-50 to-purple-100">
-                <img 
-                  src={treatmentTimelineImg} 
-                  alt="Treatment Timeline"
-                  className="w-full h-full object-cover"
-                />
+          {/* Treatment Journey Section */}
+          <div className="mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <Badge variant="secondary" className="mb-4">
+                  Treatment Timeline
+                </Badge>
+                <h3 className="text-3xl font-bold text-foreground mb-6">
+                  Your Treatment Journey
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  From initial consultation to recovery, we guide you through every step of your regenerative medicine journey. Our personalized approach ensures optimal outcomes tailored to your specific condition and health goals.
+                </p>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Comprehensive medical evaluation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Personalized treatment planning</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Ongoing monitoring and support</span>
+                  </li>
+                </ul>
               </div>
-              <CardContent className="p-6 text-center">
-                <h4 className="font-semibold text-foreground mb-2">Treatment Journey</h4>
-                <p className="text-sm text-muted-foreground">From consultation to recovery</p>
-              </CardContent>
-            </Card>
+              <div>
+                <Card className="border-0 shadow-medical overflow-hidden">
+                  <img 
+                    src={treatmentTimelineImg} 
+                    alt="Treatment Timeline"
+                    className="w-full h-auto"
+                  />
+                </Card>
+              </div>
+            </div>
           </div>
 
           {/* Educational Video Section - Better Integrated */}
@@ -148,12 +225,12 @@ const Resources = () => {
               </p>
             </div>
             
-            <div className="max-w-6xl mx-auto">
+            <div className="w-full">
               <Card className="border-0 shadow-medical overflow-hidden bg-gradient-to-br from-accent/5 to-accent/10">
-                <div className="relative w-full h-0 pb-[56.25%]">
+                <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
                   <iframe
                     src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
-                    className="absolute inset-0 w-full h-full"
+                    className="absolute top-0 left-0 w-full h-full"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
@@ -178,8 +255,8 @@ const Resources = () => {
               <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
                 <div className="aspect-square bg-gradient-to-br from-blue-50 to-blue-100">
                   <img 
-                    src={researchLab1} 
-                    alt="Medical Research Laboratory"
+                    src={cellularResearchLab} 
+                    alt="Cellular Research Laboratory"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -188,8 +265,8 @@ const Resources = () => {
               <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
                 <div className="aspect-square bg-gradient-to-br from-green-50 to-green-100">
                   <img 
-                    src={researchLab2} 
-                    alt="Clinical Research Facility"
+                    src={stemCellFacility} 
+                    alt="Stem Cell Processing Facility"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -198,8 +275,8 @@ const Resources = () => {
               <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
                 <div className="aspect-square bg-gradient-to-br from-purple-50 to-purple-100">
                   <img 
-                    src={researchLab3} 
-                    alt="Laboratory Analysis"
+                    src={qualityControlLab} 
+                    alt="Quality Control Laboratory"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -208,8 +285,8 @@ const Resources = () => {
               <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
                 <div className="aspect-square bg-gradient-to-br from-orange-50 to-orange-100">
                   <img 
-                    src={researchLab4} 
-                    alt="Biotechnology Research"
+                    src={cryogenicStorage} 
+                    alt="Cryogenic Storage Facility"
                     className="w-full h-full object-cover"
                   />
                 </div>
