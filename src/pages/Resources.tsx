@@ -102,65 +102,135 @@ const Resources = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           
-          {/* Educational Infographics Section */}
+          {/* Educational Infographics - Vertical Layout */}
+          
+          {/* Stem Cell Fundamentals */}
           <div className="mb-20">
-            <div className="text-center mb-12">
-              <Badge variant="secondary" className="mb-4">
-                Educational Resources
-              </Badge>
-              <h3 className="text-3xl font-bold text-foreground mb-4">
-                Understanding Regenerative Medicine
-              </h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Comprehensive visual guides to stem cell therapy and regenerative medicine
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {/* Stem Cell Basics */}
-              <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
-                <div className="aspect-[4/3] bg-gradient-to-br from-blue-50 to-blue-100 p-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <Badge variant="secondary" className="mb-4">
+                  Educational Guide
+                </Badge>
+                <h3 className="text-3xl font-bold text-foreground mb-6">
+                  Understanding Stem Cells
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Learn about mesenchymal stem cells and their unique abilities to reduce inflammation, self-replicate, fight cell death, and differentiate into multiple tissue types including bone, muscle, cartilage, and fat.
+                </p>
+              </div>
+              <div>
+                <Card className="border-0 shadow-medical overflow-hidden">
                   <img 
                     src={stemCellInfographic} 
-                    alt="What is a Stem Cell - Complete Guide"
-                    className="w-full h-full object-contain"
+                    alt="What is a Stem Cell - Complete Educational Guide"
+                    className="w-full h-auto"
                   />
-                </div>
-                <CardContent className="p-6 text-center">
-                  <h4 className="font-semibold text-foreground mb-2">Stem Cell Fundamentals</h4>
-                  <p className="text-sm text-muted-foreground">Essential knowledge about mesenchymal stem cells and their capabilities</p>
-                </CardContent>
-              </Card>
+                </Card>
+              </div>
+            </div>
+          </div>
 
-              {/* Therapy Benefits */}
-              <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
-                <div className="aspect-[4/3] bg-gradient-to-br from-red-50 to-red-100 p-4">
+          {/* Therapy Benefits */}
+          <div className="mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="lg:order-2">
+                <Badge variant="secondary" className="mb-4">
+                  Treatment Applications
+                </Badge>
+                <h3 className="text-3xl font-bold text-foreground mb-6">
+                  Comprehensive Therapy Benefits
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Discover how stem cell therapy can effectively treat over 65 different conditions including diabetes, stroke, dementia, arthritis, retinal diseases, leukemia, and cancer with proven therapeutic benefits.
+                </p>
+              </div>
+              <div className="lg:order-1">
+                <Card className="border-0 shadow-medical overflow-hidden">
                   <img 
                     src={stemCellTherapyBenefits} 
-                    alt="Stem Cell Therapy Benefits and Applications"
-                    className="w-full h-full object-contain"
+                    alt="Stem Cell Therapy Benefits for Multiple Medical Conditions"
+                    className="w-full h-auto"
                   />
-                </div>
-                <CardContent className="p-6 text-center">
-                  <h4 className="font-semibold text-foreground mb-2">Treatment Applications</h4>
-                  <p className="text-sm text-muted-foreground">Comprehensive overview of conditions treatable with stem cell therapy</p>
-                </CardContent>
-              </Card>
+                </Card>
+              </div>
+            </div>
+          </div>
 
-              {/* Market Research */}
-              <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white overflow-hidden">
-                <div className="aspect-[4/3] bg-gradient-to-br from-purple-50 to-purple-100 p-4">
+          {/* Market Research */}
+          <div className="mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <Badge variant="secondary" className="mb-4">
+                  Industry Analysis
+                </Badge>
+                <h3 className="text-3xl font-bold text-foreground mb-6">
+                  Cell Culture Market Insights
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Comprehensive market analysis covering biopharmaceutical applications, cancer research, stem cell technologies, and regenerative medicine with detailed industry trends and forecasts for 2018-2023.
+                </p>
+              </div>
+              <div>
+                <Card className="border-0 shadow-medical overflow-hidden">
                   <img 
                     src={cellCultureMarket} 
-                    alt="Cell Culture Market Research and Analysis"
-                    className="w-full h-full object-contain"
+                    alt="Cell Culture Market Analysis and Industry Research"
+                    className="w-full h-auto"
                   />
-                </div>
-                <CardContent className="p-6 text-center">
-                  <h4 className="font-semibold text-foreground mb-2">Industry Insights</h4>
-                  <p className="text-sm text-muted-foreground">Market trends and growth analysis in regenerative medicine</p>
-                </CardContent>
-              </Card>
+                </Card>
+              </div>
+            </div>
+          </div>
+
+          {/* Treatment Process */}
+          <div className="mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="lg:order-2">
+                <Badge variant="secondary" className="mb-4">
+                  Process Workflow
+                </Badge>
+                <h3 className="text-3xl font-bold text-foreground mb-6">
+                  Stem Cell Processing Journey
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Step-by-step breakdown of the complete stem cell treatment process from collection of bone marrow, peripheral blood, or umbilical cord blood through processing, freezing, and final transplantation.
+                </p>
+              </div>
+              <div className="lg:order-1">
+                <Card className="border-0 shadow-medical overflow-hidden">
+                  <img 
+                    src={stemCellProcessFlow} 
+                    alt="Complete Stem Cell Processing and Treatment Workflow"
+                    className="w-full h-auto"
+                  />
+                </Card>
+              </div>
+            </div>
+          </div>
+
+          {/* Joint Conditions */}
+          <div className="mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <Badge variant="secondary" className="mb-4">
+                  Specialized Treatment
+                </Badge>
+                <h3 className="text-3xl font-bold text-foreground mb-6">
+                  Joint Conditions Therapy
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Specialized regenerative medicine solutions for joint conditions including knee pain, joint pain, and osteoarthritis, with detailed FDA criteria and clinical trial information for effective treatment outcomes.
+                </p>
+              </div>
+              <div>
+                <Card className="border-0 shadow-medical overflow-hidden">
+                  <img 
+                    src={jointConditionsTherapy} 
+                    alt="Joint Conditions and Regenerative Medicine Treatment Guide"
+                    className="w-full h-auto"
+                  />
+                </Card>
+              </div>
             </div>
           </div>
 
