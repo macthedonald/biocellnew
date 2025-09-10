@@ -53,7 +53,7 @@ const VideoPlayer = ({
   views = "3.2M views"
 }: VideoPlayerProps) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false);
 
   const toggleMute = (e: React.MouseEvent) => {
     e.stopPropagation(); // Prevent opening the modal when clicking volume
