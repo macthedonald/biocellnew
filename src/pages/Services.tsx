@@ -102,9 +102,9 @@ const Services = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Your Path to Enhanced
+              Products &
               <span className="block bg-gradient-to-r from-accent to-accent-foreground bg-clip-text text-transparent">
-                Wellness
+                Services
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -115,10 +115,12 @@ const Services = () => {
                 <Phone className="w-5 h-5 mr-2" />
                 Call (858) 519-7305
               </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
-                View Products
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
+              <Link to="/contact">
+                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+                  View Products
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -197,7 +199,7 @@ const Services = () => {
                   </p>
                   <Link to="/contact">
                     <Button variant="outline" className="w-full">
-                      Learn More
+                      Book a call
                     </Button>
                   </Link>
                 </CardContent>
@@ -246,15 +248,10 @@ const Services = () => {
             <p className="text-xl text-muted-foreground mb-8">
               Take a proactive step towards a healthier, more fulfilling life with BioCellRx's innovative solutions
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Link to="/contact">
                 <Button size="lg" variant="medical">
                   Book Your Consultation
-                </Button>
-              </Link>
-              <Link to="/">
-                <Button variant="outline" size="lg">
-                  Return Home
                 </Button>
               </Link>
             </div>
