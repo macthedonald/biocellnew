@@ -131,14 +131,10 @@ const Contact = () => {
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
               Schedule your personalized consultation today and discover how our advanced regenerative therapies can help you achieve optimal wellness.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold">
                 <Phone className="w-5 h-5 mr-2" />
                 Call (858) 519-7305
-              </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
-                Schedule Online
-                <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </div>
           </div>
