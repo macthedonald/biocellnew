@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { 
   Dna,
   Snowflake,
@@ -125,9 +126,11 @@ const Products = () => {
                 </div>
               </div>
               
-              <Button variant="medical" size="lg">
-                Learn More About Results
-              </Button>
+              <Link to="/contact">
+                <Button variant="medical" size="lg">
+                  Learn More About Results
+                </Button>
+              </Link>
             </div>
             
             <div className="text-center">

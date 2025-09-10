@@ -46,12 +46,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link to="/contact">
-              <Button 
-                variant="medical" 
-                size="lg" 
-                className="group"
-                onClick={() => console.log("Hero Button clicked - navigating to /contact")}
-              >
+              <Button variant="medical" size="lg" className="group">
                 Start Your Healing Journey
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>

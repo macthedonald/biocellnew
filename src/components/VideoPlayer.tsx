@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Volume2, VolumeX, X } from "lucide-react";
 
 // Video embed component for different platforms
@@ -142,9 +143,11 @@ const VideoPlayer = ({
               <Button variant="medical">
                 Book Consultation
               </Button>
-              <Button variant="outline">
-                Learn More
-              </Button>
+              <Link to="/contact">
+                <Button variant="outline">
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </div>
         </DialogContent>

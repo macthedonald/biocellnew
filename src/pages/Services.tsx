@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 import { 
   CheckCircle, 
   Phone,
@@ -197,9 +198,11 @@ const Services = () => {
                   <p className="text-sm font-medium text-accent">
                     {therapy.details}
                   </p>
-                  <Button variant="outline" className="w-full">
-                    Learn More
-                  </Button>
+                  <Link to="/contact">
+                    <Button variant="outline" className="w-full">
+                      Learn More
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
