@@ -220,18 +220,12 @@ const Services = () => {
                       <span className="text-2xl font-bold text-accent">{therapy.price}</span>
                     </div>
                   )}
-                  {therapy.paymentLink ? (
+                  {therapy.paymentLink && (
                     <a href={therapy.paymentLink} target="_blank" rel="noopener noreferrer">
                       <Button variant="medical" className="w-full">
                         Purchase Now
                       </Button>
                     </a>
-                  ) : (
-                    <Link to="/contact">
-                      <Button variant="outline" className="w-full">
-                        Book a call
-                      </Button>
-                    </Link>
                   )}
                 </CardContent>
               </Card>
