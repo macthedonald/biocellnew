@@ -48,7 +48,7 @@ const Services = () => {
       badge: "Premium",
       description: "A potent cellular signaling vesicle transport, rich in cytokines and tetraspanin proteins, promoting extracellular matrix composition and aiding in immune regulation and tissue regeneration.",
       details: "Available in 5ml vials",
-      image: mscExosomalLysate
+      image: "/lovable-uploads/f51f3f85-b0dd-4995-85c2-5c41f0080e4e.png"
     },
     {
       title: "CBSC cryo",

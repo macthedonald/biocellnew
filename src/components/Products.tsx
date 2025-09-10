@@ -9,7 +9,7 @@ import {
   Leaf,
   CheckCircle
 } from "lucide-react";
-import mscExosomalLysate from "@/assets/msc-exosomal-lysate.png";
+import mscExosomalLysate from "/lovable-uploads/f51f3f85-b0dd-4995-85c2-5c41f0080e4e.png";
 import cbscCryo from "/lovable-uploads/ac57993d-bdef-4edf-a603-8a8c226e58a3.png";
 import hucFreshMsc from "@/assets/huc-fresh-msc.png";
 import wellnessResults from "@/assets/wellness-results-fullbody.jpg";
