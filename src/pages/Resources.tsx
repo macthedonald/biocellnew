@@ -222,7 +222,6 @@ const Resources = () => {
             </div>
           </div>
 
-
           {/* Research Gallery */}
           <div className="mb-20">
             <div className="text-center mb-12">
@@ -275,38 +274,6 @@ const Resources = () => {
                 </div>
               </Card>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 bg-gradient-to-br from-accent/5 to-accent/10">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-              Find answers to common questions about regenerative medicine, our treatments, and what to expect
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <Accordion type="single" collapsible className="space-y-3">
-              {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg border-0 shadow-sm">
-                  <AccordionTrigger className="px-6 py-4 text-left font-semibold text-foreground hover:no-underline">
-                    <div className="flex items-center space-x-3">
-                      <HelpCircle className="w-4 h-4 text-accent flex-shrink-0" />
-                      <span className="text-sm">{faq.question}</span>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4 text-muted-foreground text-sm leading-relaxed">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
           </div>
         </div>
       </section>
