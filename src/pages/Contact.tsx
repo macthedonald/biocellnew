@@ -148,158 +148,169 @@ const Contact = () => {
       </section>
 
       {/* Get in Touch Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-black text-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Get in Touch
             </h2>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+            <p className="text-xl text-white/70 max-w-4xl mx-auto">
               Contact us directly with any questions, comments, or scheduling inquiries. Our team is here to support your wellness journey.
             </p>
           </div>
 
-          {/* Contact Information Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            {contactInfo.map((info, index) => (
-              <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white text-center">
-                <CardHeader>
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-accent to-accent-foreground rounded-full mb-4 mx-auto">
-                    <info.icon className="w-8 h-8 text-white" />
+          {/* Contact Form Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Left Side - Contact Information */}
+            <div className="space-y-8">
+              {contactInfo.map((info, index) => (
+                <div key={index} className="flex items-start space-x-4">
+                  <div className="flex items-center justify-center w-12 h-12 bg-white/10 rounded-lg flex-shrink-0">
+                    <info.icon className="w-6 h-6 text-accent" />
                   </div>
-                  <CardTitle className="text-lg font-semibold text-foreground">
-                    {info.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  {info.href ? (
-                    <a 
-                      href={info.href}
-                      className="font-medium text-accent hover:text-accent/80 transition-colors block"
-                      target={info.href.startsWith('http') ? '_blank' : undefined}
-                      rel={info.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    >
-                      {info.value}
-                    </a>
-                  ) : (
-                    <p className="font-medium text-accent">
-                      {info.value}
+                  <div>
+                    <h3 className="text-xl font-semibold text-white mb-2">
+                      {info.title}
+                    </h3>
+                    {info.href ? (
+                      <a 
+                        href={info.href}
+                        className="text-lg font-medium text-accent hover:text-accent/80 transition-colors block mb-2"
+                        target={info.href.startsWith('http') ? '_blank' : undefined}
+                        rel={info.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                      >
+                        {info.value}
+                      </a>
+                    ) : (
+                      <p className="text-lg font-medium text-accent mb-2">
+                        {info.value}
+                      </p>
+                    )}
+                    <p className="text-white/70 leading-relaxed">
+                      {info.description}
                     </p>
-                  )}
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {info.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          {/* New Patient Form - Within the same "Get in Touch" section */}
-          <div className="max-w-2xl mx-auto">
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-foreground mb-4">
-                New Patient Form
-              </h3>
-              <p className="text-muted-foreground">
-                Fill out this form and send it to us to save time when you come in for your appointment.
-              </p>
+                  </div>
+                </div>
+              ))}
             </div>
-            
-            <Card className="bg-gradient-to-br from-accent/5 to-accent/10 border-0">
-              <CardContent className="p-8">
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="firstName">First Name *</Label>
-                      <Input
-                        id="firstName"
-                        name="firstName"
-                        value={formData.firstName}
-                        onChange={handleInputChange}
-                        required
-                        className="bg-white"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="lastName">Last Name *</Label>
-                      <Input
-                        id="lastName"
-                        name="lastName"
-                        value={formData.lastName}
-                        onChange={handleInputChange}
-                        required
-                        className="bg-white"
-                      />
-                    </div>
-                  </div>
 
+            {/* Right Side - Contact Form */}
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email Address *</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="bg-white"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="phone">Phone Number *</Label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      required
-                      className="bg-white"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="primaryHealthConcern">Primary Health Concern</Label>
-                    <Input
-                      id="primaryHealthConcern"
-                      name="primaryHealthConcern"
-                      value={formData.primaryHealthConcern}
-                      onChange={handleInputChange}
-                      className="bg-white"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="additionalInfo">Additional Information</Label>
-                    <Textarea
-                      id="additionalInfo"
-                      name="additionalInfo"
-                      rows={4}
-                      value={formData.additionalInfo}
-                      onChange={handleInputChange}
-                      className="bg-white"
-                    />
-                  </div>
-
-                  <div className="flex items-start space-x-2">
-                    <Checkbox
-                      id="agreeToComms"
-                      checked={formData.agreeToComms}
-                      onCheckedChange={handleCheckboxChange}
-                      required
-                    />
-                    <Label htmlFor="agreeToComms" className="text-sm leading-relaxed">
-                      I agree to receive communications from BioCellRx regarding my inquiry and understand that I can unsubscribe at any time. *
+                    <Label htmlFor="firstName" className="text-white font-medium">
+                      First Name <span className="text-accent">*</span>
                     </Label>
+                    <Input
+                      id="firstName"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      required
+                      placeholder="Enter your first name"
+                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-accent focus:ring-accent/20"
+                    />
                   </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="lastName" className="text-white font-medium">
+                      Last Name <span className="text-accent">*</span>
+                    </Label>
+                    <Input
+                      id="lastName"
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                      required
+                      placeholder="Enter your last name"
+                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-accent focus:ring-accent/20"
+                    />
+                  </div>
+                </div>
 
-                  <Button type="submit" size="lg" variant="medical" className="w-full">
-                    Send New Patient Form
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+                <div className="space-y-2">
+                  <Label htmlFor="email" className="text-white font-medium">
+                    Email Address <span className="text-accent">*</span>
+                  </Label>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    required
+                    placeholder="Enter your email"
+                    className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-accent focus:ring-accent/20"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="phone" className="text-white font-medium">
+                    Phone Number <span className="text-accent">*</span>
+                  </Label>
+                  <Input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    required
+                    placeholder="(555) 123-4567"
+                    className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-accent focus:ring-accent/20"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="primaryHealthConcern" className="text-white font-medium">
+                    Primary Health Concern
+                  </Label>
+                  <Input
+                    id="primaryHealthConcern"
+                    name="primaryHealthConcern"
+                    value={formData.primaryHealthConcern}
+                    onChange={handleInputChange}
+                    placeholder="What brings you to BioCellRx?"
+                    className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-accent focus:ring-accent/20"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="additionalInfo" className="text-white font-medium">
+                    Additional Information
+                  </Label>
+                  <Textarea
+                    id="additionalInfo"
+                    name="additionalInfo"
+                    rows={4}
+                    value={formData.additionalInfo}
+                    onChange={handleInputChange}
+                    placeholder="Tell us more about your health goals or any questions you have..."
+                    className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-accent focus:ring-accent/20 resize-none"
+                  />
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <Checkbox
+                    id="agreeToComms"
+                    checked={formData.agreeToComms}
+                    onCheckedChange={handleCheckboxChange}
+                    required
+                    className="border-white/20 data-[state=checked]:bg-accent data-[state=checked]:border-accent mt-1"
+                  />
+                  <Label htmlFor="agreeToComms" className="text-sm leading-relaxed text-white/90">
+                    I agree to receive communications from BioCellRx regarding my inquiry and understand that I can unsubscribe at any time. <span className="text-accent">*</span>
+                  </Label>
+                </div>
+
+                <Button 
+                  type="submit" 
+                  size="lg" 
+                  className="w-full bg-accent hover:bg-accent/90 text-black font-semibold py-4 rounded-lg transition-all duration-300"
+                >
+                  Send New Patient Form
+                </Button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
