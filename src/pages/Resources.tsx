@@ -229,31 +229,34 @@ const Resources = () => {
             </div>
           </div>
 
-          {/* Educational Video Section */}
-          <div className="mb-20">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-foreground mb-4">
-                Advanced Research & Technology
-              </h3>
-              <p className="text-muted-foreground">
-                See our cutting-edge research facilities and breakthrough technology in action
-              </p>
-            </div>
-            
-            <div className="w-full">
-            <div className="relative aspect-video rounded-2xl overflow-hidden border border-accent/20 shadow-medical transition-all duration-300">
-              <iframe
-                src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
-                className="absolute inset-0 w-full h-full"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-            </div>
-          </div>
         </div>
       </section>
+
+      {/* Full Width Video Section */}
+      <section className="mb-20">
+        <div className="text-center mb-8 container mx-auto px-6">
+          <h3 className="text-3xl font-bold text-foreground mb-4">
+            Advanced Research & Technology
+          </h3>
+          <p className="text-muted-foreground">
+            See our cutting-edge research facilities and breakthrough technology in action
+          </p>
+        </div>
+        
+        <div className="relative aspect-video">
+          <iframe
+            src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
+            className="absolute inset-0 w-full h-full"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </section>
+
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          {/* FAQ Section */}
 
       {/* FAQ Section */}
       <section className="py-20 bg-background">
