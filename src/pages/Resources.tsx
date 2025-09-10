@@ -230,16 +230,7 @@ const Resources = () => {
       </section>
 
       {/* Full Width Video Section */}
-      <section className="mb-20">
-        <div className="text-center mb-8 container mx-auto px-6">
-          <h3 className="text-3xl font-bold text-foreground mb-4">
-            Advanced Research & Technology
-          </h3>
-          <p className="text-muted-foreground">
-            See our cutting-edge research facilities and breakthrough technology in action
-          </p>
-        </div>
-        
+      <section className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-20">
         <div className="relative aspect-video">
           <iframe
             src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
