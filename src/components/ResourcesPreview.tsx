@@ -42,16 +42,16 @@ const ResourcesPreview = () => {
         <div className="text-center mb-16">
           <Badge variant="secondary" className="mb-4">
             <BookOpen className="w-4 h-4 mr-2" />
-            KNOWLEDGE CENTRE
+            KNOWLEDGE CENTER
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             <span className="bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">
-              Knowledge Centre
+              Knowledge Center
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Access comprehensive educational materials, clinical research, and treatment guides 
-            from our knowledge centre to understand regenerative medicine and our advanced therapies
+            from our knowledge center to understand regenerative medicine and our advanced therapies
           </p>
         </div>
 
