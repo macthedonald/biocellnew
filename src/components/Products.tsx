@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import mscExosomalLysate from "@/assets/msc-exosomal-lysate.png";
 import cbscCryo from "@/assets/cbsc-cryo.png";
-import hucFreshMsc from "@/assets/huc-fresh-msc.png";
+import hucFreshMsc from "/lovable-uploads/8362a3bb-d455-415a-a85d-5576bcf8a37d.png";
 import wellnessResults from "@/assets/wellness-results-fullbody.jpg";
 
 const Products = () => {
