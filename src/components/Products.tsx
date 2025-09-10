@@ -8,7 +8,9 @@ import {
   Leaf,
   CheckCircle
 } from "lucide-react";
-import productImage from "/lovable-uploads/a5998c10-9c39-441b-a504-74ab1bce3890.png";
+import mscExosomalLysate from "@/assets/msc-exosomal-lysate.png";
+import cbscCryo from "@/assets/cbsc-cryo.png";
+import hucFreshMsc from "@/assets/huc-fresh-msc.png";
 import wellnessResults from "@/assets/wellness-results.jpg";
 
 const Products = () => {
@@ -19,7 +21,7 @@ const Products = () => {
       description: "Cytokines are a cell signaling vehicle transport. A Tetraspanin protein- potential suppressor of metastasis. 30-100nm in size, Increase the extracellular matrix composition of skin tissue and integrity. 86% average expression of cell surface protein",
       features: ["5ml", "Cell signaling vehicle", "30-100nm in size"],
       color: "from-blue-500 to-blue-600",
-      image: productImage
+      image: mscExosomalLysate
     },
     {
       icon: Snowflake,
@@ -27,7 +29,7 @@ const Products = () => {
       description: "CBSC® is a developed biological therapeutic derived from umbilical cord blood having stem cells for body transplant. The lower cell count makes the CB ® product line perfect for smaller, localized treatments. Each vial of CB ® contains 1mL/1cc of a cellular and protein that has demonstrated remarkable results in early research testing.",
       features: ["1ml", "Silver (8 Million nucleated cells)", "Gold (15 Million nucleated cells)", "Platinum (30 million nucleated cells)"],
       color: "from-cyan-500 to-cyan-600",
-      image: productImage
+      image: cbscCryo
     },
     {
       icon: Zap,
@@ -35,7 +37,7 @@ const Products = () => {
       description: "Clinical grade mesenchymal stem cells. Obtained multiple FDA approved INDs for clinical trials. Non-frozen, fresh grade. The first team to isolate umbilical cord Mscs in 1996. This product is mesenchymal stem cell lysate.",
       features: ["40ml", "Clinical grade mesenchymal stem cells", "FDA approved INDs", "Non-frozen, fresh grade"],
       color: "from-purple-500 to-purple-600",
-      image: productImage
+      image: hucFreshMsc
     }
   ];
 
@@ -57,7 +59,7 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
           {cellularProducts.map((product, index) => (
             <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
               <CardHeader className="text-center pb-4">
