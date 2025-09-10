@@ -140,9 +140,11 @@ const VideoPlayer = ({
             <h3 className="text-2xl font-bold text-foreground mb-2">{title}</h3>
             <p className="text-muted-foreground mb-4">{views} • {description}</p>
             <div className="flex gap-4">
-              <Button variant="medical">
-                Book Consultation
-              </Button>
+              <Link to="/contact">
+                <Button variant="medical">
+                  Book Consultation
+                </Button>
+              </Link>
               <Link to="/contact">
                 <Button variant="outline">
                   Learn More

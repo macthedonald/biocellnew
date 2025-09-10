@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -330,9 +331,11 @@ const Contact = () => {
                 <Phone className="w-5 h-5 mr-2" />
                 Call Now: (858) 519-7305
               </Button>
-              <Button variant="outline" size="lg">
-                Schedule Consultation
-              </Button>
+              <Link to="/contact">
+                <Button variant="outline" size="lg">
+                  Schedule Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

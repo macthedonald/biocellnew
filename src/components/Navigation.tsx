@@ -52,9 +52,11 @@ const Navigation = () => {
           </div>
 
           {/* CTA Button */}
-          <Button variant="cta" size="lg">
-            Book Consultation
-          </Button>
+          <Link to="/contact">
+            <Button variant="cta" size="lg">
+              Book Consultation
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>

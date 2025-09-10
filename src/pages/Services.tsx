@@ -250,12 +250,16 @@ const Services = () => {
               Take a proactive step towards a healthier, more fulfilling life with BioCellRx's innovative solutions
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="medical">
-                Book Your Consultation
-              </Button>
-              <Button variant="outline" size="lg">
-                Return Home
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" variant="medical">
+                  Book Your Consultation
+                </Button>
+              </Link>
+              <Link to="/">
+                <Button variant="outline" size="lg">
+                  Return Home
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
