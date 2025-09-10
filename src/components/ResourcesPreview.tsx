@@ -93,7 +93,8 @@ const ResourcesPreview = () => {
             left: 0,
             right: 0,
             width: '100vw',
-            height: '500px',
+            height: '56.25vw', // 16:9 aspect ratio (9/16 * 100)
+            maxHeight: '600px',
             margin: '0 calc(-50vw + 50%)'
           }}>
             <iframe
