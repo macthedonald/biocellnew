@@ -45,9 +45,8 @@ const ResourcesPreview = () => {
             KNOWLEDGE CENTRE
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Knowledge &{" "}
             <span className="bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">
-              Centre
+              Knowledge Centre
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -86,6 +85,15 @@ const ResourcesPreview = () => {
           ))}
         </div>
 
+        <div className="text-center mb-12">
+          <Link to="/resources">
+            <Button size="lg" className="group">
+              Get more Knowledge
+              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
+        </div>
+
         {/* Full Width Video Section */}
         <div className="mb-12">
           <div style={{ 
@@ -110,15 +118,6 @@ const ResourcesPreview = () => {
               allowFullScreen
             />
           </div>
-        </div>
-
-        <div className="text-center">
-          <Link to="/resources">
-            <Button size="lg" className="group">
-              Get more Knowledge
-              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </Link>
         </div>
       </div>
     </section>
