@@ -55,7 +55,7 @@ const Services = () => {
       badge: "Clinical Grade",
       description: "Developed from umbilical cord blood, CBSC® offers a concentrated cellular and protein therapeutic for localized treatments.",
       details: "Silver (8M), Gold (15M), Platinum (30M nucleated cells)",
-      image: cbscCryo
+      image: "/lovable-uploads/ac57993d-bdef-4edf-a603-8a8c226e58a3.png"
     },
     {
       title: "hUC Fresh MSC Stem Cells",
