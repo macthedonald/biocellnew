@@ -78,7 +78,7 @@ const Services = () => {
       details: "6000mg CBD, Beta-Caryophyllene, Humulene, Linalool terpenes",
       image: "/lovable-uploads/eaca80fb-dc37-43e5-b4cf-18bd12a0b5ea.png",
       price: "$125.00",
-      paymentLink: "https://poynt.godaddy.com/checkout/cc0c781b-890f-4c5e-b8e1-3297a417b5d7/BioCBDrx"
+      paymentLink: "https://pay.biocellrx.com/"
     },
     {
       title: "Semaglutide GLP-1 10mg",
@@ -87,7 +87,7 @@ const Services = () => {
       details: "10mg 1 month supply, four 2.5mg/week injections",
       image: "/lovable-uploads/4b4a2781-d57e-45fc-aca9-7b3808f1ff22.png",
       price: "$425.00",
-      paymentLink: "https://poynt.godaddy.com/checkout/cc0c781b-890f-4c5e-b8e1-3297a417b5d7/BioCBDrx"
+      paymentLink: "https://pay.biocellrx.com/"
     }
   ];
 

@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 import { 
   Phone,
   ArrowRight,
@@ -93,14 +94,18 @@ const About = () => {
               revolutionizing health and wellness for over <span className="text-accent font-semibold">two decades</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold">
-                <Phone className="w-5 h-5 mr-2" />
-                Call (858) 519-7305
-              </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
-                Schedule Online
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
+              <a href="tel:+18585197305">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Call (858) 519-7305
+                </Button>
+              </a>
+              <Link to="/contact">
+                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+                  Schedule Consultation
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -120,9 +125,11 @@ const About = () => {
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 We are proud to be a leader in developing clinically advanced cellular products, offering hope and effective solutions for conditions once deemed untreatable.
               </p>
-              <Button variant="medical" size="lg">
-                Discover Your Treatment Options
-              </Button>
+              <Link to="/services">
+                <Button variant="medical" size="lg">
+                  Discover Your Treatment Options
+                </Button>
+              </Link>
             </div>
 
             {/* Stats Grid */}
@@ -230,9 +237,11 @@ const About = () => {
             <p className="text-muted-foreground mb-8 max-w-3xl mx-auto">
               This list is not exhaustive. Based on your individual medical history and symptoms, our medical professionals may recommend stem cell therapy for other conditions.
             </p>
-            <Button variant="medical" size="lg">
-              Explore Your Treatment Options
-            </Button>
+            <Link to="/services">
+              <Button variant="medical" size="lg">
+                Explore Your Treatment Options
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -249,12 +258,16 @@ const About = () => {
               Contact us to discover how stem cell therapy can transform your health journey.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="medical">
-                Schedule Your Consultation
-              </Button>
-              <Button variant="outline" size="lg">
-                Explore Our Services
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" variant="medical">
+                  Schedule Your Consultation
+                </Button>
+              </Link>
+              <Link to="/services">
+                <Button variant="outline" size="lg">
+                  Explore Our Services
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
