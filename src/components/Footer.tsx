@@ -65,14 +65,12 @@ const Footer = () => {
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
-                <a 
-                  href="https://www.instagram.com/biocellrx?igshid=YmMyMTA2M2Y="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/70 hover:text-accent transition-colors"
+                <span 
+                  className="text-white/40 cursor-not-allowed"
+                  title="Instagram account currently unavailable"
                 >
                   <Instagram className="w-5 h-5" />
-                </a>
+                </span>
                 <a 
                   href="https://www.linkedin.com/in/eloisa-sultan/"
                   target="_blank"
