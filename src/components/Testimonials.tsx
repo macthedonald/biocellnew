@@ -28,11 +28,8 @@ const Testimonials = () => {
     <section className="py-20 bg-medical-light">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-4">
-            Patient Success Stories
-          </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Real Results from Real People
+            Patient Success Stories
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Discover how BioCellRx's advanced regenerative therapies have transformed 

@@ -35,9 +35,6 @@ const Features = () => {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-4">
-            Advanced Bio-Therapies
-          </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Why Choose BioCellRx
           </h2>
