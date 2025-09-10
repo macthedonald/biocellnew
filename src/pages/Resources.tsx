@@ -240,7 +240,7 @@ const Resources = () => {
               </p>
             </div>
             
-            <div className="max-w-4xl mx-auto">
+            <div className="w-full">
             <div className="relative aspect-video rounded-2xl overflow-hidden border border-accent/20 shadow-medical transition-all duration-300">
               <iframe
                 src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
