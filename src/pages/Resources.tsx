@@ -103,7 +103,7 @@ const Resources = () => {
                   How Regenerative Medicine Works
                 </h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Our regenerative medicine process harnesses your body's natural healing mechanisms through advanced cellular therapies. Using carefully selected stem cells and growth factors, we activate your body's own repair systems to restore damaged tissues and promote natural healing.
+                  Our regenerative medicine process harnesses your body's natural healing mechanisms through advanced cellular therapies. Using carefully selected stem cells and growth factors, we activate your body's repair systems to restore damaged tissues and promote natural healing.
                 </p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start">
@@ -226,7 +226,7 @@ const Resources = () => {
               </p>
             </div>
             
-            <div className="w-full">
+            <div className="max-w-full">
               <Card className="border-0 shadow-medical overflow-hidden bg-gradient-to-br from-accent/5 to-accent/10">
                 <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
                   <iframe
