@@ -241,17 +241,15 @@ const Resources = () => {
             </div>
             
             <div className="max-w-4xl mx-auto">
-              <Card className="border-0 shadow-medical overflow-hidden bg-gradient-to-br from-accent/5 to-accent/10">
-                <div className="relative w-full aspect-video">
-                  <iframe
-                    src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
-                    className="w-full h-full"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
-              </Card>
+            <div className="relative aspect-video rounded-2xl overflow-hidden border border-accent/20 shadow-medical transition-all duration-300">
+              <iframe
+                src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=1&controls=1"
+                className="absolute inset-0 w-full h-full"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
             </div>
           </div>
         </div>
