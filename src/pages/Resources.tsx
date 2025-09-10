@@ -93,11 +93,9 @@ const Resources = () => {
         </div>
       </section>
 
-      {/* Visual Learning Section */}
+      {/* Educational Infographics - Vertical Layout */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
-          
-          {/* Educational Infographics - Vertical Layout */}
           
           {/* Stem Cell Fundamentals */}
           <div className="mb-20">
@@ -228,7 +226,6 @@ const Resources = () => {
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -253,10 +250,6 @@ const Resources = () => {
           />
         </div>
       </section>
-
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
-          {/* FAQ Section */}
 
       {/* FAQ Section */}
       <section className="py-20 bg-background">
