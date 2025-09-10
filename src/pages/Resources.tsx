@@ -17,6 +17,7 @@ import qualityControlLab from "@/assets/quality-control-lab.jpg";
 import cryogenicStorage from "@/assets/cryogenic-storage.jpg";
 
 const Resources = () => {
+  // Updated component with new image imports
   const faqs = [
     {
       question: "What is regenerative medicine and how does it work?",
