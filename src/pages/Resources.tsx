@@ -143,7 +143,7 @@ const Resources = () => {
                   Rigorous Safety Standards
                 </h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Every cellular product we use undergoes extensive quality control testing and comes from FDA-registered laboratories. Our commitment to safety ensures that each treatment meets the highest medical standards and regulatory requirements.
+                  Every cellular product we use undergoes extensive quality control testing and is sourced from FDA-registered laboratories. Our commitment to safety ensures that each treatment meets the highest medical standards and regulatory requirements.
                 </p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start">
@@ -226,7 +226,7 @@ const Resources = () => {
               </p>
             </div>
             
-            <div className="max-w-full">
+            <div className="w-full max-w-none">
               <Card className="border-0 shadow-medical overflow-hidden bg-gradient-to-br from-accent/5 to-accent/10">
                 <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
                   <iframe
