@@ -27,7 +27,12 @@ const CTA = () => {
         </div>
         
         <Link to="/contact">
-          <Button variant="medical" size="lg" className="group">
+          <Button 
+            variant="medical" 
+            size="lg" 
+            className="group"
+            onClick={() => console.log("CTA Button clicked - navigating to /contact")}
+          >
             Book Your Consultation Today
             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
