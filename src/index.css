@@ -145,7 +145,7 @@ All colors MUST be HSL.
   
   /* Home Page Products Enhanced Golden Hover */
   .product-golden-hover {
-    @apply transition-all duration-500 ease-in-out hover:shadow-[0_20px_60px_rgba(102,68,0,1),0_0_80px_rgba(128,85,0,1),0_0_120px_rgba(153,102,0,0.9),0_0_160px_rgba(204,136,0,0.7)] hover:scale-[1.12] hover:bg-gradient-to-br hover:from-yellow-400/30 hover:to-yellow-600/40 hover:border-yellow-700/60 hover:brightness-110;
+    @apply transition-all duration-500 ease-in-out hover:shadow-[0_20px_60px_rgba(102,68,0,1),0_0_80px_rgba(128,85,0,1),0_0_120px_rgba(153,102,0,0.9),0_0_160px_rgba(204,136,0,0.7)] hover:scale-[1.12] hover:bg-gradient-to-br hover:from-yellow-200/40 hover:to-yellow-400/30 hover:border-yellow-500/50 hover:brightness-110;
   }
   
   /* Story Link Animation */
