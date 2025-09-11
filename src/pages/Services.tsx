@@ -207,25 +207,16 @@ const Services = () => {
               Watch how our innovative treatments and therapies work to support your health journey
             </p>
           </div>
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto">
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-accent/20">
-              <img 
-                src="/lovable-uploads/e7d67ffc-9092-4b3a-86f6-a70e84254cd3.png" 
-                alt="BioCellRx Treatment Process"
-                className="w-full rounded-xl mb-6"
+              <iframe 
+                src="https://embed.screenapp.io/app/#/shared/638Hj_YzAT?embed=true" 
+                width="100%" 
+                height="960" 
+                frameBorder="0" 
+                allowFullScreen
+                className="rounded-xl"
               />
-              <h3 className="text-2xl font-bold text-foreground mb-4">Patient Success Story</h3>
-              <p className="text-muted-foreground mb-6">
-                Watch real patient testimonials and success stories from our regenerative medicine treatments.
-              </p>
-              <a 
-                href="https://www.instagram.com/reel/C6hCKQtJrzd/?igsh=YzAyMDM1MGJkZA=="
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
-              >
-                Watch on Instagram →
-              </a>
             </div>
           </div>
         </div>
