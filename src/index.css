@@ -135,12 +135,12 @@ All colors MUST be HSL.
   
   /* Enhanced Card Hover with Golden Glow */
   .card-golden-hover {
-    @apply transition-all duration-300 hover:shadow-[0_15px_50px_rgba(128,85,0,1),0_0_60px_rgba(153,102,0,0.9),0_0_100px_rgba(179,119,0,0.7),0_0_140px_rgba(230,153,0,0.5)] hover:scale-[1.08] hover:bg-gradient-to-br hover:from-white hover:to-yellow-900/20 hover:border-yellow-700/40 hover:brightness-115;
+    @apply transition-all duration-300 hover:shadow-[0_15px_50px_rgba(128,85,0,1),0_0_60px_rgba(153,102,0,0.9),0_0_100px_rgba(179,119,0,0.7),0_0_140px_rgba(230,153,0,0.5)] hover:scale-[1.08] hover:bg-gradient-to-br hover:from-white hover:to-yellow-900/20 hover:border-yellow-700/40 hover:brightness-110;
   }
   
   /* Button Golden Radiant */
   .btn-golden-radiant {
-    @apply transition-all duration-300 hover:shadow-[0_0_30px_rgba(128,85,0,1),0_0_60px_rgba(153,102,0,1),0_0_90px_rgba(179,119,0,0.8),0_0_120px_rgba(230,153,0,0.6)] hover:scale-[1.12] hover:brightness-130;
+    @apply transition-all duration-300 hover:shadow-[0_0_30px_rgba(128,85,0,1),0_0_60px_rgba(153,102,0,1),0_0_90px_rgba(179,119,0,0.8),0_0_120px_rgba(230,153,0,0.6)] hover:scale-[1.12] hover:brightness-125;
   }
   
   /* Story Link Animation */
