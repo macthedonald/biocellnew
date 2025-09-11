@@ -130,7 +130,7 @@ const Services = () => {
               Comprehensive regenerative medicine services and cutting-edge products designed to support your body's natural healing processes
             </p>
             <div className="flex justify-center animate-fade-in [animation-delay:0.4s]">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold hover-scale">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold btn-golden-radiant">
                 <Phone className="w-5 h-5 mr-2" />
                 Call (858) 519-7305
               </Button>
@@ -152,7 +152,7 @@ const Services = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white hover-scale animate-fade-in [animation-delay:0.1s]">
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white card-golden-hover animate-fade-in [animation-delay:0.1s]">
               <CardContent className="p-6">
                 <CheckCircle className="w-8 h-8 text-accent mb-4" />
                 <p className="text-muted-foreground leading-relaxed">
@@ -160,7 +160,7 @@ const Services = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white hover-scale animate-fade-in [animation-delay:0.2s]">
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white card-golden-hover animate-fade-in [animation-delay:0.2s]">
               <CardContent className="p-6">
                 <CheckCircle className="w-8 h-8 text-accent mb-4" />
                 <p className="text-muted-foreground leading-relaxed">
@@ -168,7 +168,7 @@ const Services = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white hover-scale animate-fade-in [animation-delay:0.3s]">
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white card-golden-hover animate-fade-in [animation-delay:0.3s]">
               <CardContent className="p-6">
                 <CheckCircle className="w-8 h-8 text-accent mb-4" />
                 <p className="text-muted-foreground leading-relaxed">
@@ -176,7 +176,7 @@ const Services = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white hover-scale animate-fade-in [animation-delay:0.4s]">
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white card-golden-hover animate-fade-in [animation-delay:0.4s]">
               <CardContent className="p-6">
                 <CheckCircle className="w-8 h-8 text-accent mb-4" />
                 <p className="text-muted-foreground leading-relaxed">
@@ -184,7 +184,7 @@ const Services = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white hover-scale animate-fade-in [animation-delay:0.5s]">
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white card-golden-hover animate-fade-in [animation-delay:0.5s]">
               <CardContent className="p-6">
                 <CheckCircle className="w-8 h-8 text-accent mb-4" />
                 <p className="text-muted-foreground leading-relaxed">
@@ -281,7 +281,7 @@ const Services = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {bioTherapies.map((therapy, index) => (
-              <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white hover-scale animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white card-golden-hover animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardHeader className="text-center">
                   <div className="mb-4">
                     <img 
@@ -339,7 +339,7 @@ const Services = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {specialists.map((specialist, index) => (
-              <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white text-center hover-scale animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white text-center card-golden-hover animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardContent className="p-6">
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-accent to-accent-foreground rounded-full mb-4">
                     <specialist.icon className="w-8 h-8 text-white" />
