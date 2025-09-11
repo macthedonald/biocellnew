@@ -67,7 +67,7 @@ const Footer = () => {
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a 
-                  href="https://www.instagram.com/accounts/suspended/?next=https%3A%2F%2Fwww.instagram.com%2Fbiocellrx%2F%3Figshid%3DYmMyMTA2M2Y%253D%26__coig_ufac%3D1"
+                  href="https://www.instagram.com/biocellrx/#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#E4405F] hover:text-[#E4405F]/80 transition-colors"
