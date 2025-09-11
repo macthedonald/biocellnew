@@ -15,6 +15,9 @@ import {
 } from "lucide-react";
 import labHeroBg from "@/assets/lab-hero-bg.jpg";
 import eloisaPhoto from "@/assets/eloisa-photo.jpg";
+import missionImage from "@/assets/mission-image.jpg";
+import conditionsImage from "@/assets/conditions-treatment-image.jpg";
+import healingPotentialImage from "@/assets/healing-potential-image.jpg";
 
 const About = () => {
   const stats = [
@@ -116,7 +119,7 @@ const About = () => {
         <div className="container mx-auto px-6">
           <div className="mb-16">
             <img 
-              src="/src/assets/mission-image.jpg" 
+              src={missionImage} 
               alt="Advanced regenerative medicine research and development"
               className="w-full max-w-5xl mx-auto rounded-2xl shadow-lg"
             />
@@ -202,7 +205,7 @@ const About = () => {
               
               <div className="h-full">
                 <img 
-                  src="/lovable-uploads/e7d67ffc-9092-4b3a-86f6-a70e84254cd3.png" 
+                  src={eloisaPhoto} 
                   alt="Eloisa Sultan - Medical Science Liaison"
                   className="w-full h-full object-cover"
                 />
@@ -225,7 +228,7 @@ const About = () => {
             
             <div className="mb-16">
               <img 
-                src="/src/assets/conditions-treatment-image.jpg" 
+                src={conditionsImage} 
                 alt="Various medical conditions treatable with stem cell therapy"
                 className="w-full max-w-5xl mx-auto rounded-2xl shadow-lg"
               />
@@ -276,7 +279,7 @@ const About = () => {
             
             <div className="mb-8">
               <img 
-                src="/src/assets/healing-potential-image.jpg" 
+                src={healingPotentialImage} 
                 alt="Natural healing potential and regenerative medicine breakthrough"
                 className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
               />
