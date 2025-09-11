@@ -32,20 +32,36 @@ const Products = () => {
       image: cbscCryo
     },
     {
-      icon: Zap,
-      title: "HUC-Fresh MSC",
-      description: "Human Umbilical Cord Mesenchymal Stem Cells providing superior therapeutic potential for regenerative medicine. Fresh, non-cryopreserved cells with high viability and potency for optimal healing outcomes.",
-      features: ["Fresh MSCs", "High viability", "Superior potency", "Non-cryopreserved"],
-      color: "from-purple-500 to-purple-600",
-      image: "/lovable-uploads/a5998c10-9c39-441b-a504-74ab1bce3890.png"
-    },
-    {
       icon: Leaf,
       title: "BioCBDrx 6000mg",
       description: "Certified• Tested• Highest potency available • Full spectrum• Organic• Vegan• nonGMO • MEDICAL grade Phytocannabinoids• Terpene for Pain • Flavonoids• MCT. Features therapeutic terpenes including Beta-Caryophyllene for anti-inflammatory and pain relief.",
       features: ["6000mg total CBD", "Full spectrum", "Medical grade", "Organic & Vegan"],
       color: "from-green-500 to-green-600",
       image: "/lovable-uploads/eaca80fb-dc37-43e5-b4cf-18bd12a0b5ea.png"
+    },
+    {
+      icon: Zap,
+      title: "Semaglutide GLP-1 10mg",
+      description: "Advanced GLP-1 receptor agonist for metabolic health and weight management. Clinically proven to support healthy blood sugar levels and promote sustainable weight loss through appetite regulation.",
+      features: ["10mg dosage", "GLP-1 receptor agonist", "Metabolic support", "Weight management"],
+      color: "from-purple-500 to-purple-600",
+      image: "/lovable-uploads/22ff32be-43e5-4063-ab26-3f4a1dbdc853.png"
+    },
+    {
+      icon: Dna,
+      title: "UC MSC 30 Million",
+      description: "Umbilical Cord Mesenchymal Stem Cells with 30 million cells per vial. Provides potent regenerative potential for tissue repair and anti-inflammatory therapeutic applications.",
+      features: ["30 million cells", "Umbilical cord derived", "High potency", "Regenerative therapy"],
+      color: "from-orange-500 to-orange-600",
+      image: "/lovable-uploads/8362a3bb-d455-415a-a85d-5576bcf8a37d.png"
+    },
+    {
+      icon: Snowflake,
+      title: "hUC Fresh MSC Stem Cells",
+      description: "Human Umbilical Cord Fresh Mesenchymal Stem Cells offering superior viability and therapeutic efficacy. Non-cryopreserved for maximum cellular integrity and regenerative potential.",
+      features: ["Fresh MSCs", "Superior viability", "Non-cryopreserved", "Maximum potency"],
+      color: "from-teal-500 to-teal-600",
+      image: "/lovable-uploads/a5998c10-9c39-441b-a504-74ab1bce3890.png"
     }
   ];
 
@@ -64,7 +80,7 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
           {cellularProducts.map((product, index) => (
             <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
               <CardHeader className="text-center pb-4">
@@ -99,67 +115,71 @@ const Products = () => {
 
         {/* Wellness Results Section */}
         <div className="bg-gradient-to-r from-accent/5 to-accent/10 rounded-3xl p-8 md:p-12 mt-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                Experience Renewed Vitality
-              </h3>
-              
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground text-center">
+              Experience Renewed Vitality
+            </h3>
+            
+            {/* Video and Image Side by Side */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
               {/* Video Section */}
-              <div className="mb-8">
-                <div className="max-w-3xl mx-auto">
-                  <div style={{padding:"177.78% 0 0 0", position:"relative"}}>
-                     <iframe 
-                       src="https://player.vimeo.com/video/1117754950?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&controls=1"
-                      frameBorder="0" 
-                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                      referrerPolicy="strict-origin-when-cross-origin" 
-                      style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}}
-                      title="Bio cell RX"
-                    />
-                  </div>
+              <div>
+                <div style={{padding:"56.25% 0 0 0", position:"relative"}}>
+                  <iframe 
+                    src="https://player.vimeo.com/video/1117754950?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&controls=1"
+                    frameBorder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}}
+                    title="Bio cell RX"
+                  />
                 </div>
               </div>
               
-              <p className="text-lg text-muted-foreground mb-8">
-                Our advanced regenerative therapies help patients regain mobility, reduce inflammation, 
-                and experience improved quality of life through the body's natural healing processes.
-              </p>
-              
-              <div className="mb-8">
-                <img 
-                  src={wellnessResults} 
-                  alt="Person demonstrating improved wellness and mobility from regenerative therapy"
-                  className="w-full aspect-video object-cover rounded-2xl shadow-lg"
-                />
-              </div>
-              
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
-                  <span className="text-foreground">Enhanced mobility and flexibility</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
-                  <span className="text-foreground">Reduced pain and inflammation</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
-                  <span className="text-foreground">Accelerated healing and recovery</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
-                  <span className="text-foreground">Improved overall wellness</span>
+              {/* Lady Image */}
+              <div>
+                <div style={{padding:"56.25% 0 0 0", position:"relative"}}>
+                  <img 
+                    src={wellnessResults} 
+                    alt="Person demonstrating improved wellness and mobility from regenerative therapy"
+                    style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}}
+                    className="object-cover rounded-2xl shadow-lg"
+                  />
                 </div>
               </div>
-              
+            </div>
+            
+            <p className="text-lg text-muted-foreground mb-8 text-center">
+              Our advanced regenerative therapies help patients regain mobility, reduce inflammation, 
+              and experience improved quality of life through the body's natural healing processes.
+            </p>
+            
+            <div className="space-y-4 mb-8">
+              <div className="flex items-center justify-center">
+                <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
+                <span className="text-foreground">Enhanced mobility and flexibility</span>
+              </div>
+              <div className="flex items-center justify-center">
+                <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
+                <span className="text-foreground">Reduced pain and inflammation</span>
+              </div>
+              <div className="flex items-center justify-center">
+                <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
+                <span className="text-foreground">Accelerated healing and recovery</span>
+              </div>
+              <div className="flex items-center justify-center">
+                <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
+                <span className="text-foreground">Improved overall wellness</span>
+              </div>
+            </div>
+            
+            <div className="text-center">
               <Link to="/contact">
                 <Button variant="medical" size="lg">
                   Learn More About Results
                 </Button>
               </Link>
             </div>
-            
           </div>
         </div>
       </div>
