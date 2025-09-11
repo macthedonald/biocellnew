@@ -32,6 +32,14 @@ const Products = () => {
       image: cbscCryo
     },
     {
+      icon: Zap,
+      title: "HUC-Fresh MSC",
+      description: "Human Umbilical Cord Mesenchymal Stem Cells providing superior therapeutic potential for regenerative medicine. Fresh, non-cryopreserved cells with high viability and potency for optimal healing outcomes.",
+      features: ["Fresh MSCs", "High viability", "Superior potency", "Non-cryopreserved"],
+      color: "from-purple-500 to-purple-600",
+      image: "/lovable-uploads/a5998c10-9c39-441b-a504-74ab1bce3890.png"
+    },
+    {
       icon: Leaf,
       title: "BioCBDrx 6000mg",
       description: "Certified• Tested• Highest potency available • Full spectrum• Organic• Vegan• nonGMO • MEDICAL grade Phytocannabinoids• Terpene for Pain • Flavonoids• MCT. Features therapeutic terpenes including Beta-Caryophyllene for anti-inflammatory and pain relief.",
@@ -56,7 +64,7 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
           {cellularProducts.map((product, index) => (
             <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
               <CardHeader className="text-center pb-4">
@@ -101,8 +109,8 @@ const Products = () => {
               <div className="mb-8">
                 <div className="max-w-3xl mx-auto">
                   <div style={{padding:"177.78% 0 0 0", position:"relative"}}>
-                    <iframe 
-                      src="https://player.vimeo.com/video/1117754950?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0"
+                     <iframe 
+                       src="https://player.vimeo.com/video/1117754950?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&controls=1"
                       frameBorder="0" 
                       allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
                       referrerPolicy="strict-origin-when-cross-origin" 
@@ -122,7 +130,7 @@ const Products = () => {
                 <img 
                   src={wellnessResults} 
                   alt="Person demonstrating improved wellness and mobility from regenerative therapy"
-                  className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg"
+                  className="w-full aspect-video object-cover rounded-2xl shadow-lg"
                 />
               </div>
               
@@ -152,13 +160,6 @@ const Products = () => {
               </Link>
             </div>
             
-            <div className="text-center">
-              <img 
-                src={wellnessResults} 
-                alt="Person demonstrating complete wellness transformation from regenerative therapy"
-                className="w-full max-w-3xl mx-auto rounded-2xl shadow-lg"
-              />
-            </div>
           </div>
         </div>
       </div>
