@@ -319,6 +319,19 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Stem Cell Therapy Image Section */}
+      <section className="py-16 bg-gradient-to-br from-accent/5 to-accent/10">
+        <div className="container mx-auto px-6">
+          <div className="text-center">
+            <img 
+              src="/lovable-uploads/856fa5be-f5b9-423f-895d-3ea7d0b9b3e7.png" 
+              alt="Advanced Stem Cell Therapy Treatment"
+              className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA Section */}
       <section className="py-20 bg-gradient-to-r from-accent/10 to-accent/5">
         <div className="container mx-auto px-6">
