@@ -20,7 +20,7 @@ import {
 import labHeroBg from "@/assets/lab-hero-bg.jpg";
 import mscExosomalLysate from "@/assets/msc-exosomal-lysate.png";
 import cbscCryo from "@/assets/cbsc-cryo.png";
-import hucFreshMsc from "@/assets/huc-fresh-msc.png";
+import hucFreshMsc from "/lovable-uploads/22ff32be-43e5-4063-ab26-3f4a1dbdc853.png";
 
 const Services = () => {
   const personalizedServices = [
