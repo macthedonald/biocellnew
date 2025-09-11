@@ -15,6 +15,9 @@ import {
 } from "lucide-react";
 import labHeroBg from "@/assets/lab-hero-bg.jpg";
 import eloisaPhoto from "@/assets/eloisa-photo.jpg";
+import missionImage from "@/assets/mission-image.jpg";
+import conditionsImage from "@/assets/conditions-treatment-image.jpg";
+import healingPotentialImage from "@/assets/healing-potential-image.jpg";
 
 const About = () => {
   const stats = [
@@ -116,7 +119,7 @@ const About = () => {
         <div className="container mx-auto px-6">
           <div className="mb-16">
             <img 
-              src="/lovable-uploads/a5998c10-9c39-441b-a504-74ab1bce3890.png" 
+              src={missionImage} 
               alt="Advanced regenerative medicine research and development"
               className="w-full max-w-5xl mx-auto rounded-2xl shadow-lg"
             />
@@ -225,7 +228,7 @@ const About = () => {
             
             <div className="mb-16">
               <img 
-                src="/lovable-uploads/abc8e5e6-fdc8-4aeb-83a6-f51637383091.png" 
+                src={conditionsImage} 
                 alt="Various medical conditions treatable with stem cell therapy"
                 className="w-full max-w-5xl mx-auto rounded-2xl shadow-lg"
               />
@@ -276,7 +279,7 @@ const About = () => {
             
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/ac57993d-bdef-4edf-a603-8a8c226e58a3.png" 
+                src={healingPotentialImage} 
                 alt="Natural healing potential and regenerative medicine breakthrough"
                 className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
               />

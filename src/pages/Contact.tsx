@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import labHeroBg from "@/assets/lab-hero-bg.jpg";
+import contactConsultationImage from "@/assets/contact-consultation-image.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -156,7 +157,7 @@ const Contact = () => {
             
             <div className="mb-12">
               <img 
-                src="/lovable-uploads/f51f3f85-b0dd-4995-85c2-5c41f0080e4e.png" 
+                src={contactConsultationImage} 
                 alt="Professional medical consultation and patient care"
                 className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
               />
@@ -315,19 +316,6 @@ const Contact = () => {
                 </Button>
               </form>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stem Cell Therapy Image Section */}
-      <section className="py-16 bg-gradient-to-br from-accent/5 to-accent/10">
-        <div className="container mx-auto px-6">
-          <div className="text-center">
-            <img 
-              src="/lovable-uploads/856fa5be-f5b9-423f-895d-3ea7d0b9b3e7.png" 
-              alt="Advanced Stem Cell Therapy Treatment"
-              className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
-            />
           </div>
         </div>
       </section>
