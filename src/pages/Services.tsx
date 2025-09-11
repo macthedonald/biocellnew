@@ -209,14 +209,16 @@ const Services = () => {
           
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-accent/20">
-              <iframe 
-                src="https://embed.screenapp.io/app/#/shared/638Hj_YzAT?embed=true" 
-                width="100%" 
-                height="500" 
-                frameBorder="0" 
-                allowFullScreen
-                className="rounded-xl"
-              />
+              <div style={{padding:"56.25% 0 0 0", position:"relative"}} className="rounded-xl overflow-hidden">
+                <iframe 
+                  src="https://player.vimeo.com/video/1117663041?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1" 
+                  frameBorder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}} 
+                  title="BIOCELLRX"
+                />
+              </div>
             </div>
           </div>
         </div>
