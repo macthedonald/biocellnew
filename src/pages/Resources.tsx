@@ -315,6 +315,75 @@ const Resources = () => {
               </div>
             </div>
           </div>
+
+          {/* BioCellRx Training Program */}
+          <div className="mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="lg:order-2">
+                <h3 className="text-3xl font-bold text-foreground mb-6">
+                  BioCellRx Training Program
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Comprehensive clinical training covering clinical research, therapeutic applications, and feedback guidance. Learn about clinical trials, current studies on regenerative medicine, and FDA guidelines for consent and risk assessment.
+                </p>
+              </div>
+              <div className="lg:order-1">
+                <Card className="border-0 shadow-medical overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/3d523b0e-7fad-427f-b3ae-89a86d15a74a.png" 
+                    alt="BioCellRx comprehensive training program covering clinical research and applications"
+                    className="w-full h-auto"
+                  />
+                </Card>
+              </div>
+            </div>
+          </div>
+
+          {/* Lymphatic System & Distribution */}
+          <div className="mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-3xl font-bold text-foreground mb-6">
+                  Oral Distribution of Anti-Inflammatory Exosome and Stem Cell Markers
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Understanding the lymphatic system and oral administration of anti-inflammatory exosomes and stem cell markers. Learn about cell viability, surface markers, and lymphatic system distribution for optimal therapeutic outcomes.
+                </p>
+              </div>
+              <div>
+                <Card className="border-0 shadow-medical overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/b5192621-b056-4706-9986-3ee13aecfbae.png" 
+                    alt="Lymphatic system distribution and oral anti-inflammatory exosome administration"
+                    className="w-full h-auto"
+                  />
+                </Card>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Knowledge Resource */}
+          <div className="mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="lg:order-2">
+                <h3 className="text-3xl font-bold text-foreground mb-6">
+                  Advanced Research Documentation
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Detailed research documentation and clinical studies supporting our regenerative medicine protocols. Comprehensive analysis of treatment methodologies and therapeutic outcomes for various medical conditions.
+                </p>
+              </div>
+              <div className="lg:order-1">
+                <Card className="border-0 shadow-medical overflow-hidden">
+                  <img 
+                    src="/src/assets/additional-knowledge-resource.jpg" 
+                    alt="Advanced regenerative medicine research documentation and clinical studies"
+                    className="w-full h-auto"
+                  />
+                </Card>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

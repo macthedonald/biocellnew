@@ -150,9 +150,17 @@ const Contact = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Get in Touch
             </h2>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-12">
               Contact us directly with any questions, comments, or scheduling inquiries. Our team is here to support your wellness journey.
             </p>
+            
+            <div className="mb-12">
+              <img 
+                src="/src/assets/contact-consultation-image.jpg" 
+                alt="Professional medical consultation and patient care"
+                className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
+              />
+            </div>
           </div>
 
           {/* Contact Form Layout */}

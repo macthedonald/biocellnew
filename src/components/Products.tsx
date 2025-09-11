@@ -118,6 +118,14 @@ const Products = () => {
                 and experience improved quality of life through the body's natural healing processes.
               </p>
               
+              <div className="mb-8">
+                <img 
+                  src={wellnessResults} 
+                  alt="Person demonstrating improved wellness and mobility from regenerative therapy"
+                  className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg"
+                />
+              </div>
+              
               <div className="space-y-4 mb-8">
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
@@ -147,8 +155,8 @@ const Products = () => {
             <div className="text-center">
               <img 
                 src={wellnessResults} 
-                alt="Person stretching demonstrating wellness results from regenerative therapy"
-                className="w-full max-w-lg mx-auto rounded-2xl shadow-lg"
+                alt="Person demonstrating complete wellness transformation from regenerative therapy"
+                className="w-full max-w-3xl mx-auto rounded-2xl shadow-lg"
               />
             </div>
           </div>

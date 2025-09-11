@@ -114,6 +114,14 @@ const About = () => {
       {/* Mission Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
+          <div className="mb-16">
+            <img 
+              src="/src/assets/mission-image.jpg" 
+              alt="Advanced regenerative medicine research and development"
+              className="w-full max-w-5xl mx-auto rounded-2xl shadow-lg"
+            />
+          </div>
+          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
@@ -211,9 +219,17 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Conditions We Transform
             </h2>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-12">
               Stem cell therapy represents a paradigm shift in modern medicine, offering powerful approaches to managing chronic conditions and promoting natural healing.
             </p>
+            
+            <div className="mb-16">
+              <img 
+                src="/src/assets/conditions-treatment-image.jpg" 
+                alt="Various medical conditions treatable with stem cell therapy"
+                className="w-full max-w-5xl mx-auto rounded-2xl shadow-lg"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -257,6 +273,14 @@ const About = () => {
               BioCellRx is committed to advancing health through innovative science and compassionate care. 
               Contact us to discover how stem cell therapy can transform your health journey.
             </p>
+            
+            <div className="mb-8">
+              <img 
+                src="/src/assets/healing-potential-image.jpg" 
+                alt="Natural healing potential and regenerative medicine breakthrough"
+                className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
+              />
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
                 <Button size="lg" variant="medical">
