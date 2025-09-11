@@ -88,6 +88,22 @@ const Products = () => {
           ))}
         </div>
 
+        {/* Video Section */}
+        <div className="my-20">
+          <div className="max-w-4xl mx-auto">
+            <div style={{padding:"177.78% 0 0 0", position:"relative"}}>
+              <iframe 
+                src="https://player.vimeo.com/video/1117754950?badge=0&autopause=0&player_id=0&app_id=58479" 
+                frameBorder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}}
+                title="Bio cell RX"
+              />
+            </div>
+          </div>
+        </div>
+
         {/* Wellness Results Section */}
         <div className="bg-gradient-to-r from-accent/5 to-accent/10 rounded-3xl p-8 md:p-12 mt-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
