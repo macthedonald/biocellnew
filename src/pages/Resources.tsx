@@ -23,7 +23,6 @@ import researchImage2 from "@/assets/research-image-2.png";
 import researchImage3 from "@/assets/research-image-3.png";
 import processGraph from "@/assets/process-graph.jpg";
 import researchImage5 from "@/assets/research-image-5.jpg";
-import additionalKnowledgeResource from "@/assets/additional-knowledge-resource.jpg";
 
 const Resources = () => {
   // Updated component with new image imports
@@ -377,7 +376,7 @@ const Resources = () => {
               <div className="lg:order-1">
                 <Card className="border-0 shadow-medical overflow-hidden">
                   <img 
-                    src={additionalKnowledgeResource} 
+                    src="/lovable-uploads/8362a3bb-d455-415a-a85d-5576bcf8a37d.png" 
                     alt="Advanced regenerative medicine research documentation and clinical studies"
                     className="w-full h-auto"
                   />
