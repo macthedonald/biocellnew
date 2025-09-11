@@ -112,7 +112,7 @@ const Contact = () => {
       <div className="min-h-screen">
       {/* Hero Section */}
       <section 
-        className="relative py-32 text-white overflow-hidden"
+        className="relative py-32 text-white overflow-hidden animate-fade-in"
         style={{
           backgroundImage: `url(${labHeroBg})`,
           backgroundSize: 'cover',
@@ -123,18 +123,18 @@ const Contact = () => {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">
               Ready to Transform
               <span className="block bg-gradient-to-r from-accent to-accent-foreground bg-clip-text text-transparent">
                 Your Health?
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in [animation-delay:0.2s]">
               Schedule your personalized consultation today and discover how our advanced regenerative therapies can help you achieve optimal wellness.
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center animate-fade-in [animation-delay:0.4s]">
               <a href="tel:+18585197305">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold hover-scale">
                   <Phone className="w-5 h-5 mr-2" />
                   Call (858) 519-7305
                 </Button>
@@ -169,7 +169,7 @@ const Contact = () => {
             {/* Left Side - Contact Information */}
             <div className="space-y-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-start space-x-4">
+                <div key={index} className="flex items-start space-x-4 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                   <div className="flex items-center justify-center w-12 h-12 bg-accent/10 rounded-lg flex-shrink-0">
                     <info.icon className="w-6 h-6 text-accent" />
                   </div>
@@ -200,7 +200,7 @@ const Contact = () => {
             </div>
 
             {/* Right Side - Contact Form */}
-            <div className="bg-white rounded-2xl p-8 border border-border shadow-lg">
+            <div className="bg-white rounded-2xl p-8 border border-border shadow-lg animate-fade-in [animation-delay:0.3s]">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">

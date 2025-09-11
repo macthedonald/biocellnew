@@ -82,7 +82,7 @@ const Products = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
           {cellularProducts.map((product, index) => (
-            <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+            <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white hover-scale animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
               <CardHeader className="text-center pb-4">
                 <div className="mb-4">
                   <img 
@@ -183,7 +183,7 @@ const Products = () => {
           <img 
             src="/lovable-uploads/327850c4-6315-43ab-8ecd-5fde55374629.png"
             alt="Stem cell therapy illustration showing regenerative medicine process"
-            className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
+            className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg animate-fade-in hover-scale"
           />
         </div>
       </div>

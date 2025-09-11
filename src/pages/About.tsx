@@ -75,7 +75,7 @@ const About = () => {
       <div className="min-h-screen">
       {/* Hero Section */}
       <section 
-        className="relative py-32 text-white overflow-hidden"
+        className="relative py-32 text-white overflow-hidden animate-fade-in"
         style={{
           backgroundImage: `url(${labHeroBg})`,
           backgroundSize: 'cover',
@@ -86,25 +86,25 @@ const About = () => {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">
               About
               <span className="block bg-gradient-to-r from-accent to-accent-foreground bg-clip-text text-transparent">
                 BioCellRx
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in [animation-delay:0.2s]">
               Standing at the intersection of medical science and technological advancement, 
               revolutionizing health and wellness for over <span className="text-accent font-semibold">two decades</span>
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in [animation-delay:0.4s]">
               <a href="tel:+18585197305">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold hover-scale">
                   <Phone className="w-5 h-5 mr-2" />
                   Call (858) 519-7305
                 </Button>
               </a>
               <Link to="/contact">
-                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black hover-scale">
                   Schedule Consultation
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
@@ -146,7 +146,7 @@ const About = () => {
             {/* Stats Grid */}
             <div className="grid grid-cols-2 gap-6">
               {stats.map((stat, index) => (
-                <Card key={index} className="text-center bg-gradient-to-br from-accent/5 to-accent/10 border-0">
+                <Card key={index} className="text-center bg-gradient-to-br from-accent/5 to-accent/10 border-0 hover-scale animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                   <CardContent className="p-6">
                     <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-accent to-accent-foreground rounded-full mb-4">
                       <stat.icon className="w-6 h-6 text-white" />
@@ -237,7 +237,7 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {conditions.map((condition, index) => (
-              <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white h-full">
+              <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white h-full hover-scale animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardHeader>
                   <CardTitle className="text-xl font-semibold text-foreground">
                     {condition.title}

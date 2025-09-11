@@ -109,7 +109,7 @@ const Services = () => {
       <div className="min-h-screen">
       {/* Hero Section */}
       <section 
-        className="relative py-32 text-white overflow-hidden"
+        className="relative py-32 text-white overflow-hidden animate-fade-in"
         style={{
           backgroundImage: `url(${labHeroBg})`,
           backgroundSize: 'cover',
@@ -120,17 +120,17 @@ const Services = () => {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">
               Products &
               <span className="block bg-gradient-to-r from-accent to-accent-foreground bg-clip-text text-transparent">
                 Services
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in [animation-delay:0.2s]">
               Comprehensive regenerative medicine services and cutting-edge products designed to support your body's natural healing processes
             </p>
-            <div className="flex justify-center">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold">
+            <div className="flex justify-center animate-fade-in [animation-delay:0.4s]">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold hover-scale">
                 <Phone className="w-5 h-5 mr-2" />
                 Call (858) 519-7305
               </Button>
@@ -152,7 +152,7 @@ const Services = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white hover-scale animate-fade-in [animation-delay:0.1s]">
               <CardContent className="p-6">
                 <CheckCircle className="w-8 h-8 text-accent mb-4" />
                 <p className="text-muted-foreground leading-relaxed">
@@ -160,7 +160,7 @@ const Services = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white hover-scale animate-fade-in [animation-delay:0.2s]">
               <CardContent className="p-6">
                 <CheckCircle className="w-8 h-8 text-accent mb-4" />
                 <p className="text-muted-foreground leading-relaxed">
@@ -168,7 +168,7 @@ const Services = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white hover-scale animate-fade-in [animation-delay:0.3s]">
               <CardContent className="p-6">
                 <CheckCircle className="w-8 h-8 text-accent mb-4" />
                 <p className="text-muted-foreground leading-relaxed">
@@ -176,7 +176,7 @@ const Services = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white hover-scale animate-fade-in [animation-delay:0.4s]">
               <CardContent className="p-6">
                 <CheckCircle className="w-8 h-8 text-accent mb-4" />
                 <p className="text-muted-foreground leading-relaxed">
@@ -184,7 +184,7 @@ const Services = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+            <Card className="group hover:shadow-medical transition-all duration-300 border-0 bg-white hover-scale animate-fade-in [animation-delay:0.5s]">
               <CardContent className="p-6">
                 <CheckCircle className="w-8 h-8 text-accent mb-4" />
                 <p className="text-muted-foreground leading-relaxed">
@@ -281,7 +281,7 @@ const Services = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {bioTherapies.map((therapy, index) => (
-              <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+              <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white hover-scale animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardHeader className="text-center">
                   <div className="mb-4">
                     <img 
@@ -339,7 +339,7 @@ const Services = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {specialists.map((specialist, index) => (
-              <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white text-center">
+              <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white text-center hover-scale animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardContent className="p-6">
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-accent to-accent-foreground rounded-full mb-4">
                     <specialist.icon className="w-8 h-8 text-white" />
@@ -361,14 +361,14 @@ const Services = () => {
             <img 
               src="/lovable-uploads/327850c4-6315-43ab-8ecd-5fde55374629.png"
               alt="Stem cell therapy illustration showing regenerative medicine process"
-              className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
+              className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg animate-fade-in hover-scale"
             />
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-accent/10 to-accent/5">
+      <section className="py-20 bg-gradient-to-r from-accent/10 to-accent/5 animate-fade-in">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
