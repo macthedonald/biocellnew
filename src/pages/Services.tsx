@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import VideoPlayer from "@/components/VideoPlayer";
 import { Link } from "react-router-dom";
 import { 
   CheckCircle, 
@@ -191,6 +192,30 @@ const Services = () => {
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+              See Our Process in Action
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+              Watch how our innovative treatments and therapies work to support your health journey
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <VideoPlayer
+              thumbnail="/lovable-uploads/e7d67ffc-9092-4b3a-86f6-a70e84254cd3.png"
+              title="BioCellRx Treatment Process"
+              description="Discover how our advanced bio-therapies and regenerative medicine treatments can transform your health and wellness."
+              videoUrl="https://www.instagram.com/reel/C6hCKQtJrzd/?igsh=YzAyMDM1MGJkZA=="
+              duration="2:30"
+              views="1.2K"
+            />
           </div>
         </div>
       </section>
