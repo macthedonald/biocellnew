@@ -82,7 +82,7 @@ const Products = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
           {cellularProducts.map((product, index) => (
-            <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white card-golden-hover animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white product-golden-hover animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
               <CardHeader className="text-center pb-4">
                 <div className="mb-4">
                   <img 

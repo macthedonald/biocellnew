@@ -143,6 +143,11 @@ All colors MUST be HSL.
     @apply transition-all duration-300 hover:shadow-[0_0_30px_rgba(128,85,0,1),0_0_60px_rgba(153,102,0,1),0_0_90px_rgba(179,119,0,0.8),0_0_120px_rgba(230,153,0,0.6)] hover:scale-[1.12] hover:brightness-125;
   }
   
+  /* Home Page Products Enhanced Golden Hover */
+  .product-golden-hover {
+    @apply transition-all duration-300 hover:shadow-[0_20px_60px_rgba(102,68,0,1),0_0_80px_rgba(128,85,0,1),0_0_120px_rgba(153,102,0,0.9),0_0_160px_rgba(204,136,0,0.7)] hover:scale-[1.12] hover:bg-gradient-to-br hover:from-white hover:to-yellow-900/25 hover:border-yellow-800/50 hover:brightness-125;
+  }
+  
   /* Story Link Animation */
   .story-link {
     @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
