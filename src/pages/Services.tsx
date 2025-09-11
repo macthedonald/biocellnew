@@ -353,7 +353,11 @@ const Services = () => {
           </div>
         </div>
       </section>
-
+<img 
+                src={healingPotentialImage} 
+                alt="Natural healing potential and regenerative medicine breakthrough"
+                className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
+              />
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-accent/10 to-accent/5">
         <div className="container mx-auto px-6">
