@@ -113,6 +113,15 @@ const Products = () => {
         </div>
 
 
+        {/* Stem Cell Therapy Image */}
+        <div className="text-center mb-20">
+          <img 
+            src="/lovable-uploads/1c059493-9c3a-4141-9ad0-efa0f6fa2edc.png"
+            alt="Stem Cell Therapy - Advanced regenerative medicine illustration"
+            className="w-full max-w-4xl mx-auto rounded-2xl shadow-xl"
+          />
+        </div>
+
         {/* Wellness Results Section */}
         <div className="bg-gradient-to-r from-accent/5 to-accent/10 rounded-3xl p-8 md:p-12 mt-20">
           <div>
