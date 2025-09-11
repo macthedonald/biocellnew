@@ -215,6 +215,7 @@ const Services = () => {
               videoUrl="https://www.instagram.com/reel/C6hCKQtJrzd/?igsh=YzAyMDM1MGJkZA=="
               duration="2:30"
               views="1.2K"
+              autoplay={true}
             />
           </div>
         </div>

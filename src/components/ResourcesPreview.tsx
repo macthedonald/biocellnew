@@ -102,8 +102,8 @@ const ResourcesPreview = () => {
             margin: '0 calc(-50vw + 50%)'
           }}>
             <iframe
-              src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=1&title=0&portrait=0&byline=0&badge=0&loop=0&muted=0&controls=1"
-              style={{ 
+              src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=0&title=0&portrait=0&byline=0&badge=0&loop=0&muted=0&controls=1"
+              style={{
                 width: '100vw', 
                 height: '100%', 
                 border: 'none',

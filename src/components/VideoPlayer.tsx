@@ -4,23 +4,30 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Volume2, VolumeX, X } from "lucide-react";
 
+// Helper function to get embed URLs
+const getEmbedUrl = (url: string) => {
+  if (url.includes('youtube.com') || url.includes('youtu.be')) {
+    const videoId = url.includes('youtu.be') 
+      ? url.split('/').pop()?.split('?')[0]
+      : url.split('v=')[1]?.split('&')[0];
+    return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+  }
+  if (url.includes('vimeo.com')) {
+    const videoId = url.split('/').pop();
+    return `https://player.vimeo.com/video/${videoId}?autoplay=1`;
+  }
+  if (url.includes('instagram.com')) {
+    // For Instagram, we'll use the direct embed URL
+    const postId = url.match(/\/reel\/([^/\?]+)/)?.[1] || url.match(/\/p\/([^/\?]+)/)?.[1];
+    if (postId) {
+      return `https://www.instagram.com/p/${postId}/embed`;
+    }
+  }
+  return url;
+};
+
 // Video embed component for different platforms
 const VideoEmbed = ({ url, title }: { url: string; title: string }) => {
-  // Extract video ID for different platforms
-  const getEmbedUrl = (url: string) => {
-    if (url.includes('youtube.com') || url.includes('youtu.be')) {
-      const videoId = url.includes('youtu.be') 
-        ? url.split('/').pop()?.split('?')[0]
-        : url.split('v=')[1]?.split('&')[0];
-      return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-    }
-    if (url.includes('vimeo.com')) {
-      const videoId = url.split('/').pop();
-      return `https://player.vimeo.com/video/${videoId}?autoplay=1`;
-    }
-    return url;
-  };
-
   return (
     <iframe
       src={getEmbedUrl(url)}
@@ -42,6 +49,7 @@ interface VideoPlayerProps {
   videoUrl?: string;
   duration?: string;
   views?: string;
+  autoplay?: boolean;
 }
 
 const VideoPlayer = ({ 
@@ -50,7 +58,8 @@ const VideoPlayer = ({
   description, 
   videoUrl = "https://vimeo.com/76979871", // Default demo video
   duration = "4:32",
-  views = "3.2M views"
+  views = "3.2M views",
+  autoplay = false
 }: VideoPlayerProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
@@ -68,16 +77,27 @@ const VideoPlayer = ({
         onClick={() => setIsOpen(true)}
       >
         {/* Live Video Background */}
-        <div className="absolute inset-0">
-          <iframe
-            src={`${videoUrl}&muted=${isMuted ? 1 : 0}`}
-            width="100%"
-            height="100%"
-            frameBorder="0"
-            allow="autoplay; fullscreen"
+        {autoplay && (
+          <div className="absolute inset-0">
+            <iframe
+              src={`${getEmbedUrl(videoUrl)}&muted=${isMuted ? 1 : 0}`}
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              allow="autoplay; fullscreen"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+        )}
+        
+        {/* Static thumbnail when not autoplaying */}
+        {!autoplay && (
+          <img 
+            src={thumbnail} 
+            alt={title}
             className="absolute inset-0 w-full h-full object-cover"
           />
-        </div>
+        )}
         
         {/* Subtle Hover Overlay */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 pointer-events-none"></div>

@@ -86,6 +86,7 @@ const Features = () => {
               videoUrl="https://player.vimeo.com/video/671229814?h=0fd935f76c&autoplay=1&loop=1"
               duration="4:32"
               views="3.2M views"
+              autoplay={true}
             />
           </div>
         </div>
