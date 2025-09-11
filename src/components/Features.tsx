@@ -47,7 +47,17 @@ const Features = () => {
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white">
+            <Card 
+              key={index} 
+              className={`group hover:shadow-medical transition-all duration-300 border-0 bg-white animate-fade-in hover-scale ${
+                index === 0 ? 'animation-delay-100' : 
+                index === 1 ? 'animation-delay-200' : 
+                'animation-delay-300'
+              }`}
+              style={{
+                animationDelay: `${index * 0.2}s`
+              }}
+            >
               <CardContent className="p-8 text-center">
                 <Badge variant="outline" className="mb-4 border-accent/20 text-accent">
                   {feature.badge}
