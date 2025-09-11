@@ -18,7 +18,6 @@ import {
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import labHeroBg from "@/assets/lab-hero-bg.jpg";
-import contactConsultationImage from "@/assets/contact-consultation-image.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -157,7 +156,7 @@ const Contact = () => {
             
             <div className="mb-12">
               <img 
-                src={contactConsultationImage} 
+                src="/src/assets/contact-consultation-image.jpg" 
                 alt="Professional medical consultation and patient care"
                 className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
               />

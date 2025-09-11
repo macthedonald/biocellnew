@@ -121,8 +121,8 @@ const Products = () => {
             </h3>
             
             {/* Video Section */}
-            <div className="mb-10 -mx-6 md:-mx-12">
-              <div style={{padding:"56.25% 0 0 0", position:"relative"}}>
+            <div className="mb-10">
+              <div className="max-w-5xl mx-auto" style={{padding:"56.25% 0 0 0", position:"relative"}}>
                 <iframe 
                   src="https://player.vimeo.com/video/1117754950?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&controls=1"
                   frameBorder="0" 
