@@ -182,7 +182,7 @@ const Products = () => {
         <div className="text-center mt-20">
           <img 
             src="/lovable-uploads/327850c4-6315-43ab-8ecd-5fde55374629.png"
-            alt="Stem cell therapy illustration showing regenerative medicine process"
+            alt=""
             className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg animate-fade-in hover-scale"
           />
         </div>
