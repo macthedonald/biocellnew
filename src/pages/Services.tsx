@@ -359,7 +359,7 @@ const Services = () => {
         <div className="container mx-auto px-6">
           <div className="text-center">
             <img 
-              src="/lovable-uploads/327850c4-6315-43ab-8ecd-5fde55374629.png"
+              src="/lovable-uploads/17664a49-da49-4d0a-a65c-d8598aea9785.png"
               alt="Stem cell therapy illustration showing regenerative medicine process"
               className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg animate-fade-in hover-scale"
             />
