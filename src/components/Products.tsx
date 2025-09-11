@@ -121,8 +121,8 @@ const Products = () => {
             </h3>
             
             {/* Video Section */}
-            <div className="mb-8">
-              <div style={{padding:"56.25% 0 0 0", position:"relative"}}>
+            <div className="mb-10">
+              <div className="max-w-5xl mx-auto" style={{padding:"56.25% 0 0 0", position:"relative"}}>
                 <iframe 
                   src="https://player.vimeo.com/video/1117754950?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&controls=1"
                   frameBorder="0" 
@@ -130,11 +130,12 @@ const Products = () => {
                   referrerPolicy="strict-origin-when-cross-origin" 
                   style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}}
                   title="Bio cell RX"
+                  className="rounded-2xl shadow-xl"
                 />
               </div>
             </div>
             
-            <p className="text-lg text-muted-foreground mb-8 text-center">
+            <p className="text-xl text-muted-foreground mb-10 text-center font-medium max-w-4xl mx-auto leading-relaxed">
               Our advanced regenerative therapies help patients regain mobility, reduce inflammation, 
               and experience improved quality of life through the body's natural healing processes.
             </p>
@@ -148,22 +149,22 @@ const Products = () => {
               />
             </div>
             
-            <div className="space-y-4 mb-8">
+            <div className="space-y-5 mb-10">
               <div className="flex items-center justify-center">
-                <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
-                <span className="text-foreground">Enhanced mobility and flexibility</span>
+                <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
+                <span className="text-foreground text-lg font-medium">Enhanced mobility and flexibility</span>
               </div>
               <div className="flex items-center justify-center">
-                <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
-                <span className="text-foreground">Reduced pain and inflammation</span>
+                <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
+                <span className="text-foreground text-lg font-medium">Reduced pain and inflammation</span>
               </div>
               <div className="flex items-center justify-center">
-                <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
-                <span className="text-foreground">Accelerated healing and recovery</span>
+                <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
+                <span className="text-foreground text-lg font-medium">Accelerated healing and recovery</span>
               </div>
               <div className="flex items-center justify-center">
-                <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
-                <span className="text-foreground">Improved overall wellness</span>
+                <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
+                <span className="text-foreground text-lg font-medium">Improved overall wellness</span>
               </div>
             </div>
             
