@@ -207,16 +207,26 @@ const Services = () => {
               Watch how our innovative treatments and therapies work to support your health journey
             </p>
           </div>
-          <div className="max-w-4xl mx-auto">
-            <VideoPlayer
-              thumbnail="/lovable-uploads/e7d67ffc-9092-4b3a-86f6-a70e84254cd3.png"
-              title="BioCellRx Treatment Process"
-              description="Discover how our advanced bio-therapies and regenerative medicine treatments can transform your health and wellness."
-              videoUrl="https://www.instagram.com/reel/C6hCKQtJrzd/?igsh=YzAyMDM1MGJkZA=="
-              duration="2:30"
-              views="1.2K"
-              autoplay={true}
-            />
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-accent/20">
+              <img 
+                src="/lovable-uploads/e7d67ffc-9092-4b3a-86f6-a70e84254cd3.png" 
+                alt="BioCellRx Treatment Process"
+                className="w-full rounded-xl mb-6"
+              />
+              <h3 className="text-2xl font-bold text-foreground mb-4">Patient Success Story</h3>
+              <p className="text-muted-foreground mb-6">
+                Watch real patient testimonials and success stories from our regenerative medicine treatments.
+              </p>
+              <a 
+                href="https://www.instagram.com/reel/C6hCKQtJrzd/?igsh=YzAyMDM1MGJkZA=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+              >
+                Watch on Instagram →
+              </a>
+            </div>
           </div>
         </div>
       </section>
