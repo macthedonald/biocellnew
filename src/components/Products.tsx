@@ -45,7 +45,7 @@ const Products = () => {
       description: "Advanced GLP-1 receptor agonist for metabolic health and weight management. Clinically proven to support healthy blood sugar levels and promote sustainable weight loss through appetite regulation.",
       features: ["10mg dosage", "GLP-1 receptor agonist", "Metabolic support", "Weight management"],
       color: "from-purple-500 to-purple-600",
-      image: "/lovable-uploads/22ff32be-43e5-4063-ab26-3f4a1dbdc853.png"
+      image: "/lovable-uploads/4b4a2781-d57e-45fc-aca9-7b3808f1ff22.png"
     },
     {
       icon: Dna,
@@ -61,7 +61,7 @@ const Products = () => {
       description: "Human Umbilical Cord Fresh Mesenchymal Stem Cells offering superior viability and therapeutic efficacy. Non-cryopreserved for maximum cellular integrity and regenerative potential.",
       features: ["Fresh MSCs", "Superior viability", "Non-cryopreserved", "Maximum potency"],
       color: "from-teal-500 to-teal-600",
-      image: "/lovable-uploads/a5998c10-9c39-441b-a504-74ab1bce3890.png"
+      image: "/lovable-uploads/22ff32be-43e5-4063-ab26-3f4a1dbdc853.png"
     }
   ];
 
@@ -120,32 +120,17 @@ const Products = () => {
               Experience Renewed Vitality
             </h3>
             
-            {/* Video and Image Side by Side */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-              {/* Video Section */}
-              <div>
-                <div style={{padding:"56.25% 0 0 0", position:"relative"}}>
-                  <iframe 
-                    src="https://player.vimeo.com/video/1117754950?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&controls=1"
-                    frameBorder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                    referrerPolicy="strict-origin-when-cross-origin" 
-                    style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}}
-                    title="Bio cell RX"
-                  />
-                </div>
-              </div>
-              
-              {/* Lady Image */}
-              <div>
-                <div style={{padding:"56.25% 0 0 0", position:"relative"}}>
-                  <img 
-                    src={wellnessResults} 
-                    alt="Person demonstrating improved wellness and mobility from regenerative therapy"
-                    style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}}
-                    className="object-cover rounded-2xl shadow-lg"
-                  />
-                </div>
+            {/* Video Section */}
+            <div className="mb-8">
+              <div style={{padding:"56.25% 0 0 0", position:"relative"}}>
+                <iframe 
+                  src="https://player.vimeo.com/video/1117754950?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&controls=1"
+                  frameBorder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}}
+                  title="Bio cell RX"
+                />
               </div>
             </div>
             
@@ -153,6 +138,15 @@ const Products = () => {
               Our advanced regenerative therapies help patients regain mobility, reduce inflammation, 
               and experience improved quality of life through the body's natural healing processes.
             </p>
+            
+            {/* Lady Image */}
+            <div className="mb-8">
+              <img 
+                src={wellnessResults} 
+                alt="Person demonstrating improved wellness and mobility from regenerative therapy"
+                className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg"
+              />
+            </div>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-center justify-center">
