@@ -353,11 +353,20 @@ const Services = () => {
           </div>
         </div>
       </section>
-<img 
-                src={healingPotentialImage} 
-                alt="Natural healing potential and regenerative medicine breakthrough"
-                className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
-              />
+
+      {/* Stem Cell Therapy Image Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="text-center">
+            <img 
+              src="/lovable-uploads/327850c4-6315-43ab-8ecd-5fde55374629.png"
+              alt="Stem cell therapy illustration showing regenerative medicine process"
+              className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-accent/10 to-accent/5">
         <div className="container mx-auto px-6">
