@@ -9,8 +9,12 @@ import {
   Leaf,
   CheckCircle
 } from "lucide-react";
-import mscExosomalLysate from "/lovable-uploads/f51f3f85-b0dd-4995-85c2-5c41f0080e4e.png";
-import cbscCryo from "/lovable-uploads/ac57993d-bdef-4edf-a603-8a8c226e58a3.png";
+import mscExosomalLysate from "/public/lovable-uploads/f51f3f85-b0dd-4995-85c2-5c41f0080e4e.png";
+import cbscCryo from "/public/lovable-uploads/ac57993d-bdef-4edf-a603-8a8c226e58a3.png";
+import hucFreshMsc from "/public/lovable-uploads/22ff32be-43e5-4063-ab26-3f4a1dbdc853.png";
+import ucMsc30Million from "/public/lovable-uploads/8362a3bb-d455-415a-a85d-5576bcf8a37d.png";
+import semaglutide from "/public/lovable-uploads/4b4a2781-d57e-45fc-aca9-7b3808f1ff22.png";
+import bioCbdrx from "/public/lovable-uploads/eaca80fb-dc37-43e5-b4cf-18bd12a0b5ea.png";
 import wellnessResults from "@/assets/wellness-results-fullbody.jpg";
 
 const Products = () => {
@@ -37,7 +41,7 @@ const Products = () => {
       description: "Human Umbilical Cord Fresh Mesenchymal Stem Cells offering superior viability and therapeutic efficacy. Non-cryopreserved for maximum cellular integrity and regenerative potential.",
       features: ["Fresh MSCs", "Superior viability", "Non-cryopreserved", "Maximum potency"],
       color: "from-teal-500 to-teal-600",
-      image: "/lovable-uploads/22ff32be-43e5-4063-ab26-3f4a1dbdc853.png"
+      image: hucFreshMsc
     },
     {
       icon: Dna,
@@ -45,7 +49,7 @@ const Products = () => {
       description: "Umbilical Cord Mesenchymal Stem Cells with 30 million cells per vial. Provides potent regenerative potential for tissue repair and anti-inflammatory therapeutic applications.",
       features: ["30 million cells", "Umbilical cord derived", "High potency", "Regenerative therapy"],
       color: "from-orange-500 to-orange-600",
-      image: "/lovable-uploads/8362a3bb-d455-415a-a85d-5576bcf8a37d.png"
+      image: ucMsc30Million
     },
     {
       icon: Zap,
@@ -53,7 +57,7 @@ const Products = () => {
       description: "Advanced GLP-1 receptor agonist for metabolic health and weight management. Clinically proven to support healthy blood sugar levels and promote sustainable weight loss through appetite regulation.",
       features: ["10mg dosage", "GLP-1 receptor agonist", "Metabolic support", "Weight management"],
       color: "from-purple-500 to-purple-600",
-      image: "/lovable-uploads/4b4a2781-d57e-45fc-aca9-7b3808f1ff22.png"
+      image: semaglutide
     },
     {
       icon: Leaf,
@@ -61,7 +65,7 @@ const Products = () => {
       description: "Certified• Tested• Highest potency available • Full spectrum• Organic• Vegan• nonGMO • MEDICAL grade Phytocannabinoids• Terpene for Pain • Flavonoids• MCT. Features therapeutic terpenes including Beta-Caryophyllene for anti-inflammatory and pain relief.",
       features: ["6000mg total CBD", "Full spectrum", "Medical grade", "Organic & Vegan"],
       color: "from-green-500 to-green-600",
-      image: "/lovable-uploads/eaca80fb-dc37-43e5-b4cf-18bd12a0b5ea.png"
+      image: bioCbdrx
     }
   ];
 
