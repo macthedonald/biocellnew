@@ -13,7 +13,6 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => {
-  console.log("App component initializing...");
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
