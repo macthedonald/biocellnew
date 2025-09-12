@@ -17,6 +17,7 @@ import {
   Facebook
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 import labHeroBg from "@/assets/lab-hero-bg.jpg";
 import contactConsultationImage from "@/assets/contact-consultation-image.jpg";
 
@@ -47,8 +48,19 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Basic validation
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone) {
+      toast({
+        title: "Error",
+        description: "Please fill in all required fields.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     if (!formData.agreeToComms) {
       toast({
         title: "Agreement Required",
@@ -57,22 +69,67 @@ const Contact = () => {
       });
       return;
     }
-    
-    toast({
-      title: "Form Submitted Successfully!",
-      description: "We'll contact you soon to schedule your consultation.",
-    });
-    
-    // Reset form
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      primaryHealthConcern: "",
-      additionalInfo: "",
-      agreeToComms: false
-    });
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Error",
+        description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    try {
+      // Submit form data to edge function
+      const { data, error } = await supabase.functions.invoke('send-contact-notification', {
+        body: {
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          primaryHealthConcern: formData.primaryHealthConcern,
+          additionalInfo: formData.additionalInfo,
+          agreeToComms: formData.agreeToComms,
+        }
+      });
+
+      if (error) {
+        console.error('Error submitting form:', error);
+        toast({
+          title: "Error",
+          description: "There was a problem submitting your form. Please try again.",
+          variant: "destructive",
+        });
+        return;
+      }
+
+      console.log('Form submitted successfully:', data);
+      
+      toast({
+        title: "Form Submitted Successfully!",
+        description: "We'll contact you soon to schedule your consultation.",
+      });
+      
+      // Reset form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        primaryHealthConcern: "",
+        additionalInfo: "",
+        agreeToComms: false
+      });
+    } catch (error) {
+      console.error('Unexpected error:', error);
+      toast({
+        title: "Error",
+        description: "There was a problem submitting your form. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   const contactInfo = [
