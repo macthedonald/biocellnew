@@ -113,29 +113,29 @@ const Products = () => {
         </div>
 
 
-        {/* Wellness Results Section with Background Video */}
-        <div className="relative rounded-3xl overflow-hidden mt-20 min-h-[80vh]">
-          {/* Background Video */}
-          <div className="absolute inset-0">
-            <iframe 
-              src="https://player.vimeo.com/video/1117754950?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&controls=0&autoplay=1&muted=0&loop=1&background=1"
-              frameBorder="0" 
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-              referrerPolicy="strict-origin-when-cross-origin" 
-              style={{position:"absolute", top:0, left:0, width:"100%", height:"100%", pointerEvents: "none"}}
-              title="Bio cell RX"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/50"></div>
-          </div>
-          
-          {/* Content Overlay */}
-          <div className="relative z-10 p-8 md:p-12 flex flex-col justify-center min-h-[80vh]">
-            <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white text-center">
+        {/* Wellness Results Section */}
+        <div className="bg-gradient-to-r from-accent/5 to-accent/10 rounded-3xl p-8 md:p-12 mt-20">
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground text-center">
               Experience Renewed Vitality
             </h3>
             
-            <p className="text-xl text-white/90 mb-10 text-center font-medium max-w-4xl mx-auto leading-relaxed">
+            {/* Video Section */}
+            <div className="mb-10 -mx-6 md:-mx-12">
+              <div style={{padding:"56.25% 0 0 0", position:"relative"}}>
+                <iframe 
+                  src="https://player.vimeo.com/video/1117754950?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&controls=1&autoplay=1&muted=0"
+                  frameBorder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}}
+                  title="Bio cell RX"
+                  className="rounded-2xl shadow-xl"
+                />
+              </div>
+            </div>
+            
+            <p className="text-xl text-muted-foreground mb-10 text-center font-medium max-w-4xl mx-auto leading-relaxed">
               Our advanced regenerative therapies help patients regain mobility, reduce inflammation, 
               and experience improved quality of life through the body's natural healing processes.
             </p>
@@ -145,63 +145,35 @@ const Products = () => {
               <img 
                 src={wellnessResults} 
                 alt="Person demonstrating improved wellness and mobility from regenerative therapy"
-                className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg border-4 border-white/20"
+                className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg"
               />
             </div>
             
             <div className="space-y-5 mb-10">
               <div className="flex items-center justify-center">
                 <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
-                <span className="text-white text-lg font-medium">Enhanced mobility and flexibility</span>
+                <span className="text-foreground text-lg font-medium">Enhanced mobility and flexibility</span>
               </div>
               <div className="flex items-center justify-center">
                 <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
-                <span className="text-white text-lg font-medium">Reduced pain and inflammation</span>
+                <span className="text-foreground text-lg font-medium">Reduced pain and inflammation</span>
               </div>
               <div className="flex items-center justify-center">
                 <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
-                <span className="text-white text-lg font-medium">Accelerated healing and recovery</span>
+                <span className="text-foreground text-lg font-medium">Accelerated healing and recovery</span>
               </div>
               <div className="flex items-center justify-center">
                 <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
-                <span className="text-white text-lg font-medium">Improved overall wellness</span>
+                <span className="text-foreground text-lg font-medium">Improved overall wellness</span>
               </div>
             </div>
             
             <div className="text-center">
               <Link to="/contact">
-                <Button variant="medical" size="lg" className="bg-white text-medical-dark hover:bg-white/90">
+                <Button variant="medical" size="lg">
                   Learn More About Results
                 </Button>
               </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Floating Product Logos */}
-        <div className="relative py-16 overflow-hidden">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative w-80 h-80">
-              {cellularProducts.map((product, index) => (
-                <div
-                  key={index}
-                  className="absolute w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center animate-spin"
-                  style={{
-                    top: '50%',
-                    left: '50%',
-                    transform: `rotate(${index * (360 / cellularProducts.length)}deg) translate(120px) rotate(-${index * (360 / cellularProducts.length)}deg)`,
-                    transformOrigin: '0 0',
-                    animationDuration: '20s',
-                    animationDelay: `${index * 0.5}s`
-                  }}
-                >
-                  <img 
-                    src={product.image} 
-                    alt={product.title}
-                    className="w-12 h-12 object-contain rounded-lg"
-                  />
-                </div>
-              ))}
             </div>
           </div>
         </div>
