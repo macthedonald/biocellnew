@@ -80,24 +80,26 @@ const Features = () => {
         <div className="mt-20">
           <div className="text-center mb-12">
             <h3 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-              See the Science Behind the Breakthrough
+              See Our Process in Action
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Go inside our state-of-the-art laboratory and witness the precision 
-              technology that's transforming lives
+              Watch how our innovative treatments and therapies work to support your health journey
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <VideoPlayer
-              thumbnail={videoThumbnail}
-              title="BioCellRx Explainer Video"
-              description="See our breakthrough technology"
-              videoUrl="https://player.vimeo.com/video/671229814?h=0fd935f76c&autoplay=1&loop=1"
-              duration="4:32"
-              views="3.2M views"
-              autoplay={true}
-            />
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-accent/20">
+              <div style={{padding:"56.25% 0 0 0", position:"relative"}} className="rounded-xl overflow-hidden">
+                <iframe 
+                  src="https://player.vimeo.com/video/1117663041?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1" 
+                  frameBorder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}} 
+                  title="BIOCELLRX"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
