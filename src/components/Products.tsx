@@ -178,14 +178,6 @@ const Products = () => {
           </div>
         </div>
 
-        {/* Stem Cell Therapy Image Section */}
-        <div className="text-center mt-20">
-          <img 
-            src="/lovable-uploads/327850c4-6315-43ab-8ecd-5fde55374629.png"
-            alt=""
-            className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg animate-fade-in hover-scale"
-          />
-        </div>
       </div>
     </section>
   );
