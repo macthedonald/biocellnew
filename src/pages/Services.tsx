@@ -122,9 +122,9 @@ const Services = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">
-              Products &
+              Wellness &
               <span className="block bg-gradient-to-r from-accent to-accent-foreground bg-clip-text text-transparent">
-                Services
+                Biologics
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in [animation-delay:0.2s]">

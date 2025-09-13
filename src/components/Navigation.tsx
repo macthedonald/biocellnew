@@ -6,7 +6,7 @@ const Navigation = () => {
   
   const navItems = [
     { name: "Home", href: "/", isRoute: true },
-    { name: "Products & Services", href: "/services", isRoute: true },
+    { name: "Wellness and Biologics", href: "/services", isRoute: true },
     { name: "About", href: "/about", isRoute: true },
     { name: "Contact", href: "/contact", isRoute: true },
     { name: "Knowledge Center", href: "/resources", isRoute: true },
