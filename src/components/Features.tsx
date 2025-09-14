@@ -7,8 +7,30 @@ import {
 } from "lucide-react";
 import VideoPlayer from "@/components/VideoPlayer";
 import videoThumbnail from "@/assets/video-thumbnail.jpg";
+import { useEffect, useRef, useState } from "react";
 
 const Features = () => {
+  const videoRef = useRef<HTMLDivElement>(null);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const [isVideoVisible, setIsVideoVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isVideoVisible) {
+          setIsVideoVisible(true);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [isVideoVisible]);
+
   const features = [
     {
       icon: Users,
@@ -87,17 +109,29 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto" ref={videoRef}>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-accent/20">
               <div style={{padding:"56.25% 0 0 0", position:"relative"}} className="rounded-xl overflow-hidden">
-                <iframe 
-                  src="https://player.vimeo.com/video/1117663041?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&muted=0&controls=1" 
-                  frameBorder="0" 
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                  referrerPolicy="strict-origin-when-cross-origin" 
-                  style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}} 
-                  title="BIOCELLRX"
-                />
+                {isVideoVisible ? (
+                  <iframe 
+                    ref={iframeRef}
+                    src="https://player.vimeo.com/video/1117663041?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&muted=0&controls=1" 
+                    frameBorder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}} 
+                    title="BIOCELLRX"
+                  />
+                ) : (
+                  <div 
+                    className="absolute inset-0 bg-gray-100 flex items-center justify-center"
+                    style={{backgroundImage: `url(${videoThumbnail})`, backgroundSize: 'cover', backgroundPosition: 'center'}}
+                  >
+                    <div className="w-16 h-16 bg-white/80 rounded-full flex items-center justify-center">
+                      <div className="w-0 h-0 border-l-[12px] border-l-black border-y-[8px] border-y-transparent ml-1"></div>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
