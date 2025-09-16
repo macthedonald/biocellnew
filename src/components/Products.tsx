@@ -7,14 +7,16 @@ import {
   Snowflake,
   Zap,
   Leaf,
-  CheckCircle
+  CheckCircle,
+  ArrowRight
 } from "lucide-react";
-import mscExosomalLysate from "/public/lovable-uploads/f51f3f85-b0dd-4995-85c2-5c41f0080e4e.png";
-import cbscCryo from "/public/lovable-uploads/ac57993d-bdef-4edf-a603-8a8c226e58a3.png";
-import hucFreshMsc from "/public/lovable-uploads/22ff32be-43e5-4063-ab26-3f4a1dbdc853.png";
-import ucMsc30Million from "/public/lovable-uploads/8362a3bb-d455-415a-a85d-5576bcf8a37d.png";
-import semaglutide from "/public/lovable-uploads/4b4a2781-d57e-45fc-aca9-7b3808f1ff22.png";
-import bioCbdrx from "/public/lovable-uploads/eaca80fb-dc37-43e5-b4cf-18bd12a0b5ea.png";
+import VitalityVideo from "@/components/VitalityVideo";
+import mscExosomalLysate from "/uploads/f51f3f85-b0dd-4995-85c2-5c41f0080e4e.png";
+import cbscCryo from "/uploads/ac57993d-bdef-4edf-a603-8a8c226e58a3.png";
+import hucFreshMsc from "/uploads/22ff32be-43e5-4063-ab26-3f4a1dbdc853.png";
+import ucMsc30Million from "/uploads/8362a3bb-d455-415a-a85d-5576bcf8a37d.png";
+import semaglutide from "/uploads/4b4a2781-d57e-45fc-aca9-7b3808f1ff22.png";
+import bioCbdrx from "/uploads/eaca80fb-dc37-43e5-b4cf-18bd12a0b5ea.png";
 import wellnessResults from "@/assets/wellness-results-fullbody.jpg";
 
 const Products = () => {
@@ -120,65 +122,88 @@ const Products = () => {
         {/* Wellness Results Section */}
         <div className="bg-gradient-to-r from-accent/5 to-accent/10 rounded-3xl p-8 md:p-12 mt-20">
           <div>
-            <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground text-center">
-              Experience Renewed Vitality
-            </h3>
-            
-            {/* Video Section */}
-            <div className="mb-10 -mx-6 md:-mx-12">
-              <div style={{padding:"56.25% 0 0 0", position:"relative"}}>
-                <iframe 
-                  src="https://player.vimeo.com/video/1117754950?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&controls=1&autoplay=1&muted=0"
-                  frameBorder="0" 
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                  referrerPolicy="strict-origin-when-cross-origin" 
-                  style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}}
-                  title="Bio cell RX"
-                  className="rounded-2xl shadow-xl"
-                />
+            {/* Two Column Header Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center mb-12">
+              {/* Left Column - Text Content */}
+              <div className="space-y-6 lg:col-span-2">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                  Experience Renewed Vitality
+                </h3>
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                  Our advanced regenerative therapies help patients regain mobility, reduce inflammation, 
+                  and experience improved quality of life through the body's natural healing processes.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link to="/contact">
+                    <Button variant="medical" size="lg" className="w-full sm:w-auto">
+                      Start Your Journey
+                      <ArrowRight className="w-5 h-5 ml-2" />
+                    </Button>
+                  </Link>
+                  <Link to="/services">
+                    <Button variant="outline" size="lg" className="w-full sm:w-auto border-accent text-accent hover:bg-accent hover:text-black">
+                      Learn More
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+              
+              {/* Right Column - Video */}
+              <div className="order-first lg:order-last lg:col-span-3">
+                <VitalityVideo />
               </div>
             </div>
             
-            <p className="text-xl text-muted-foreground mb-10 text-center font-medium max-w-4xl mx-auto leading-relaxed">
-              Our advanced regenerative therapies help patients regain mobility, reduce inflammation, 
-              and experience improved quality of life through the body's natural healing processes.
-            </p>
-            
-            {/* Lady Image */}
-            <div className="mb-8">
-              <img 
-                src={wellnessResults} 
-                alt="Person demonstrating improved wellness and mobility from regenerative therapy"
-                className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg"
-              />
-            </div>
-            
-            <div className="space-y-5 mb-10">
-              <div className="flex items-center justify-center">
-                <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
-                <span className="text-foreground text-lg font-medium">Enhanced mobility and flexibility</span>
-              </div>
-              <div className="flex items-center justify-center">
-                <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
-                <span className="text-foreground text-lg font-medium">Reduced pain and inflammation</span>
-              </div>
-              <div className="flex items-center justify-center">
-                <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
-                <span className="text-foreground text-lg font-medium">Accelerated healing and recovery</span>
-              </div>
-              <div className="flex items-center justify-center">
-                <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
-                <span className="text-foreground text-lg font-medium">Improved overall wellness</span>
-              </div>
-            </div>
-            
-            <div className="text-center">
-              <Link to="/contact">
-                <Button variant="medical" size="lg">
-                  Learn More About Results
-                </Button>
-              </Link>
-            </div>
+            {/* Two Column Card */}
+            <Card className="mb-8 bg-white/80 backdrop-blur-sm border-accent/20 shadow-lg">
+              <CardContent className="p-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                  {/* Left Column - Image */}
+                  <div className="order-2 lg:order-1">
+                    <img 
+                      src={wellnessResults} 
+                      alt="Person demonstrating improved wellness and mobility from regenerative therapy"
+                      className="w-full max-w-md mx-auto lg:mx-0 rounded-2xl shadow-lg"
+                    />
+                  </div>
+                  
+                  {/* Right Column - Benefits List */}
+                  <div className="order-1 lg:order-2 space-y-6">
+                    <h5 className="text-xl font-semibold text-foreground mb-4">
+                      Transform Your Health Journey
+                    </h5>
+                    <div className="space-y-4">
+                      <div className="flex items-start">
+                        <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0 mt-1" />
+                        <span className="text-foreground text-lg font-medium">Enhanced mobility and flexibility</span>
+                      </div>
+                      <div className="flex items-start">
+                        <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0 mt-1" />
+                        <span className="text-foreground text-lg font-medium">Reduced inflammation and pain</span>
+                      </div>
+                      <div className="flex items-start">
+                        <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0 mt-1" />
+                        <span className="text-foreground text-lg font-medium">Improved quality of life</span>
+                      </div>
+                      <div className="flex items-start">
+                        <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0 mt-1" />
+                        <span className="text-foreground text-lg font-medium">Natural healing processes</span>
+                      </div>
+                    </div>
+                    
+                    {/* Learn More Button */}
+                    <div className="pt-4">
+                      <Link to="/contact">
+                        <Button variant="medical" size="lg" className="w-full sm:w-auto">
+                          Learn More About Results
+                          <ArrowRight className="w-5 h-5 ml-2" />
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
 

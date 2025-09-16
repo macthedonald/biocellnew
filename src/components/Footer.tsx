@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/lovable-uploads/abc8e5e6-fdc8-4aeb-83a6-f51637383091.png" 
+                src="/uploads/abc8e5e6-fdc8-4aeb-83a6-f51637383091.png" 
                 alt="BioCellRx Logo" 
                 className="h-10 w-auto"
               />
@@ -50,7 +50,6 @@ const Footer = () => {
                   info@biocellrx.com
                 </a>
               </li>
-              <li>Available 24/7</li>
             </ul>
             
             {/* Social Links */}
@@ -90,10 +89,27 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 mt-8 pt-8 text-center">
-          <p className="text-white/60">
-            © 2025 BioCellRx. All rights reserved. | Advanced regenerative medicine solutions.
-          </p>
+        <div className="border-t border-white/10 mt-8 pt-8">
+          <div className="text-center">
+            <p className="text-white/60 mb-4">
+              © 2025 BioCellRx. All rights reserved. | Advanced regenerative medicine solutions.
+            </p>
+            <div className="flex justify-center items-center gap-4 text-sm">
+              <a 
+                href="/privacy-policy" 
+                className="text-white/60 hover:text-accent transition-colors underline"
+              >
+                Privacy Policy
+              </a>
+              <span className="text-white/40">|</span>
+              <a 
+                href="/terms-of-service" 
+                className="text-white/60 hover:text-accent transition-colors underline"
+              >
+                Terms of Service
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

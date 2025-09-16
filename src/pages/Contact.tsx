@@ -169,7 +169,7 @@ const Contact = () => {
       <div className="min-h-screen">
       {/* Hero Section */}
       <section 
-        className="relative py-32 text-white overflow-hidden animate-fade-in"
+        className="relative h-screen sm:h-auto sm:py-32 flex items-center justify-center text-white overflow-hidden animate-fade-in"
         style={{
           backgroundImage: `url(${labHeroBg})`,
           backgroundSize: 'cover',
@@ -178,22 +178,28 @@ const Contact = () => {
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight animate-fade-in">
               Ready to Transform
               <span className="block bg-gradient-to-r from-accent to-accent-foreground bg-clip-text text-transparent">
                 Your Health?
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in [animation-delay:0.2s]">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in [animation-delay:0.2s] px-4">
               Schedule your personalized consultation today and discover how our advanced regenerative therapies can help you achieve optimal wellness.
             </p>
-            <div className="flex justify-center animate-fade-in [animation-delay:0.4s]">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-fade-in [animation-delay:0.4s] px-4">
               <a href="tel:+18585197305">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold hover-scale">
                   <Phone className="w-5 h-5 mr-2" />
                   Call (858) 519-7305
+                </Button>
+              </a>
+              <a href="#contact-form">
+                <Button variant="outline" size="lg" className="border-white bg-transparent text-white hover:bg-white hover:text-black hover-scale">
+                  Schedule Consultation
+                  <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </div>
@@ -202,7 +208,7 @@ const Contact = () => {
       </section>
 
       {/* Get in Touch Section */}
-      <section className="py-20 bg-background">
+      <section id="contact-form" className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
@@ -222,33 +228,33 @@ const Contact = () => {
           </div>
 
           {/* Contact Form Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
             {/* Left Side - Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-6 lg:space-y-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-start space-x-4 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <div className="flex items-center justify-center w-12 h-12 bg-accent/10 rounded-lg flex-shrink-0">
-                    <info.icon className="w-6 h-6 text-accent" />
+                <div key={index} className="flex items-start space-x-3 sm:space-x-4 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-accent/10 rounded-lg flex-shrink-0">
+                    <info.icon className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">
+                    <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-1 sm:mb-2">
                       {info.title}
                     </h3>
                     {info.href ? (
                       <a 
                         href={info.href}
-                        className="text-lg font-medium text-accent hover:text-accent/80 transition-colors block mb-2"
+                        className="text-base sm:text-lg font-medium text-accent hover:text-accent/80 transition-colors block mb-1 sm:mb-2"
                         target={info.href.startsWith('http') ? '_blank' : undefined}
                         rel={info.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                       >
                         {info.value}
                       </a>
                     ) : (
-                      <p className="text-lg font-medium text-accent mb-2">
+                      <p className="text-base sm:text-lg font-medium text-accent mb-1 sm:mb-2">
                         {info.value}
                       </p>
                     )}
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                       {info.description}
                     </p>
                   </div>
@@ -257,11 +263,11 @@ const Contact = () => {
             </div>
 
             {/* Right Side - Contact Form */}
-            <div className="bg-white rounded-2xl p-8 border border-border shadow-lg animate-fade-in [animation-delay:0.3s]">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-border shadow-lg animate-fade-in [animation-delay:0.3s]">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="firstName" className="text-foreground font-medium">
+                    <Label htmlFor="firstName" className="text-sm sm:text-base text-foreground font-medium">
                       First Name <span className="text-accent">*</span>
                     </Label>
                     <Input
@@ -271,11 +277,11 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       placeholder="Enter your first name"
-                      className="bg-white border-border focus:border-accent focus:ring-accent/20"
+                      className="bg-white border-border focus:border-accent focus:ring-accent/20 text-sm sm:text-base h-10 sm:h-11"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="lastName" className="text-foreground font-medium">
+                    <Label htmlFor="lastName" className="text-sm sm:text-base text-foreground font-medium">
                       Last Name <span className="text-accent">*</span>
                     </Label>
                     <Input
@@ -285,13 +291,13 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       placeholder="Enter your last name"
-                      className="bg-white border-border focus:border-accent focus:ring-accent/20"
+                      className="bg-white border-border focus:border-accent focus:ring-accent/20 text-sm sm:text-base h-10 sm:h-11"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="text-foreground font-medium">
+                  <Label htmlFor="email" className="text-sm sm:text-base text-foreground font-medium">
                     Email Address <span className="text-accent">*</span>
                   </Label>
                   <Input
@@ -302,12 +308,12 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     placeholder="Enter your email"
-                    className="bg-white border-border focus:border-accent focus:ring-accent/20"
+                    className="bg-white border-border focus:border-accent focus:ring-accent/20 text-sm sm:text-base h-10 sm:h-11"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-foreground font-medium">
+                  <Label htmlFor="phone" className="text-sm sm:text-base text-foreground font-medium">
                     Phone Number <span className="text-accent">*</span>
                   </Label>
                   <Input
@@ -318,12 +324,12 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     placeholder="(555) 123-4567"
-                    className="bg-white border-border focus:border-accent focus:ring-accent/20"
+                    className="bg-white border-border focus:border-accent focus:ring-accent/20 text-sm sm:text-base h-10 sm:h-11"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="primaryHealthConcern" className="text-foreground font-medium">
+                  <Label htmlFor="primaryHealthConcern" className="text-sm sm:text-base text-foreground font-medium">
                     Primary Health Concern
                   </Label>
                   <Input
@@ -332,12 +338,12 @@ const Contact = () => {
                     value={formData.primaryHealthConcern}
                     onChange={handleInputChange}
                     placeholder="What brings you to BioCellRx?"
-                    className="bg-white border-border focus:border-accent focus:ring-accent/20"
+                    className="bg-white border-border focus:border-accent focus:ring-accent/20 text-sm sm:text-base h-10 sm:h-11"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="additionalInfo" className="text-foreground font-medium">
+                  <Label htmlFor="additionalInfo" className="text-sm sm:text-base text-foreground font-medium">
                     Additional Information
                   </Label>
                   <Textarea
@@ -347,7 +353,7 @@ const Contact = () => {
                     value={formData.additionalInfo}
                     onChange={handleInputChange}
                     placeholder="Tell us more about your health goals or any questions you have..."
-                    className="bg-white border-border focus:border-accent focus:ring-accent/20 resize-none"
+                    className="bg-white border-border focus:border-accent focus:ring-accent/20 resize-none text-sm sm:text-base min-h-[100px]"
                   />
                 </div>
 
@@ -357,9 +363,9 @@ const Contact = () => {
                     checked={formData.agreeToComms}
                     onCheckedChange={handleCheckboxChange}
                     required
-                    className="border-border data-[state=checked]:bg-accent data-[state=checked]:border-accent mt-1"
+                    className="border-border data-[state=checked]:bg-accent data-[state=checked]:border-accent mt-1 flex-shrink-0"
                   />
-                  <Label htmlFor="agreeToComms" className="text-sm leading-relaxed text-muted-foreground">
+                  <Label htmlFor="agreeToComms" className="text-xs sm:text-sm leading-relaxed text-muted-foreground cursor-pointer">
                     I agree to receive communications from BioCellRx regarding my inquiry and understand that I can unsubscribe at any time. <span className="text-accent">*</span>
                   </Label>
                 </div>
@@ -367,7 +373,7 @@ const Contact = () => {
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full bg-accent hover:bg-accent/90 text-black font-semibold py-4 rounded-lg transition-all duration-300"
+                  className="w-full bg-accent hover:bg-accent/90 text-black font-semibold py-3 sm:py-4 rounded-lg transition-all duration-300 text-sm sm:text-base"
                 >
                   Send New Patient Form
                 </Button>

@@ -90,31 +90,6 @@ const ResourcesPreview = () => {
           </Link>
         </div>
 
-        {/* Full Width Video Section */}
-        <div className="mb-12">
-          <div style={{ 
-            position: 'relative',
-            left: 0,
-            right: 0,
-            width: '100vw',
-            height: '56.25vw', // 16:9 aspect ratio (9/16 * 100)
-            maxHeight: '600px',
-            margin: '0 calc(-50vw + 50%)'
-          }}>
-            <iframe
-              src="https://player.vimeo.com/video/703393362?h=c2afb21c93&autoplay=0&title=0&portrait=0&byline=0&badge=0&loop=0&muted=0&controls=1"
-              style={{
-                width: '100vw', 
-                height: '100%', 
-                border: 'none',
-                display: 'block'
-              }}
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        </div>
       </div>
     </section>
   );

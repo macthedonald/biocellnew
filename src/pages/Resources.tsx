@@ -331,7 +331,7 @@ const Resources = () => {
               <div className="lg:order-1">
                 <Card className="border-0 shadow-medical overflow-hidden">
                   <img 
-                    src="/lovable-uploads/3d523b0e-7fad-427f-b3ae-89a86d15a74a.png" 
+                    src="/uploads/3d523b0e-7fad-427f-b3ae-89a86d15a74a.png" 
                     alt="BioCellRx comprehensive training program covering clinical research and applications"
                     className="w-full h-auto"
                   />
@@ -354,7 +354,7 @@ const Resources = () => {
               <div>
                 <Card className="border-0 shadow-medical overflow-hidden">
                   <img 
-                    src="/lovable-uploads/b5192621-b056-4706-9986-3ee13aecfbae.png" 
+                    src="/uploads/b5192621-b056-4706-9986-3ee13aecfbae.png" 
                     alt="Lymphatic system distribution and oral anti-inflammatory exosome administration"
                     className="w-full h-auto"
                   />

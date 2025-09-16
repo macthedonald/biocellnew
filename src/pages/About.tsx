@@ -75,7 +75,7 @@ const About = () => {
       <div className="min-h-screen">
       {/* Hero Section */}
       <section 
-        className="relative py-32 text-white overflow-hidden animate-fade-in"
+        className="relative h-screen sm:h-auto sm:py-32 flex items-center justify-center text-white overflow-hidden animate-fade-in"
         style={{
           backgroundImage: `url(${labHeroBg})`,
           backgroundSize: 'cover',
@@ -84,19 +84,19 @@ const About = () => {
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight animate-fade-in">
               About
               <span className="block bg-gradient-to-r from-accent to-accent-foreground bg-clip-text text-transparent">
                 BioCellRx
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in [animation-delay:0.2s]">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in [animation-delay:0.2s] px-4">
               Standing at the intersection of medical science and technological advancement, 
               revolutionizing health and wellness for over <span className="text-accent font-semibold">two decades</span>
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in [animation-delay:0.4s]">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-fade-in [animation-delay:0.4s] px-4">
               <a href="tel:+18585197305">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-black font-semibold hover-scale">
                   <Phone className="w-5 h-5 mr-2" />
@@ -104,7 +104,7 @@ const About = () => {
                 </Button>
               </a>
               <Link to="/contact">
-                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black hover-scale">
+                <Button variant="outline" size="lg" className="border-white bg-transparent text-white hover:bg-white hover:text-black hover-scale">
                   Schedule Consultation
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
@@ -115,9 +115,9 @@ const About = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="mb-16">
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="mb-12 sm:mb-16">
             <img 
               src={missionImage} 
               alt="Advanced regenerative medicine research and development"
@@ -125,7 +125,7 @@ const About = () => {
             />
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
                 Our Mission
@@ -216,17 +216,17 @@ const About = () => {
       </section>
 
       {/* Conditions We Transform */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-foreground">
               Conditions We Transform
             </h2>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-12">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-4xl mx-auto mb-8 sm:mb-12 px-4">
               Stem cell therapy represents a paradigm shift in modern medicine, offering powerful approaches to managing chronic conditions and promoting natural healing.
             </p>
             
-            <div className="mb-16">
+            <div className="mb-12 sm:mb-16">
               <img 
                 src={conditionsImage} 
                 alt="Various medical conditions treatable with stem cell therapy"
@@ -235,7 +235,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
             {conditions.map((condition, index) => (
               <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-0 bg-white h-full hover-scale animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardHeader>

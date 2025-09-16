@@ -118,34 +118,92 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground smooth-scroll;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 }
 
 @layer utilities {
-  /* Hover Scale Animation */
+  /* Mobile-first responsive utilities */
+  .mobile-safe-area {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  .mobile-text-scale {
+    @apply text-sm sm:text-base;
+  }
+  
+  .mobile-heading-scale {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+  }
+  
+  .mobile-padding {
+    @apply py-12 sm:py-16 lg:py-20;
+  }
+  
+  .mobile-gap {
+    @apply gap-4 sm:gap-6 lg:gap-8;
+  }
+
+  /* Hover Scale Animation - Reduced for mobile */
   .hover-scale {
-    @apply transition-transform duration-200 hover:scale-105;
+    @apply transition-transform duration-200 hover:scale-105 active:scale-95;
+  }
+  
+  /* Mobile-friendly hover effects */
+  @media (hover: hover) {
+    .hover-scale:hover {
+      @apply scale-105;
+    }
+    
+    .card-golden-hover:hover {
+      @apply shadow-[0_15px_50px_rgba(128,85,0,1),0_0_60px_rgba(153,102,0,0.9),0_0_100px_rgba(179,119,0,0.7),0_0_140px_rgba(230,153,0,0.5)] scale-[1.08] bg-gradient-to-br from-white to-yellow-900/20 border-yellow-700/40 brightness-110;
+    }
+    
+    .btn-golden-radiant:hover {
+      @apply shadow-[0_0_30px_rgba(128,85,0,1),0_0_60px_rgba(153,102,0,1),0_0_90px_rgba(179,119,0,0.8),0_0_120px_rgba(230,153,0,0.6)] scale-[1.12] brightness-125;
+    }
+    
+    .product-golden-hover:hover {
+      @apply shadow-[0_20px_60px_rgba(102,68,0,1),0_0_80px_rgba(128,85,0,1),0_0_120px_rgba(153,102,0,0.9),0_0_160px_rgba(204,136,0,0.7)] scale-[1.12] bg-gradient-to-br from-yellow-400/70 to-orange-400/60 border-yellow-600/70 brightness-110;
+    }
+    
+    .hover-golden-radiant:hover {
+      @apply shadow-[0_0_40px_rgba(128,85,0,1),0_0_80px_rgba(179,119,0,0.9),0_0_120px_rgba(230,153,0,0.7),0_0_160px_rgba(255,204,0,0.5)] bg-gradient-to-br from-yellow-900/40 to-amber-900/30 brightness-125;
+    }
+  }
+  
+  /* Mobile fallback - no hover effects */
+  @media (hover: none) {
+    .hover-scale:active {
+      @apply scale-95;
+    }
+    
+    .card-golden-hover:active {
+      @apply scale-95;
+    }
   }
   
   /* Golden Radiant Hover Effect */
   .hover-golden-radiant {
-    @apply transition-all duration-300 hover:shadow-[0_0_40px_rgba(128,85,0,1),0_0_80px_rgba(179,119,0,0.9),0_0_120px_rgba(230,153,0,0.7),0_0_160px_rgba(255,204,0,0.5)] hover:bg-gradient-to-br hover:from-yellow-900/40 hover:to-amber-900/30 hover:brightness-125;
+    @apply transition-all duration-300;
   }
   
   /* Enhanced Card Hover with Golden Glow */
   .card-golden-hover {
-    @apply transition-all duration-300 hover:shadow-[0_15px_50px_rgba(128,85,0,1),0_0_60px_rgba(153,102,0,0.9),0_0_100px_rgba(179,119,0,0.7),0_0_140px_rgba(230,153,0,0.5)] hover:scale-[1.08] hover:bg-gradient-to-br hover:from-white hover:to-yellow-900/20 hover:border-yellow-700/40 hover:brightness-110;
+    @apply transition-all duration-300;
   }
   
   /* Button Golden Radiant */
   .btn-golden-radiant {
-    @apply transition-all duration-300 hover:shadow-[0_0_30px_rgba(128,85,0,1),0_0_60px_rgba(153,102,0,1),0_0_90px_rgba(179,119,0,0.8),0_0_120px_rgba(230,153,0,0.6)] hover:scale-[1.12] hover:brightness-125;
+    @apply transition-all duration-300;
   }
   
   /* Home Page Products Enhanced Golden Hover */
   .product-golden-hover {
-    @apply transition-all duration-500 ease-in-out hover:shadow-[0_20px_60px_rgba(102,68,0,1),0_0_80px_rgba(128,85,0,1),0_0_120px_rgba(153,102,0,0.9),0_0_160px_rgba(204,136,0,0.7)] hover:scale-[1.12] hover:bg-gradient-to-br hover:from-yellow-400/70 hover:to-orange-400/60 hover:border-yellow-600/70 hover:brightness-110;
+    @apply transition-all duration-500 ease-in-out;
   }
   
   /* Story Link Animation */
@@ -156,5 +214,75 @@ All colors MUST be HSL.
   /* Pulse Animation */
   .pulse {
     @apply animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite];
+  }
+  
+  /* Touch-friendly button sizes */
+  .btn-touch {
+    @apply min-h-[44px] min-w-[44px];
+  }
+  
+  /* Improved text readability on mobile */
+  .mobile-text {
+    @apply leading-relaxed;
+  }
+  
+  /* Prevent zoom on input focus (iOS) */
+  .no-zoom {
+    font-size: 16px;
+  }
+  
+  /* Core Web Vitals Optimization */
+  .preload-critical {
+    font-display: swap;
+  }
+  
+  /* Accessibility improvements */
+  .focus-visible:focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+  
+  /* Performance optimizations */
+  .will-change-transform {
+    will-change: transform;
+  }
+  
+  /* Better mobile scrolling */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-in,
+    .animate-bounce,
+    .hover-scale {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+  
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .card-golden-hover:hover {
+      @apply border-2 border-accent;
+    }
+  }
+  
+  /* Dark mode preference */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: light;
+    }
+  }
+  
+  /* Video scaling utilities */
+  .video-fill {
+    transform: scale(1.1);
+    transform-origin: center;
+  }
+  
+  .video-container {
+    overflow: hidden;
   }
 }

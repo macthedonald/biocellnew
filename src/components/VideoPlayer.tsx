@@ -73,7 +73,7 @@ const VideoPlayer = ({
     <>
       {/* Video Thumbnail with Live Video Background */}
       <div 
-        className="relative aspect-video rounded-2xl overflow-hidden border border-accent/20 cursor-pointer group shadow-medical hover:shadow-gold transition-all duration-300"
+        className="relative aspect-video rounded-2xl overflow-hidden border border-accent/20 cursor-pointer group shadow-medical hover:shadow-gold transition-all duration-300 video-container"
         onClick={() => setIsOpen(true)}
       >
         {/* Live Video Background */}
@@ -85,7 +85,7 @@ const VideoPlayer = ({
               height="100%"
               frameBorder="0"
               allow="autoplay; fullscreen"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover video-fill"
             />
           </div>
         )}
@@ -95,7 +95,7 @@ const VideoPlayer = ({
           <img 
             src={thumbnail} 
             alt={title}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover video-fill"
           />
         )}
         

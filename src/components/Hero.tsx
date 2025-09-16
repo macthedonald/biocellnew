@@ -6,7 +6,7 @@ import labHeroBg from "@/assets/lab-hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen h-screen sm:min-h-screen sm:h-auto flex items-center justify-center overflow-hidden" role="banner" aria-label="BioCellRx Hero Section">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -19,32 +19,37 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 pt-28 pb-16">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-20 sm:pt-28 pb-16">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Trust Badge */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
-            Unlock Your Body's{" "}
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 text-white leading-tight">
+            Advanced{" "}
             <span className="bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">
-              Healing Potential
+              Stem Cell Therapy
             </span>
+            {" "}& Regenerative Medicine
           </h1>
 
-          {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Experience the future of regenerative medicine with BioCellRx's advanced stem 
-            cell therapies and premium CBD products. Scientifically-backed solutions that 
-            harness your body's natural healing capabilities for optimal health and enhanced 
-            quality of life.
+          {/* Subheadline with hot keywords */}
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
+            Leading regenerative medicine clinic with FDA-approved stem cell treatments, MSC exosomal lysate, 
+            and advanced cellular therapy. <strong className="text-accent">95% success rate</strong> with 
+            <strong className="text-accent">20+ years</strong> of clinical experience in anti-aging, 
+            joint pain relief, and chronic condition treatment.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 px-4">
             <Link to="/contact">
-              <Button variant="medical" size="lg" className="group">
-                Start Your Healing Journey
+              <Button variant="medical" size="lg" className="group hover-scale">
+                Get Free Stem Cell Consultation
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
+            <a href="tel:+18585197305">
+              <Button variant="outline" size="lg" className="border-white bg-transparent text-white hover:bg-white hover:text-black hover-scale">
+                Call (858) 519-7305
+              </Button>
+            </a>
           </div>
 
           {/* Stats */}
