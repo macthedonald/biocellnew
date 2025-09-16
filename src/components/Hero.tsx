@@ -19,26 +19,24 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-20 sm:pt-28 pb-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 text-white leading-tight">
-            Advanced{" "}
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-24 sm:pt-32 pb-16">
+        <div className="max-w-4xl mx-auto text-center w-full">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 text-white leading-tight">
+            Discover Your Body's{" "}
             <span className="bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">
-              Stem Cell Therapy
+              Healing Potential
             </span>
-            {" "}& Regenerative Medicine
+            {" "}with Stem Cell
           </h1>
 
           {/* Subheadline with hot keywords */}
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
-            Leading regenerative medicine clinic with FDA-approved stem cell treatments, MSC exosomal lysate, 
-            and advanced cellular therapy. <strong className="text-accent">95% success rate</strong> with 
-            <strong className="text-accent">20+ years</strong> of clinical experience in anti-aging, 
-            joint pain relief, and chronic condition treatment.
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed">
+            <strong className="text-accent">Scientifically-backed</strong> stem cell therapies and <strong className="text-accent">premium CBD products</strong>. 
+            Harness your body's <strong className="text-accent">natural healing</strong> for optimal health with <strong className="text-accent">BioCellRX</strong>.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 px-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-16 sm:mb-12 px-4">
             <Link to="/contact">
               <Button variant="medical" size="lg" className="group hover-scale">
                 Get Free Stem Cell Consultation
@@ -53,27 +51,27 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+          <div className="grid grid-cols-3 gap-3 sm:gap-6 md:gap-8 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-white/10 rounded-full mb-3">
-                <Award className="w-6 h-6 text-accent" />
+              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-2 sm:mb-3">
+                <Award className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
               </div>
-              <div className="text-white font-semibold">Clinically Advanced</div>
-              <div className="text-white/70 text-sm">Cellular Products</div>
+              <div className="text-white font-semibold text-sm sm:text-base">Clinically Advanced</div>
+              <div className="text-white/70 text-xs sm:text-sm">Cellular Products</div>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-white/10 rounded-full mb-3">
-                <Users className="w-6 h-6 text-accent" />
+              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-2 sm:mb-3">
+                <Users className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
               </div>
-              <div className="text-white font-semibold">20+ Years</div>
-              <div className="text-white/70 text-sm">Research & Development</div>
+              <div className="text-white font-semibold text-sm sm:text-base">20+ Years</div>
+              <div className="text-white/70 text-xs sm:text-sm">Research & Development</div>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-white/10 rounded-full mb-3">
-                <Network className="w-6 h-6 text-accent" />
+              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-2 sm:mb-3">
+                <Network className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
               </div>
-              <div className="text-white font-semibold">Network of</div>
-              <div className="text-white/70 text-sm">Expert Practitioners</div>
+              <div className="text-white font-semibold text-sm sm:text-base">Network of</div>
+              <div className="text-white/70 text-xs sm:text-sm">Expert Practitioners</div>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/uploads/abc8e5e6-fdc8-4aeb-83a6-f51637383091.png" 
+                src="/uploads/logo.png" 
                 alt="BioCellRx Logo" 
                 className="h-10 w-auto"
               />

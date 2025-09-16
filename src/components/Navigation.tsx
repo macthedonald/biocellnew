@@ -31,7 +31,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center" onClick={closeMenu}>
             <img 
-              src="/uploads/abc8e5e6-fdc8-4aeb-83a6-f51637383091.png" 
+              src="/uploads/logo.png" 
               alt="BioCellRx Logo" 
               className="h-10 sm:h-12 w-auto"
             />
