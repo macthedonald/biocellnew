@@ -104,9 +104,6 @@ const Features = () => {
             <h3 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
               See Our Process in Action
             </h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Watch how our innovative treatments and therapies work to support your health journey
-            </p>
           </div>
 
           <div className="max-w-4xl mx-auto" ref={videoRef}>

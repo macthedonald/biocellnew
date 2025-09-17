@@ -19,9 +19,9 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-24 sm:pt-32 pb-16">
-        <div className="max-w-4xl mx-auto text-center w-full">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 text-white leading-tight">
+      <div className="relative z-10 w-full px-2 sm:px-6 pt-20 sm:pt-32 pb-12">
+        <div className="w-full max-w-none sm:max-w-4xl mx-auto text-center">
+          <h1 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-6 text-white leading-tight px-2">
             Discover Your Body's{" "}
             <span className="bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">
               Healing Potential
@@ -30,48 +30,48 @@ const Hero = () => {
           </h1>
 
           {/* Subheadline with hot keywords */}
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 sm:mb-8 w-full sm:max-w-4xl mx-auto leading-relaxed px-2">
             <strong className="text-accent">Scientifically-backed</strong> stem cell therapies and <strong className="text-accent">premium CBD products</strong>. 
             Harness your body's <strong className="text-accent">natural healing</strong> for optimal health with <strong className="text-accent">BioCellRX</strong>.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-16 sm:mb-12 px-4">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-4 justify-center mb-16 sm:mb-12 px-4">
             <Link to="/contact">
-              <Button variant="medical" size="lg" className="group hover-scale">
-                Get Free Stem Cell Consultation
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              <Button variant="medical" size="lg" className="group hover-scale text-base sm:text-base px-6 py-4 sm:px-6 sm:py-3">
+                Book Consultation
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
             <a href="tel:+18585197305">
-              <Button variant="outline" size="lg" className="border-white bg-transparent text-white hover:bg-white hover:text-black hover-scale">
+              <Button variant="outline" size="lg" className="border-white bg-transparent text-white hover:bg-white hover:text-black hover-scale text-base sm:text-base px-6 py-4 sm:px-6 sm:py-3">
                 Call (858) 519-7305
               </Button>
             </a>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-3 sm:gap-6 md:gap-8 max-w-3xl mx-auto">
+          {/* Stats - Hidden on Mobile */}
+          <div className="hidden sm:grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-1 sm:mb-3">
-                <Award className="w-4 h-4 sm:w-6 sm:h-6 text-accent" />
+              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-2 sm:mb-3">
+                <Award className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
               </div>
-              <div className="text-white font-semibold text-xs sm:text-base">Clinically Advanced</div>
-              <div className="text-white/70 text-xs sm:text-sm">Cellular Products</div>
+              <div className="text-white font-semibold text-sm sm:text-base">Clinically Advanced</div>
+              <div className="text-white/70 text-sm sm:text-sm">Cellular Products</div>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-1 sm:mb-3">
-                <Users className="w-4 h-4 sm:w-6 sm:h-6 text-accent" />
+              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-2 sm:mb-3">
+                <Users className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
               </div>
-              <div className="text-white font-semibold text-xs sm:text-base">20+ Years</div>
-              <div className="text-white/70 text-xs sm:text-sm">Research & Development</div>
+              <div className="text-white font-semibold text-sm sm:text-base">20+ Years</div>
+              <div className="text-white/70 text-sm sm:text-sm">Research & Development</div>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-1 sm:mb-3">
-                <Network className="w-4 h-4 sm:w-6 sm:h-6 text-accent" />
+              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-2 sm:mb-3">
+                <Network className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
               </div>
-              <div className="text-white font-semibold text-xs sm:text-base">Network of</div>
-              <div className="text-white/70 text-xs sm:text-sm">Expert Practitioners</div>
+              <div className="text-white font-semibold text-sm sm:text-base">Network of</div>
+              <div className="text-white/70 text-sm sm:text-sm">Expert Practitioners</div>
             </div>
           </div>
         </div>
