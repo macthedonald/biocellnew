@@ -53,24 +53,24 @@ const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-3 sm:gap-6 md:gap-8 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-2 sm:mb-3">
-                <Award className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
+              <div className="inline-flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-1 sm:mb-3">
+                <Award className="w-4 h-4 sm:w-6 sm:h-6 text-accent" />
               </div>
-              <div className="text-white font-semibold text-sm sm:text-base">Clinically Advanced</div>
+              <div className="text-white font-semibold text-xs sm:text-base">Clinically Advanced</div>
               <div className="text-white/70 text-xs sm:text-sm">Cellular Products</div>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-2 sm:mb-3">
-                <Users className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
+              <div className="inline-flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-1 sm:mb-3">
+                <Users className="w-4 h-4 sm:w-6 sm:h-6 text-accent" />
               </div>
-              <div className="text-white font-semibold text-sm sm:text-base">20+ Years</div>
+              <div className="text-white font-semibold text-xs sm:text-base">20+ Years</div>
               <div className="text-white/70 text-xs sm:text-sm">Research & Development</div>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-2 sm:mb-3">
-                <Network className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
+              <div className="inline-flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-1 sm:mb-3">
+                <Network className="w-4 h-4 sm:w-6 sm:h-6 text-accent" />
               </div>
-              <div className="text-white font-semibold text-sm sm:text-base">Network of</div>
+              <div className="text-white font-semibold text-xs sm:text-base">Network of</div>
               <div className="text-white/70 text-xs sm:text-sm">Expert Practitioners</div>
             </div>
           </div>
