@@ -24,12 +24,18 @@ const Navigation = () => {
     setIsMenuOpen(false);
   };
 
+  const handleNavClick = () => {
+    closeMenu();
+    // Immediate scroll to top for better UX
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 sm:space-x-3" onClick={closeMenu}>
+          <Link to="/" className="flex items-center space-x-2 sm:space-x-3" onClick={handleNavClick}>
             <img 
               src="/uploads/logo.png" 
               alt="BioCellRx Logo" 
@@ -47,6 +53,7 @@ const Navigation = () => {
                 <Link
                   key={item.name}
                   to={item.href}
+                  onClick={handleNavClick}
                   className={`text-sm xl:text-base transition-colors duration-300 whitespace-nowrap ${
                     location.pathname === item.href 
                       ? "text-accent font-medium" 
@@ -100,7 +107,7 @@ const Navigation = () => {
                     <Link
                       key={item.name}
                       to={item.href}
-                      onClick={closeMenu}
+                      onClick={handleNavClick}
                       className={`text-base py-2 px-4 rounded-lg transition-colors duration-300 ${
                         location.pathname === item.href 
                           ? "text-accent font-medium bg-accent/10" 
@@ -123,7 +130,7 @@ const Navigation = () => {
                 
                 {/* Mobile CTA Button */}
                 <div className="pt-2 border-t border-border">
-                  <Link to="/contact" onClick={closeMenu}>
+                  <Link to="/contact" onClick={handleNavClick}>
                     <Button variant="cta" size="default" className="w-full">
               Book Consultation
             </Button>

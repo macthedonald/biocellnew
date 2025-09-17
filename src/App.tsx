@@ -9,6 +9,7 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 import CookieConsent from "@/components/CookieConsent";
 import Analytics from "@/components/Analytics";
 import RedirectHandler from "./components/RedirectHandler";
+import ScrollToTop from "@/components/ScrollToTop";
 import { setupGlobalErrorHandling } from "./utils/errorHandler";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
@@ -40,6 +41,7 @@ const App = () => {
             <Toaster />
             <Sonner />
             <BrowserRouter>
+              <ScrollToTop />
               <RedirectHandler>
                 <Routes>
                 <Route path="/" element={<Index />} />
