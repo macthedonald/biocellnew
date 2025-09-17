@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -32,11 +33,11 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li><a href="/" className="text-white/70 hover:text-accent transition-colors">Home</a></li>
-                <li><a href="/services" className="text-white/70 hover:text-accent transition-colors">Services</a></li>
-                <li><a href="/about" className="text-white/70 hover:text-accent transition-colors">About</a></li>
-                <li><a href="/contact" className="text-white/70 hover:text-accent transition-colors">Contact</a></li>
-                <li><a href="/resources" className="text-white/70 hover:text-accent transition-colors">Knowledge Center</a></li>
+                <li><Link to="/" className="text-white/70 hover:text-accent transition-colors">Home</Link></li>
+                <li><Link to="/services" className="text-white/70 hover:text-accent transition-colors">Services</Link></li>
+                <li><Link to="/about" className="text-white/70 hover:text-accent transition-colors">About</Link></li>
+                <li><Link to="/contact" className="text-white/70 hover:text-accent transition-colors">Contact</Link></li>
+                <li><Link to="/resources" className="text-white/70 hover:text-accent transition-colors">Knowledge Center</Link></li>
               </ul>
             </div>
 
@@ -102,19 +103,19 @@ const Footer = () => {
               © 2025 BioCellRx. All rights reserved. | Advanced regenerative medicine solutions.
             </p>
             <div className="flex justify-center items-center gap-4 text-sm">
-              <a 
-                href="/privacy-policy" 
+              <Link 
+                to="/privacy-policy" 
                 className="text-white/60 hover:text-accent transition-colors underline"
               >
                 Privacy Policy
-              </a>
+              </Link>
               <span className="text-white/40">|</span>
-              <a 
-                href="/terms-of-service" 
+              <Link 
+                to="/terms-of-service" 
                 className="text-white/60 hover:text-accent transition-colors underline"
               >
                 Terms of Service
-              </a>
+              </Link>
             </div>
           </div>
         </div>

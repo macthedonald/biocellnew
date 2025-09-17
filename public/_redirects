@@ -1,0 +1,20 @@
+# Netlify redirects for SPA routing
+
+# Legacy redirects
+/home /
+/wellness /services
+/biologics /services
+/knowledge-center /resources
+/blog /resources
+/privacy /privacy-policy
+/terms /terms-of-service
+/tos /terms-of-service
+
+# Case-insensitive redirects
+/Services /services
+/About /about
+/Contact /contact
+/Resources /resources
+
+# Fallback for SPA - must be last
+/* /index.html 200
