@@ -36,15 +36,15 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-4 justify-center mb-16 sm:mb-12 px-4">
-            <Link to="/contact">
-              <Button variant="medical" size="lg" className="group hover-scale text-base sm:text-base px-6 py-4 sm:px-6 sm:py-3">
-                Book Consultation
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-4 justify-center mb-12 sm:mb-12 px-2 w-full">
+            <Link to="/contact" className="w-full sm:w-auto">
+              <Button variant="medical" size="lg" className="group hover-scale text-lg sm:text-base px-8 py-5 sm:px-6 sm:py-3 w-full sm:w-auto">
+                Get Free Stem Cell Consultation
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
-            <a href="tel:+18585197305">
-              <Button variant="outline" size="lg" className="border-white bg-transparent text-white hover:bg-white hover:text-black hover-scale text-base sm:text-base px-6 py-4 sm:px-6 sm:py-3">
+            <a href="tel:+18585197305" className="w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="border-white bg-transparent text-white hover:bg-white hover:text-black hover-scale text-lg sm:text-base px-8 py-5 sm:px-6 sm:py-3 w-full sm:w-auto">
                 Call (858) 519-7305
               </Button>
             </a>
